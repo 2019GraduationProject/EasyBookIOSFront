@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // 去掉导航条底部的分割线
+        UINavigationBar.appearance().shadowImage = UIImage()
+        // 去掉 tab bar 顶部的分割线
+//        UITabBar.appearance().shadowImage = UIImage()
+        
         return true
     }
 

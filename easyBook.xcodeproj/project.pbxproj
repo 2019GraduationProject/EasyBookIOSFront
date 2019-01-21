@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		4F25D19C21F4A36E004E7DB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F25D19B21F4A36E004E7DB4 /* AppDelegate.swift */; };
-		4F25D19E21F4A36E004E7DB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F25D19D21F4A36E004E7DB4 /* ViewController.swift */; };
 		4F25D1A121F4A36E004E7DB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F25D19F21F4A36E004E7DB4 /* Main.storyboard */; };
 		4F25D1A321F4A370004E7DB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F25D1A221F4A370004E7DB4 /* Assets.xcassets */; };
 		4F25D1A621F4A370004E7DB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F25D1A421F4A370004E7DB4 /* LaunchScreen.storyboard */; };
+		4F25D1B121F4B510004E7DB4 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F25D1B021F4B510004E7DB4 /* ScheduleController.swift */; };
+		4F25D1B421F4B77F004E7DB4 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F25D1B321F4B77F004E7DB4 /* PersonController.swift */; };
+		4F25D1B621F4C9B3004E7DB4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F25D1B521F4C9B3004E7DB4 /* TabBarController.swift */; };
+		4FCB547021F56ECA00D5FAFB /* UIViewLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCB546F21F56ECA00D5FAFB /* UIViewLayerHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F25D19821F4A36E004E7DB4 /* easyBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easyBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F25D19B21F4A36E004E7DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F25D19D21F4A36E004E7DB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4F25D1A021F4A36E004E7DB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F25D1A221F4A370004E7DB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F25D1A521F4A370004E7DB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F25D1A721F4A370004E7DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F25D1B021F4B510004E7DB4 /* ScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
+		4F25D1B321F4B77F004E7DB4 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		4F25D1B521F4C9B3004E7DB4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4FCB546F21F56ECA00D5FAFB /* UIViewLayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewLayerHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		4F25D19A21F4A36E004E7DB4 /* easyBook */ = {
 			isa = PBXGroup;
 			children = (
+				4FCB546E21F56EA300D5FAFB /* Utils */,
+				4F25D1B221F4B752004E7DB4 /* PersonPage */,
+				4F25D1AD21F4AA99004E7DB4 /* SchedulePage */,
 				4F25D19B21F4A36E004E7DB4 /* AppDelegate.swift */,
-				4F25D19D21F4A36E004E7DB4 /* ViewController.swift */,
 				4F25D19F21F4A36E004E7DB4 /* Main.storyboard */,
 				4F25D1A221F4A370004E7DB4 /* Assets.xcassets */,
 				4F25D1A421F4A370004E7DB4 /* LaunchScreen.storyboard */,
 				4F25D1A721F4A370004E7DB4 /* Info.plist */,
+				4F25D1B521F4C9B3004E7DB4 /* TabBarController.swift */,
 			);
 			path = easyBook;
+			sourceTree = "<group>";
+		};
+		4F25D1AD21F4AA99004E7DB4 /* SchedulePage */ = {
+			isa = PBXGroup;
+			children = (
+				4F25D1B021F4B510004E7DB4 /* ScheduleController.swift */,
+			);
+			path = SchedulePage;
+			sourceTree = "<group>";
+		};
+		4F25D1B221F4B752004E7DB4 /* PersonPage */ = {
+			isa = PBXGroup;
+			children = (
+				4F25D1B321F4B77F004E7DB4 /* PersonController.swift */,
+			);
+			path = PersonPage;
+			sourceTree = "<group>";
+		};
+		4FCB546E21F56EA300D5FAFB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4FCB546F21F56ECA00D5FAFB /* UIViewLayerHelper.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F25D19E21F4A36E004E7DB4 /* ViewController.swift in Sources */,
+				4F25D1B121F4B510004E7DB4 /* ScheduleController.swift in Sources */,
+				4F25D1B621F4C9B3004E7DB4 /* TabBarController.swift in Sources */,
+				4F25D1B421F4B77F004E7DB4 /* PersonController.swift in Sources */,
+				4FCB547021F56ECA00D5FAFB /* UIViewLayerHelper.swift in Sources */,
 				4F25D19C21F4A36E004E7DB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
