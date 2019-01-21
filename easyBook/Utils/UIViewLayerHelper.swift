@@ -10,7 +10,12 @@ import UIKit
 
 // storyboard设计时可预览
 @IBDesignable
-class CustomImg: UIImageView {
+class CustomUIView: UIView {
+    
+}
+
+@IBDesignable
+class CustomImageView: UIImageView {
     
 }
 

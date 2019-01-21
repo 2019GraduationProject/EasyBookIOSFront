@@ -14,6 +14,7 @@
 		4F25D1B121F4B510004E7DB4 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F25D1B021F4B510004E7DB4 /* ScheduleController.swift */; };
 		4F25D1B421F4B77F004E7DB4 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F25D1B321F4B77F004E7DB4 /* PersonController.swift */; };
 		4F25D1B621F4C9B3004E7DB4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F25D1B521F4C9B3004E7DB4 /* TabBarController.swift */; };
+		4FB7DD9421F5F6740070CC8B /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB7DD9321F5F6740070CC8B /* NavigationHelper.swift */; };
 		4FCB547021F56ECA00D5FAFB /* UIViewLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCB546F21F56ECA00D5FAFB /* UIViewLayerHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		4F25D1B021F4B510004E7DB4 /* ScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
 		4F25D1B321F4B77F004E7DB4 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 		4F25D1B521F4C9B3004E7DB4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4FB7DD9321F5F6740070CC8B /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
 		4FCB546F21F56ECA00D5FAFB /* UIViewLayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewLayerHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				4FCB546F21F56ECA00D5FAFB /* UIViewLayerHelper.swift */,
+				4FB7DD9321F5F6740070CC8B /* NavigationHelper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F25D1B121F4B510004E7DB4 /* ScheduleController.swift in Sources */,
+				4FB7DD9421F5F6740070CC8B /* NavigationHelper.swift in Sources */,
 				4F25D1B621F4C9B3004E7DB4 /* TabBarController.swift in Sources */,
 				4F25D1B421F4B77F004E7DB4 /* PersonController.swift in Sources */,
 				4FCB547021F56ECA00D5FAFB /* UIViewLayerHelper.swift in Sources */,

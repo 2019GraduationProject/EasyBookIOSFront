@@ -9,14 +9,27 @@
 import UIKit
 
 class PersonController: UITableViewController {
-
+    
+    @IBOutlet weak var userBgImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // 修改每个section之间的间距：修改section的footer的大小
+        // 设置导航条背景透明
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        // 设置导航条标题字体颜色为白色
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        // 修改每个 section 之间的间距：修改 section 的 footer 的大小
         tableView.sectionFooterHeight = 8
+        
     }
-
+    
+    // 设置状态栏字体颜色为白色
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     /// 在视图加载完毕后取消第一个section的点击效果,
     /// 若在viewDidLoad()中写，则还未加载到第一个section，会报空指针
     ///
@@ -28,7 +41,7 @@ class PersonController: UITableViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        // 定制关于作者页面返回按钮上无文字
+        // 定制返回按钮上无文字
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
