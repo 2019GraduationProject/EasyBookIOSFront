@@ -16,12 +16,13 @@ class PersonController: UITableViewController {
         super.viewDidLoad()
 
         // 设置导航条背景透明
+        navigationController?.navigationBar.backgroundColor = UIColor.clear
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         // 设置导航条标题字体颜色为白色
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         // 修改每个 section 之间的间距：修改 section 的 footer 的大小
-        tableView.sectionFooterHeight = 8
+//        tableView.sectionFooterHeight = 8
         
     }
     
@@ -46,9 +47,9 @@ class PersonController: UITableViewController {
     }
     
     /// 修改每个section之间的间距：修改section的header的大小
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0.1
-    }
+//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 0.1
+//    }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 取消点击行则选中的状态

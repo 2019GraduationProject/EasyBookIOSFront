@@ -16,8 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UINavigationBar.appearance().shadowColor = UIColor(named: "themeSeperatorColor")
         // 去掉导航条底部的分割线
-        UINavigationBar.appearance().shadowImage = UIImage()
+//        UINavigationBar.appearance().shadowImage = UIImage()
         return true
     }
 
