@@ -8,12 +8,13 @@
 
 import UIKit
 
-/// ⚠️注：由于使用了 Search Bar and Search Display Controller 组件，所有的 tableView 引用都要加上self.tableView，否则程序会崩溃
+/// ⚠️注：由于使用了 Search Bar and Search Display Controller 组件，
+///      所有的 tableView 引用都要加上self.tableView，否则程序会崩溃
 class GroupController: UITableViewController {
     
     @IBOutlet weak var groupSearchBar: UISearchBar!
     
-    var naviBarShadowImage : UIImage! // 存储默认导航条背景图片
+    var naviBarShadowImage = UIImage(named: "separator") // 存储导航条图片
     var initialOffsetY : CGFloat! // 初始位移量
     var isInitialCompute = true // 是否是第一次计算初始位移的标志
     
@@ -24,8 +25,6 @@ class GroupController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        naviBarShadowImage = navigationController?.navigationBar.shadowImage
-
         // 设置导航条背景透明
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
@@ -37,7 +36,7 @@ class GroupController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        // 去掉第一个section上下的分割线
+        // 去掉第一个 section 最上方的分割线
         if let cell = tableView.cellForRow(at: [0, 0]) {
             var seperatorId = 0
             for subView in cell.subviews {
@@ -49,7 +48,7 @@ class GroupController: UITableViewController {
                     seperatorId += 1
                 }
             }
-//            cell.subviews.forEach { (subView) in
+//            cell.subviews.forEach { (subView) in // 去掉第一个 section 每条分割线
 //                if subView.bounds.height < 1 {
 //                    subView.isHidden = true
 //                }
@@ -57,6 +56,9 @@ class GroupController: UITableViewController {
         }
     }
     
+    /// 屏幕从初始位置往下滚动，显示 tab bar，否则设置 tab bar 透明
+    ///
+    /// - Parameter scrollView: tableView 本身的 scrollView
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if isInitialCompute {
             initialOffsetY = scrollView.contentOffset.y
@@ -65,7 +67,6 @@ class GroupController: UITableViewController {
         
         if scrollView.contentOffset.y > initialOffsetY {
             navigationController?.navigationBar.shadowImage = naviBarShadowImage
-            navigationController?.navigationBar.shadowColor = UIColor(named: "themeSeperatorColor")
             navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
         } else {
             navigationController?.navigationBar.shadowImage = UIImage()
@@ -74,7 +75,7 @@ class GroupController: UITableViewController {
     }
 
     
-    // MARK: - Table view data source
+    // MARK: - Table View Data Source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -142,7 +143,7 @@ class GroupController: UITableViewController {
         headerView.backgroundColor = UIColor.clear
         
         let headerLabel = UILabel(frame: CGRect(x: 20, y: 0, width: 100, height: 22))
-        headerLabel.textColor = UIColor.lightGray
+        headerLabel.textColor = UIColor(named: "themeGray")
         headerLabel.font = UIFont.systemFont(ofSize: 11)
         headerView.addSubview(headerLabel)
         

@@ -24,7 +24,7 @@ class TabBarController: UITabBarController {
             // 将 tab bar 的文字向上调整2个单位
             tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -2)
             // 修改 tab bar 的文字字体
-            tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Helvetica", size: 10)!], for: .normal)
+//            tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Helvetica", size: 10)!], for: .normal)
         }
         // 设置 tab bar 选中时字体颜色
         self.tabBar.tintColor = UIColor(named: "themeColor")

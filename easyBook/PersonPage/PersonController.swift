@@ -21,14 +21,20 @@ class PersonController: UITableViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         // 设置导航条标题字体颜色为白色
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        // 修改每个 section 之间的间距：修改 section 的 footer 的大小
-//        tableView.sectionFooterHeight = 8
-        
     }
     
     // 设置状态栏字体颜色为白色
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    
+    /// 由于子页面导航条字体颜色为黑色，在子页面回退回本页面时，本页面导航条字体颜色会被子页面修改为黑色，这里修复这个bug
+    ///
+    /// - Parameter animated:
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // 设置导航条标题字体颜色为白色
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
     
     /// 在视图加载完毕后取消第一个section的点击效果,
@@ -45,11 +51,6 @@ class PersonController: UITableViewController {
         // 定制返回按钮上无文字
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
-    
-    /// 修改每个section之间的间距：修改section的header的大小
-//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 0.1
-//    }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 取消点击行则选中的状态
