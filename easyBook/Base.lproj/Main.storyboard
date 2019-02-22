@@ -111,15 +111,15 @@
                                     <outlet property="titleLabel" destination="bcA-Ol-eq4" id="b6a-f2-E8c"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupSubtitleCell" rowHeight="56" id="rHM-fY-k5o" customClass="GroupSubtitleCell" customModule="easyBook" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="155.5" width="375" height="56"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupSubtitleCell" rowHeight="70" id="rHM-fY-k5o" customClass="GroupSubtitleCell" customModule="easyBook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="155.5" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rHM-fY-k5o" id="hyH-uG-gHd">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ye0-Zp-3Xe">
-                                            <rect key="frame" x="20" y="8" width="335" height="40"/>
+                                            <rect key="frame" x="20" y="15" width="335" height="40"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_group_40x40_" translatesAutoresizingMaskIntoConstraints="NO" id="7Q3-b6-uvU" customClass="CustomImageView" customModule="easyBook" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -521,10 +521,12 @@
         <scene sceneID="Kpg-hb-Zv5">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="XXu-cB-yyq" customClass="EditInfoController" customModule="easyBook" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="56" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ra8-9d-6VO">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="56" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ra8-9d-6VO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="separatorColor" name="themeSeperatorColor"/>
+                        <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <sections>
                             <tableViewSection id="bDR-sd-3gT">
                                 <cells>
@@ -976,28 +978,28 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aAf-nK-06X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1849" y="3059"/>
+            <point key="canvasLocation" x="1922" y="3063"/>
         </scene>
         <!--Message Controller-->
         <scene sceneID="naL-po-I08">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="NWU-TK-MxN" customClass="MessageController" customModule="easyBook" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="56" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jyh-3m-cby">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Jyh-3m-cby">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="separatorColor" name="themeSeperatorColor"/>
                         <inset key="separatorInset" minX="78" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageSubtitleCell" rowHeight="56" id="U1e-hG-HpF" customClass="MessageSubtitleCell" customModule="easyBook" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="56"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageSubtitleCell" rowHeight="70" id="U1e-hG-HpF" customClass="MessageSubtitleCell" customModule="easyBook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U1e-hG-HpF" id="8IH-sU-2Gy">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BPL-9F-LUi">
-                                            <rect key="frame" x="20" y="8" width="335" height="40"/>
+                                            <rect key="frame" x="20" y="15" width="335" height="40"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_group_40x40_" translatesAutoresizingMaskIntoConstraints="NO" id="fIA-Tl-jbc" customClass="CustomImageView" customModule="easyBook" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>

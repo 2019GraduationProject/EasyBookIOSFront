@@ -115,16 +115,14 @@ class GroupController: UITableViewController {
             
             return cell
         default:
-            let reuseIdentifier = String(describing: GroupSubtitleCell.self)
-            let cell = self.tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! GroupSubtitleCell
+            let reuseIdentifier = String(describing: GroupBasicCell.self)
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! GroupBasicCell
             
             cell.titleImageView.image = UIImage(named: "default_group_avatar_40x40_")
             cell.titleLabel.text = "群组2"
-            cell.subTitleLabel.text = "创建者：黄小白"
             
             return cell
         }
-
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

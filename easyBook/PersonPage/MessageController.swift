@@ -9,10 +9,12 @@
 import UIKit
 
 class MessageController: UITableViewController {
-
+    
     var naviBarShadowImage = UIImage(named: "separator") // 存储导航条图片
     var initialOffsetY : CGFloat! // 初始位移量
     var isInitialCompute = true // 是否是第一次计算初始位移的标志
+ 
+    var messageNum = 6 // 消息数量
     
     
     override func viewDidLoad() {
@@ -21,6 +23,10 @@ class MessageController: UITableViewController {
         self.navigationItem.title = "我的消息"
         // 设置导航条标题字体颜色为黑色
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.darkText]
+        
+        // 修改每个 section 之间的间距：修改 section 的 footer 的大小
+        tableView.sectionFooterHeight = 8
+        
         // 去掉 tableview 多余的分割线
         self.tableView.tableFooterView = UIView.init()
     }
@@ -43,12 +49,12 @@ class MessageController: UITableViewController {
         }
     }
     
-
+    
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return messageNum
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -63,11 +69,30 @@ class MessageController: UITableViewController {
         return cell
     }
     
+    /// 修改每个section之间的间距：修改section的header的大小
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.1
+    }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 取消点击行则选中的状态
         self.tableView.deselectRow(at: indexPath, animated: true)
     }
 
+    /// 每行右往左滑监听
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let deleteAction = UIContextualAction(style: .destructive, title: "删除") { (_, _, completion) in
+            self.messageNum -= 1
+            self.tableView.deleteRows(at: [indexPath], with: .automatic)
+            // 收起滑动侧边栏
+            completion(true)
+        }
+        deleteAction.image = UIImage(named: "delete_24x24_")
+        
+        let config = UISwipeActionsConfiguration(actions: [deleteAction])
+        return config
+    }
 
     /*
     // Override to support conditional editing of the table view.
