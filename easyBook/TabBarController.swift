@@ -35,7 +35,17 @@ class TabBarController: UITabBarController {
         let uiView = UIView(frame: CGRect(x: 0, y: -0.333333, width: view.bounds.width, height: 0.333333))
         uiView.backgroundColor = UIColor(named: "themeSeperatorColor")
         self.tabBar.insertSubview(uiView, at: 0)
-
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // 如果用户未登录，则显示登录页面
+        if !UserDefaults.standard.bool(forKey: "ifLogin") {
+            if let loginNaviController = self.storyboard?.instantiateViewController(withIdentifier: "LoginNaviController") as? UINavigationController {
+                self.present(loginNaviController, animated: false, completion: nil)
+            }
+        }
     }
 
 }
