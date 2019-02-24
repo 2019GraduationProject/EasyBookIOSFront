@@ -72,4 +72,24 @@ extension UIView {
         }
     }
     
+    @IBInspectable
+    var borderColor: UIColor? {
+        get {
+            return layer.borderColor != nil ? UIColor(cgColor: layer.borderColor!) : nil
+        }
+        set {
+            layer.borderColor = newValue?.cgColor
+        }
+    }
+    
+    @IBInspectable
+    var borderWidth: CGFloat {
+        get {
+            return layer.borderWidth
+        }
+        set {
+            layer.borderWidth = newValue
+        }
+    }
+    
 }

@@ -25,6 +25,15 @@ class SettingsController: UITableViewController {
         tableView.sectionFooterHeight = 8
     }
     
+    /// 去掉子页面返回按钮后的文字
+    ///
+    /// - Parameter animated:
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // 设置返回按钮后的文字
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
     /// 屏幕从初始位置往下滚动，显示 tab bar，否则设置 tab bar 透明
     ///
     /// - Parameter scrollView: tableView 本身的 scrollView
@@ -54,7 +63,31 @@ class SettingsController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 取消点击行则选中的状态
         self.tableView.deselectRow(at: indexPath, animated: true)
+        
+        // 点击退出登录行
+        if indexPath.section == 2 {
+            let actionSheet = UIAlertController(title: nil, message: "退出后不会删除任何历史数据，下次登录依然可以使用本账号。", preferredStyle: .actionSheet)
+            
+            let logoutAction = UIAlertAction(title: "退出登录", style: .destructive) { (_) in
+                if let loginNaviController = self.storyboard?.instantiateViewController(withIdentifier: "LoginNaviController") as? UINavigationController {
+                    self.present(loginNaviController, animated: true, completion: {
+                        UserDefaults.standard.set(false, forKey: "ifLogin")
+                    })
+                }
+            }
+            let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+            
+            actionSheet.addAction(logoutAction)
+            actionSheet.addAction(cancelAction)
+            
+            present(actionSheet, animated: true, completion: nil)
+        }
     }
+    
+    // MARK: - Event Listeners
+    
+    
+    
 
     /*
     // MARK: - Navigation

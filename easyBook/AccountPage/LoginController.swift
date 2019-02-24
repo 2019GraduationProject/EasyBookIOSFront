@@ -1,25 +1,28 @@
 //
-//  PersonController.swift
+//  LoginController.swift
 //  easyBook
 //
-//  Created by 黄小白 on 2019/1/20.
+//  Created by 黄小白 on 2019/2/22.
 //  Copyright © 2019 Sherley Huang's studio. All rights reserved.
 //
 
 import UIKit
 
-class PersonController: UITableViewController {
+class LoginController: UIViewController {
     
-    @IBOutlet weak var userBgImageView: UIImageView!
+    @IBOutlet weak var accountTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // 设置导航条背景透明
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
-        // 设置导航条标题字体颜色为白色
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
+        // 输入内容会显示成小黑点
+        passwordTextField.isSecureTextEntry = true
     }
     
     // 设置状态栏字体颜色为白色
@@ -27,26 +30,37 @@ class PersonController: UITableViewController {
         return .lightContent
     }
     
-    /// 在视图加载完毕后取消第一个section的点击效果,
-    /// 若在viewDidLoad()中写，则还未加载到第一个section，会报空指针
+    /// 去掉子页面返回按钮后的文字
     ///
-    /// - Parameter animated: Bool
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        tableView.cellForRow(at: [0, 0])?.selectionStyle = .none
-    }
-    
+    /// - Parameter animated:
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        // 定制返回按钮上无文字
+        // 设置返回按钮后的文字
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // 取消点击行则选中的状态
-        tableView.deselectRow(at: indexPath, animated: true)
+    
+    // MARK: - Event Listeners
+    
+    /// 登录方法
+    ///
+    /// - Parameter sender: 登录按钮
+    @IBAction func tapLogin(_ sender: UIButton) {
+        // TODO 登录逻辑写这里！
+        performSegue(withIdentifier: "login", sender: self)
+        UserDefaults.standard.set(true, forKey: "ifLogin")
     }
-
+    
+    
+    /// 点击空白处收回键盘
+    ///
+    /// - Parameter sender: UITapGestureRecognizer
+    @IBAction func tapBlank(_ sender: UITapGestureRecognizer) {
+        accountTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+    }
+    
+    
     /*
     // MARK: - Navigation
 

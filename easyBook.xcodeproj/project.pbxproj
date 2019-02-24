@@ -23,6 +23,10 @@
 		4FB7DDA121F6CD720070CC8B /* GroupBasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB7DDA021F6CD720070CC8B /* GroupBasicCell.swift */; };
 		4FB7DDA321F6CE250070CC8B /* GroupSubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB7DDA221F6CE250070CC8B /* GroupSubtitleCell.swift */; };
 		4FCB547021F56ECA00D5FAFB /* UIViewLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCB546F21F56ECA00D5FAFB /* UIViewLayerHelper.swift */; };
+		4FEB78922220042F00B24099 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB78912220042F00B24099 /* AboutController.swift */; };
+		4FEB7895222024CC00B24099 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB7894222024CC00B24099 /* LoginController.swift */; };
+		4FEB7897222111FE00B24099 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB7896222111FE00B24099 /* RegisterController.swift */; };
+		4FEB789922226E2100B24099 /* ResetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB789822226E2100B24099 /* ResetPasswordController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		4FB7DDA021F6CD720070CC8B /* GroupBasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBasicCell.swift; sourceTree = "<group>"; };
 		4FB7DDA221F6CE250070CC8B /* GroupSubtitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSubtitleCell.swift; sourceTree = "<group>"; };
 		4FCB546F21F56ECA00D5FAFB /* UIViewLayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewLayerHelper.swift; sourceTree = "<group>"; };
+		4FEB78912220042F00B24099 /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
+		4FEB7894222024CC00B24099 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		4FEB7896222111FE00B24099 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		4FEB789822226E2100B24099 /* ResetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,7 @@
 		4F25D19A21F4A36E004E7DB4 /* easyBook */ = {
 			isa = PBXGroup;
 			children = (
+				4FEB78932220248D00B24099 /* AccountPage */,
 				4FB7DD9521F6A4E70070CC8B /* GroupPage */,
 				4FCB546E21F56EA300D5FAFB /* Utils */,
 				4F25D1B221F4B752004E7DB4 /* PersonPage */,
@@ -106,6 +115,7 @@
 				4FB50DAD21F87CFD007D88ED /* EditInfoController.swift */,
 				4FB50DAF21F89EAF007D88ED /* MessageController.swift */,
 				4FB50DB121F89FD9007D88ED /* MessageSubtitleCell.swift */,
+				4FEB78912220042F00B24099 /* AboutController.swift */,
 			);
 			path = PersonPage;
 			sourceTree = "<group>";
@@ -127,6 +137,16 @@
 				4FB7DD9321F5F6740070CC8B /* NavigationHelper.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		4FEB78932220248D00B24099 /* AccountPage */ = {
+			isa = PBXGroup;
+			children = (
+				4FEB7894222024CC00B24099 /* LoginController.swift */,
+				4FEB7896222111FE00B24099 /* RegisterController.swift */,
+				4FEB789822226E2100B24099 /* ResetPasswordController.swift */,
+			);
+			path = AccountPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,13 +224,17 @@
 				4FB7DDA321F6CE250070CC8B /* GroupSubtitleCell.swift in Sources */,
 				4FB7DD9421F5F6740070CC8B /* NavigationHelper.swift in Sources */,
 				4FB50DAE21F87CFD007D88ED /* EditInfoController.swift in Sources */,
+				4FEB7895222024CC00B24099 /* LoginController.swift in Sources */,
 				4FB7DD9721F6A5130070CC8B /* GroupController.swift in Sources */,
+				4FEB78922220042F00B24099 /* AboutController.swift in Sources */,
 				4F25D1B621F4C9B3004E7DB4 /* TabBarController.swift in Sources */,
 				4F25D1B421F4B77F004E7DB4 /* PersonController.swift in Sources */,
 				4FB50DB021F89EAF007D88ED /* MessageController.swift in Sources */,
 				4FB50DAC21F82B4E007D88ED /* SettingsController.swift in Sources */,
 				4FCB547021F56ECA00D5FAFB /* UIViewLayerHelper.swift in Sources */,
+				4FEB7897222111FE00B24099 /* RegisterController.swift in Sources */,
 				4FB7DDA121F6CD720070CC8B /* GroupBasicCell.swift in Sources */,
+				4FEB789922226E2100B24099 /* ResetPasswordController.swift in Sources */,
 				4FB50DB221F89FD9007D88ED /* MessageSubtitleCell.swift in Sources */,
 				4F25D19C21F4A36E004E7DB4 /* AppDelegate.swift in Sources */,
 			);
