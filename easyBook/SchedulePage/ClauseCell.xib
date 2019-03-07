@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClauseCell" rowHeight="308" id="KGk-i7-Jjw" customClass="ClauseCell" customModule="easyBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="449" height="175.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nhb-0C-wXa">
+                        <rect key="frame" x="20" y="0.0" width="409" height="56"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMC-F4-KQV">
+                                <rect key="frame" x="0.0" y="18" width="52" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" name="themeGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LXU-Z3-Gsx">
+                                <rect key="frame" x="306" y="18" width="103" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYO-om-mSW">
+                                        <rect key="frame" x="0.0" y="0.0" width="43" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" - " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNF-M9-tOB">
+                                        <rect key="frame" x="43" y="0.0" width="16.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIa-WS-MSQ">
+                                        <rect key="frame" x="59.5" y="0.0" width="43.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="NFI-jt-gsz"/>
+                        </constraints>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFT-OG-5Cp">
+                        <rect key="frame" x="20" y="55.5" width="429" height="0.5"/>
+                        <color key="backgroundColor" name="themeSeperatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="jjx-43-fmO"/>
+                        </constraints>
+                    </view>
+                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="vBG-hW-fSk">
+                        <rect key="frame" x="0.0" y="55.5" width="224.5" height="120"/>
+                        <date key="date" timeIntervalSinceReferenceDate="573408000.22730696">
+                            <!--2019-03-04 16:00:00 +0000-->
+                        </date>
+                        <locale key="locale" localeIdentifier="zh_CN"/>
+                    </datePicker>
+                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="TRd-MU-fKd">
+                        <rect key="frame" x="224.5" y="55.5" width="224.5" height="120"/>
+                        <date key="date" timeIntervalSinceReferenceDate="573476863.22730696">
+                            <!--2019-03-05 11:07:43 +0000-->
+                        </date>
+                        <locale key="locale" localeIdentifier="zh_CN"/>
+                    </datePicker>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="TRd-MU-fKd" secondAttribute="trailing" id="2Ng-RT-5wt"/>
+                    <constraint firstItem="TRd-MU-fKd" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" id="7Hv-Ec-mKm"/>
+                    <constraint firstAttribute="trailing" secondItem="nhb-0C-wXa" secondAttribute="trailing" constant="20" id="7VV-Ob-Qgu"/>
+                    <constraint firstItem="nhb-0C-wXa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7hA-t5-HpH"/>
+                    <constraint firstItem="tFT-OG-5Cp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="AuB-Bk-bKC"/>
+                    <constraint firstItem="vBG-hW-fSk" firstAttribute="top" secondItem="tFT-OG-5Cp" secondAttribute="top" id="DFW-Yu-YCH"/>
+                    <constraint firstAttribute="bottom" secondItem="vBG-hW-fSk" secondAttribute="bottom" id="FAu-jB-xaJ"/>
+                    <constraint firstItem="vBG-hW-fSk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KE5-Qi-JOd"/>
+                    <constraint firstItem="TRd-MU-fKd" firstAttribute="top" secondItem="tFT-OG-5Cp" secondAttribute="top" id="Knm-Rc-1St"/>
+                    <constraint firstItem="vBG-hW-fSk" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" id="Pw0-mg-3wT"/>
+                    <constraint firstAttribute="bottom" secondItem="TRd-MU-fKd" secondAttribute="bottom" id="XRa-sL-Bq9"/>
+                    <constraint firstItem="tFT-OG-5Cp" firstAttribute="bottom" secondItem="nhb-0C-wXa" secondAttribute="bottom" id="hrt-X2-Beb"/>
+                    <constraint firstAttribute="trailing" secondItem="tFT-OG-5Cp" secondAttribute="trailing" id="jDw-sp-FYm"/>
+                    <constraint firstItem="nhb-0C-wXa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="pFw-eR-o2e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="endTimeLabel" destination="NIa-WS-MSQ" id="o1R-6t-vzz"/>
+                <outlet property="endTimePicker" destination="TRd-MU-fKd" id="mC5-fF-ZTG"/>
+                <outlet property="startTimeLabel" destination="WYO-om-mSW" id="Pnd-VM-lhH"/>
+                <outlet property="startTimePicker" destination="vBG-hW-fSk" id="g64-9p-lUo"/>
+                <outlet property="timePeriodLabel" destination="TMC-F4-KQV" id="GfH-co-4Kq"/>
+            </connections>
+            <point key="canvasLocation" x="-7.2000000000000002" y="58.47076461769116"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="themeGray">
+            <color red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="themeSeperatorColor">
+            <color red="0.83921568627450982" green="0.84313725490196079" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

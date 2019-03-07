@@ -15,6 +15,10 @@
 		4F25D1B621F4C9B3004E7DB4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F25D1B521F4C9B3004E7DB4 /* TabBarController.swift */; };
 		4F5CAF582225199400E7A723 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5CAF572225199400E7A723 /* ScheduleController.swift */; };
 		4F5CAF5A222553D200E7A723 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5CAF59222553D200E7A723 /* EventCell.swift */; };
+		4F74AE37222E3B6B00D92C90 /* AddLocalEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F74AE36222E3B6B00D92C90 /* AddLocalEventController.swift */; };
+		4F74AE3E222EC0A000D92C90 /* ClauseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F74AE3C222EC0A000D92C90 /* ClauseCell.swift */; };
+		4F74AE3F222EC0A000D92C90 /* ClauseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F74AE3D222EC0A000D92C90 /* ClauseCell.xib */; };
+		4FAD16DE2231350E00D3C953 /* AddGlobalEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD16DD2231350E00D3C953 /* AddGlobalEventController.swift */; };
 		4FB50DAC21F82B4E007D88ED /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB50DAB21F82B4E007D88ED /* SettingsController.swift */; };
 		4FB50DAE21F87CFD007D88ED /* EditInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB50DAD21F87CFD007D88ED /* EditInfoController.swift */; };
 		4FB50DB021F89EAF007D88ED /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB50DAF21F89EAF007D88ED /* MessageController.swift */; };
@@ -44,6 +48,10 @@
 		4F5CAF542224E75900E7A723 /* easyBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "easyBook-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F5CAF572225199400E7A723 /* ScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
 		4F5CAF59222553D200E7A723 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		4F74AE36222E3B6B00D92C90 /* AddLocalEventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocalEventController.swift; sourceTree = "<group>"; };
+		4F74AE3C222EC0A000D92C90 /* ClauseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClauseCell.swift; sourceTree = "<group>"; };
+		4F74AE3D222EC0A000D92C90 /* ClauseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClauseCell.xib; sourceTree = "<group>"; };
+		4FAD16DD2231350E00D3C953 /* AddGlobalEventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGlobalEventController.swift; sourceTree = "<group>"; };
 		4FB50DAB21F82B4E007D88ED /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		4FB50DAD21F87CFD007D88ED /* EditInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInfoController.swift; sourceTree = "<group>"; };
 		4FB50DAF21F89EAF007D88ED /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
@@ -123,6 +131,10 @@
 			children = (
 				4F5CAF572225199400E7A723 /* ScheduleController.swift */,
 				4F5CAF59222553D200E7A723 /* EventCell.swift */,
+				4F74AE36222E3B6B00D92C90 /* AddLocalEventController.swift */,
+				4F74AE3C222EC0A000D92C90 /* ClauseCell.swift */,
+				4F74AE3D222EC0A000D92C90 /* ClauseCell.xib */,
+				4FAD16DD2231350E00D3C953 /* AddGlobalEventController.swift */,
 			);
 			path = SchedulePage;
 			sourceTree = "<group>";
@@ -239,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F74AE3F222EC0A000D92C90 /* ClauseCell.xib in Resources */,
 				4F25D1A621F4A370004E7DB4 /* LaunchScreen.storyboard in Resources */,
 				4F25D1A321F4A370004E7DB4 /* Assets.xcassets in Resources */,
 				4F25D1A121F4A36E004E7DB4 /* Main.storyboard in Resources */,
@@ -258,12 +271,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-easyBook/Pods-easyBook-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/NewPopMenu/PopMenu.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopMenu.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -302,6 +317,8 @@
 				4FB7DDA321F6CE250070CC8B /* GroupSubtitleCell.swift in Sources */,
 				4FB7DD9421F5F6740070CC8B /* NavigationHelper.swift in Sources */,
 				4FB50DAE21F87CFD007D88ED /* EditInfoController.swift in Sources */,
+				4F74AE37222E3B6B00D92C90 /* AddLocalEventController.swift in Sources */,
+				4FAD16DE2231350E00D3C953 /* AddGlobalEventController.swift in Sources */,
 				4FEB7895222024CC00B24099 /* LoginController.swift in Sources */,
 				4FB7DD9721F6A5130070CC8B /* GroupController.swift in Sources */,
 				4FEB78922220042F00B24099 /* AboutController.swift in Sources */,
@@ -314,6 +331,7 @@
 				4FCB547021F56ECA00D5FAFB /* UIViewLayerHelper.swift in Sources */,
 				4FEB7897222111FE00B24099 /* RegisterController.swift in Sources */,
 				4FB7DDA121F6CD720070CC8B /* GroupBasicCell.swift in Sources */,
+				4F74AE3E222EC0A000D92C90 /* ClauseCell.swift in Sources */,
 				4FEB789922226E2100B24099 /* ResetPasswordController.swift in Sources */,
 				4FB50DB221F89FD9007D88ED /* MessageSubtitleCell.swift in Sources */,
 				4F25D19C21F4A36E004E7DB4 /* AppDelegate.swift in Sources */,

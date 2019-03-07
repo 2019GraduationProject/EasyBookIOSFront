@@ -8,17 +8,21 @@
 
 import UIKit
 import FSCalendar
+import PopMenu
 
-class ScheduleController: UIViewController, UITableViewDataSource, UITableViewDelegate, FSCalendarDataSource, FSCalendarDelegate, UIGestureRecognizerDelegate {
+class ScheduleController: UIViewController, UITableViewDataSource, UITableViewDelegate, FSCalendarDataSource, FSCalendarDelegate, UIGestureRecognizerDelegate, PopMenuViewControllerDelegate {
 
     @IBOutlet weak var calendar: FSCalendar!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var calendarHeightConstraint: NSLayoutConstraint!
     
+    var popMenuManager: PopMenuManager!
+    
+    var datesWithEvent = ["2019-02-28", "2019-03-01", "2019-03-18", "2019-04-15"]
     
     fileprivate lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy/MM/dd"
+        formatter.dateFormat = "yyyy-MM-dd"
         return formatter
     }()
     
@@ -41,6 +45,45 @@ class ScheduleController: UIViewController, UITableViewDataSource, UITableViewDe
         self.calendar.appearance.headerMinimumDissolvedAlpha = 0.0
 //        calendar.firstWeekday = 2 // 使用周一为第一列
         
+        initPopMenuManager()
+    }
+    
+    /// 设置新建事件的弹出窗口
+    func initPopMenuManager() {
+        // 获取 PopMenuManager 实例
+        popMenuManager = PopMenuManager.default
+        // 设置 action
+        let action1 = PopMenuDefaultAction(title: "组内/跨组事件", image: UIImage(), color: UIColor.white)
+        let action2 = PopMenuDefaultAction(title: "全局事件", image: UIImage(), color: UIColor.white)
+        // 设置 action 的图片高度为0，即起到去掉图片的效果，否则会占用空间位置
+        action1.iconWidthHeight = 0
+        action2.iconWidthHeight = 0
+        // 加入 action
+        popMenuManager.addAction(action1)
+        popMenuManager.addAction(action2)
+        
+        // 定制外观
+        popMenuManager.popMenuAppearance.popMenuBackgroundStyle = .none()
+        popMenuManager.popMenuAppearance.popMenuCornerRadius = 6
+        popMenuManager.popMenuAppearance.popMenuStatusBarStyle = .default
+        popMenuManager.popMenuDelegate = self
+    }
+    
+    
+    // MARK:- PopMenuViewControllerDelegate
+    
+    func popMenuDidSelectItem(_ popMenuViewController: PopMenuViewController, at index: Int) {
+        popMenuViewController.dismiss(animated: true) {
+            if index == 0 {
+                if let addLocalEventNaviController = self.storyboard?.instantiateViewController(withIdentifier: "AddLocalEventNaviController") as? UINavigationController {
+                    self.present(addLocalEventNaviController, animated: true)
+                }
+            } else {
+                if let addGlobalEventNaviController = self.storyboard?.instantiateViewController(withIdentifier: "AddGlobalEventNaviController") as? UINavigationController {
+                    self.present(addGlobalEventNaviController, animated: true)
+                }
+            }
+        }
     }
     
     
@@ -81,6 +124,15 @@ class ScheduleController: UIViewController, UITableViewDataSource, UITableViewDe
         print("\(self.dateFormatter.string(from: calendar.currentPage))")
     }
     
+    /// 给有事件的日期设置白点，返回值表示设置几个白点
+    func calendar(_ calendar: FSCalendar, numberOfEventsFor date: Date) -> Int {
+        let dateString = self.dateFormatter.string(from: date)
+        if self.datesWithEvent.contains(dateString) {
+            return 3
+        }
+        return 0
+    }
+    
     
     // MARK:- UITableViewDataSource
     
@@ -105,6 +157,14 @@ class ScheduleController: UIViewController, UITableViewDataSource, UITableViewDe
         // 取消点击行则选中的状态
         self.tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    
+    // MARK: - Event Listeners
+    
+    @IBAction func tapAddButton(_ sender: UIBarButtonItem) {
+        popMenuManager.present(sourceView: sender)
+    }
+    
     
     /*
     // MARK: - Navigation

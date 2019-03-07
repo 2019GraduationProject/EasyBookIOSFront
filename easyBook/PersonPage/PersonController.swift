@@ -27,8 +27,8 @@ class PersonController: UITableViewController {
         return .lightContent
     }
     
-    /// 在视图加载完毕后取消第一个section的点击效果,
-    /// 若在viewDidLoad()中写，则还未加载到第一个section，会报空指针
+    /// 取消第一个 section 的点击效果
+    /// ⚠️注：若在viewDidLoad()中写，则还未加载到第一个section，会报空指针
     ///
     /// - Parameter animated: Bool
     override func viewDidAppear(_ animated: Bool) {

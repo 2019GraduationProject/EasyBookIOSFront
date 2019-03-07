@@ -34,10 +34,18 @@ class RegisterController: UIViewController {
     ///
     /// - Parameter sender: UITapGestureRecognizer
     @IBAction func tapBlank(_ sender: UITapGestureRecognizer) {
-        phoneTextField.resignFirstResponder()
-        verificationCodeTextField.resignFirstResponder()
-        passwordTextField.resignFirstResponder()
-        confirmPasswordTextField.resignFirstResponder()
+        if phoneTextField.isFirstResponder {
+            phoneTextField.resignFirstResponder()
+        }
+        else if verificationCodeTextField.isFirstResponder {
+            verificationCodeTextField.resignFirstResponder()
+        }
+        else if passwordTextField.isFirstResponder {
+            passwordTextField.resignFirstResponder()
+        }
+        else if confirmPasswordTextField.isFirstResponder {
+            confirmPasswordTextField.resignFirstResponder()
+        }
     }
     
 

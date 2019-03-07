@@ -56,8 +56,12 @@ class LoginController: UIViewController {
     ///
     /// - Parameter sender: UITapGestureRecognizer
     @IBAction func tapBlank(_ sender: UITapGestureRecognizer) {
-        accountTextField.resignFirstResponder()
-        passwordTextField.resignFirstResponder()
+        if accountTextField.isFirstResponder {
+            accountTextField.resignFirstResponder()
+        }
+        else if passwordTextField.isFirstResponder {
+            passwordTextField.resignFirstResponder()
+        }
     }
     
     

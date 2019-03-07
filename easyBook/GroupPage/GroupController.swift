@@ -93,10 +93,8 @@ class GroupController: UITableViewController {
             return 5
         }
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
         switch indexPath.section {
         case 0:
             let reuseIdentifier = String(describing: GroupBasicCell.self)

@@ -35,10 +35,18 @@ class ResetPasswordController: UIViewController {
     ///
     /// - Parameter sender: UITapGestureRecognizer
     @IBAction func tapBlank(_ sender: UITapGestureRecognizer) {
-        phoneTextField.resignFirstResponder()
-        verificationCodeTextField.resignFirstResponder()
-        newPasswordTextField.resignFirstResponder()
-        confirmPasswordTextField.resignFirstResponder()
+        if phoneTextField.isFirstResponder {
+            phoneTextField.resignFirstResponder()
+        }
+        else if verificationCodeTextField.isFirstResponder {
+            verificationCodeTextField.resignFirstResponder()
+        }
+        else if newPasswordTextField.isFirstResponder {
+            newPasswordTextField.resignFirstResponder()
+        }
+        else if confirmPasswordTextField.isFirstResponder {
+            confirmPasswordTextField.resignFirstResponder()
+        }
     }
     
     /*
