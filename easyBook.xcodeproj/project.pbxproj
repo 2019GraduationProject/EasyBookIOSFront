@@ -19,6 +19,7 @@
 		4F74AE3E222EC0A000D92C90 /* ClauseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F74AE3C222EC0A000D92C90 /* ClauseCell.swift */; };
 		4F74AE3F222EC0A000D92C90 /* ClauseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F74AE3D222EC0A000D92C90 /* ClauseCell.xib */; };
 		4FAD16DE2231350E00D3C953 /* AddGlobalEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD16DD2231350E00D3C953 /* AddGlobalEventController.swift */; };
+		4FAD16E62232290B00D3C953 /* MyGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD16E52232290B00D3C953 /* MyGroupCell.swift */; };
 		4FB50DAC21F82B4E007D88ED /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB50DAB21F82B4E007D88ED /* SettingsController.swift */; };
 		4FB50DAE21F87CFD007D88ED /* EditInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB50DAD21F87CFD007D88ED /* EditInfoController.swift */; };
 		4FB50DB021F89EAF007D88ED /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB50DAF21F89EAF007D88ED /* MessageController.swift */; };
@@ -52,6 +53,7 @@
 		4F74AE3C222EC0A000D92C90 /* ClauseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClauseCell.swift; sourceTree = "<group>"; };
 		4F74AE3D222EC0A000D92C90 /* ClauseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClauseCell.xib; sourceTree = "<group>"; };
 		4FAD16DD2231350E00D3C953 /* AddGlobalEventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGlobalEventController.swift; sourceTree = "<group>"; };
+		4FAD16E52232290B00D3C953 /* MyGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupCell.swift; sourceTree = "<group>"; };
 		4FB50DAB21F82B4E007D88ED /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		4FB50DAD21F87CFD007D88ED /* EditInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInfoController.swift; sourceTree = "<group>"; };
 		4FB50DAF21F89EAF007D88ED /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				4FB7DD9621F6A5130070CC8B /* GroupController.swift */,
 				4FB7DDA021F6CD720070CC8B /* GroupBasicCell.swift */,
 				4FB7DDA221F6CE250070CC8B /* GroupSubtitleCell.swift */,
+				4FAD16E52232290B00D3C953 /* MyGroupCell.swift */,
 			);
 			path = GroupPage;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				4FB7DDA321F6CE250070CC8B /* GroupSubtitleCell.swift in Sources */,
 				4FB7DD9421F5F6740070CC8B /* NavigationHelper.swift in Sources */,
 				4FB50DAE21F87CFD007D88ED /* EditInfoController.swift in Sources */,
+				4FAD16E62232290B00D3C953 /* MyGroupCell.swift in Sources */,
 				4F74AE37222E3B6B00D92C90 /* AddLocalEventController.swift in Sources */,
 				4FAD16DE2231350E00D3C953 /* AddGlobalEventController.swift in Sources */,
 				4FEB7895222024CC00B24099 /* LoginController.swift in Sources */,
