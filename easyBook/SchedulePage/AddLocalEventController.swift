@@ -14,9 +14,14 @@ class AddLocalEventController: UITableViewController {
     @IBOutlet weak var eventLocationTextField: UITextField!
     @IBOutlet weak var eventDateLabel: UILabel!
     @IBOutlet weak var eventDatePicker: UIDatePicker!
+    @IBOutlet weak var chosenGroupLabel: UILabel!
+    
+    let createdGroupNameList = ["机器学习", "软工大作业"]
+    let attendedGroupNameList = ["出国留学申请", "movies", "本科毕设", "设计design"]
     
     var clauseNum: Int! // 条目数量
-
+    var chosenGroupDic = Dictionary<String, Bool>()
+    
     fileprivate lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
@@ -33,6 +38,14 @@ class AddLocalEventController: UITableViewController {
         super.viewDidLoad()
         
         clauseNum = 1 // 默认新建一个条目
+        
+        // 初始化字典
+        for group in createdGroupNameList {
+            chosenGroupDic.updateValue(false, forKey: group)
+        }
+        for group in attendedGroupNameList {
+            chosenGroupDic.updateValue(false, forKey: group)
+        }
         
         // 创建重用的单元格
         self.tableView.register(UINib(nibName: "ClauseCell", bundle: nil), forCellReuseIdentifier: "ClauseCell")
@@ -192,14 +205,66 @@ class AddLocalEventController: UITableViewController {
         self.eventDate = datePicker.date
     }
     
-    /*
+    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+ 
+    @IBAction func backToAddLocalEvent(segue: UIStoryboardSegue) {
+        if segue.identifier == "chooseToAdd" {
+            let chooseGroupVC = segue.source as! ChooseGroupController
+            self.chosenGroupDic = chooseGroupVC.chosenGroupDic
+        }
+        else if segue.identifier == "chosenToAdd" {
+            let chosenGroupVC = segue.source as! ChosenGroupController
+            self.chosenGroupDic = chosenGroupVC.chosenGroupDic
+        }
+        
+        var chosenGroupsName = ""
+        var isEmpty = true
+        
+        for item in chosenGroupDic {
+            if item.value {
+                isEmpty = false
+                chosenGroupsName += item.key
+                chosenGroupsName += ", "
+            }
+        }
+        // 去掉空格和最后一个逗号
+        if !isEmpty {
+            chosenGroupsName = String(chosenGroupsName.trimmingCharacters(in: .whitespaces).prefix(chosenGroupsName.count - 2))
+            chosenGroupLabel.text = chosenGroupsName
+        } else {
+            chosenGroupLabel.text = "无已选择的群组"
+        }
     }
-    */
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toChooseGroup" {
+            let destination = segue.destination as! UINavigationController
+            let chooseGroupVC = destination.topViewController as! ChooseGroupController
+            chooseGroupVC.chosenGroupDic = self.chosenGroupDic
+        }
+        else if segue.identifier == "toChosenGroup" {
+            let destination = segue.destination as! UINavigationController
+            let chosenGroupVC = destination.topViewController as! ChosenGroupController
+            
+            var createdGroupChosenList: [String] = []
+            var attendedGroupChosenList: [String] = []
+            
+            for group in createdGroupNameList {
+                if chosenGroupDic[group]! {
+                    createdGroupChosenList.append(group)
+                }
+            }
+            for group in attendedGroupNameList {
+                if chosenGroupDic[group]! {
+                    attendedGroupChosenList.append(group)
+                }
+            }
+            
+            chosenGroupVC.chosenGroupDic = self.chosenGroupDic
+            chosenGroupVC.createdGroupChosenList = createdGroupChosenList
+            chosenGroupVC.attendedGroupChosenList = attendedGroupChosenList
+        }
+    }
+    
 }

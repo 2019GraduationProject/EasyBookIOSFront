@@ -8,5 +8,6 @@ target 'easyBook' do
   # Pods for easyBook
   pod 'FSCalendar'
   pod 'NewPopMenu', '~> 2.0'
+  pod 'BEMCheckBox'
 
 end
