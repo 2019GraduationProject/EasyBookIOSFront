@@ -66,4 +66,5 @@ class ClauseCell: UITableViewCell {
     @objc func chooseEndTime(_ datePicker: UIDatePicker) {
         self.clauseEndTime = endTimePicker.date
     }
+    
 }

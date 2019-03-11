@@ -2,23 +2,27 @@ PODS:
   - BEMCheckBox (1.4.1)
   - FSCalendar (2.8.0)
   - NewPopMenu (2.1.2)
+  - Parchment (1.5.0)
 
 DEPENDENCIES:
   - BEMCheckBox
   - FSCalendar
   - NewPopMenu (~> 2.0)
+  - Parchment
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BEMCheckBox
     - FSCalendar
     - NewPopMenu
+    - Parchment
 
 SPEC CHECKSUMS:
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
   NewPopMenu: c6129e08e8192f6257ceb5f9a4357e1b59c6e2e7
+  Parchment: 5a8c9c73549a6d73a7c1b606c27246910d2e5720
 
-PODFILE CHECKSUM: 99061bb66ad2e52916e3ae7f3bc9e4bfb91b156f
+PODFILE CHECKSUM: 9486324883f0672af7a6b0399832b9a31884513b
 
 COCOAPODS: 1.5.3

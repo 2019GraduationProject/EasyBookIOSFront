@@ -247,23 +247,25 @@ class AddLocalEventController: UITableViewController {
             let destination = segue.destination as! UINavigationController
             let chosenGroupVC = destination.topViewController as! ChosenGroupController
             
-            var createdGroupChosenList: [String] = []
-            var attendedGroupChosenList: [String] = []
+//            var createdGroupChosenList: [String] = []
+//            var attendedGroupChosenList: [String] = []
+            var chosenGroupList: [String] = []
             
             for group in createdGroupNameList {
                 if chosenGroupDic[group]! {
-                    createdGroupChosenList.append(group)
+                    chosenGroupList.append(group)
                 }
             }
             for group in attendedGroupNameList {
                 if chosenGroupDic[group]! {
-                    attendedGroupChosenList.append(group)
+                    chosenGroupList.append(group)
                 }
             }
             
             chosenGroupVC.chosenGroupDic = self.chosenGroupDic
-            chosenGroupVC.createdGroupChosenList = createdGroupChosenList
-            chosenGroupVC.attendedGroupChosenList = attendedGroupChosenList
+            chosenGroupVC.chosenGroupList = chosenGroupList
+//            chosenGroupVC.createdGroupChosenList = createdGroupChosenList
+//            chosenGroupVC.attendedGroupChosenList = attendedGroupChosenList
         }
     }
     
