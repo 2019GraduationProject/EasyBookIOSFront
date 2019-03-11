@@ -131,7 +131,6 @@ class AddLocalEventController: UITableViewController {
     override func tableView(_ tableView: UITableView,
                             indentationLevelForRowAt indexPath: IndexPath) -> Int {
         if indexPath.section == 2 && indexPath.row >= 1 {
-            // 当执行到日期选择器所在的 indexPat h就创建一个 indexPath 然后强插
             let newIndexPath = IndexPath(row: 1, section: indexPath.section)
             return super.tableView(tableView, indentationLevelForRowAt: newIndexPath)
         } else {

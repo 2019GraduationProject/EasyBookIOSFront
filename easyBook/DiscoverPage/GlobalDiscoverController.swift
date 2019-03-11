@@ -51,6 +51,10 @@ class GlobalDiscoverController: UITableViewController {
         self.tableView.deselectRow(at: indexPath, animated: true)
         
         if let eventDetailNaviController = self.storyboard?.instantiateViewController(withIdentifier: "EventDetailNaviController") as? UINavigationController {
+            let eventDetailVC = eventDetailNaviController.topViewController as! EventDetailController
+            let eventInfo = self.globalEventData[indexPath.row]
+            eventDetailVC.eventInfo = eventInfo
+            
             eventDetailNaviController.modalTransitionStyle = .coverVertical
             present(eventDetailNaviController, animated: true, completion: nil)
         }

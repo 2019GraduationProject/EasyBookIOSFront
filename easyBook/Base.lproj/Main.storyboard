@@ -2944,6 +2944,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="eventDateLabel" destination="cvO-ns-IcB" id="i0f-XH-paj"/>
+                        <outlet property="eventNameLabel" destination="7VS-8H-Rw6" id="mHb-Ks-aHd"/>
+                        <outlet property="locationLabel" destination="DgI-vF-LqG" id="XgY-RJ-Mnt"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Mm-TJ-f0A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
