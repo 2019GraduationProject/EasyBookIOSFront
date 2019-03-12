@@ -27,6 +27,26 @@ class RegisterController: UIViewController {
         confirmPasswordTextField.isSecureTextEntry = true
     }
     
+    /// 退出本界面时收回键盘
+    ///
+    /// - Parameter animated: Bool
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        if phoneTextField.isFirstResponder {
+            phoneTextField.resignFirstResponder()
+        }
+        else if verificationCodeTextField.isFirstResponder {
+            verificationCodeTextField.resignFirstResponder()
+        }
+        else if passwordTextField.isFirstResponder {
+            passwordTextField.resignFirstResponder()
+        }
+        else if confirmPasswordTextField.isFirstResponder {
+            confirmPasswordTextField.resignFirstResponder()
+        }
+    }
+    
     
     // MARK: - Event Listeners
     

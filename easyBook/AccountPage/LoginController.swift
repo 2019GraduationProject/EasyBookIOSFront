@@ -35,8 +35,17 @@ class LoginController: UIViewController {
     /// - Parameter animated:
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
         // 设置返回按钮后的文字
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
+        // 退出本界面时收回键盘
+        if accountTextField.isFirstResponder {
+            accountTextField.resignFirstResponder()
+        }
+        else if passwordTextField.isFirstResponder {
+            passwordTextField.resignFirstResponder()
+        }
     }
     
     

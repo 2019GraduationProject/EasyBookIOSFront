@@ -23,7 +23,11 @@ class ScheduleDetailController: UITableViewController {
         super.viewDidLoad()
         
         tableView.sectionFooterHeight = 0
+        self.navigationItem.title = "预约详情"
+        // 设置导航条标题字体颜色为黑色
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.darkText]
         
+        // 设置事件数据内容
         eventNameLabel.text = scheduleInfo.name
         dateLabel.text = scheduleInfo.date
         startTimeLabel.text = scheduleInfo.startTime

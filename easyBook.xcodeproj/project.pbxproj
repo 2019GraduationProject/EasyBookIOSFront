@@ -16,6 +16,8 @@
 		4F05E6272236762A00EC43D5 /* DetailEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05E6262236762A00EC43D5 /* DetailEventCell.swift */; };
 		4F05E62922377E9000EC43D5 /* ScheduleDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05E62822377E9000EC43D5 /* ScheduleDetailController.swift */; };
 		4F05E62B2237808300EC43D5 /* ScheduleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05E62A2237808300EC43D5 /* ScheduleEvent.swift */; };
+		4F05E62D22378C6A00EC43D5 /* SetNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05E62C22378C6A00EC43D5 /* SetNameController.swift */; };
+		4F05E62F2237972B00EC43D5 /* SetGenderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05E62E2237972B00EC43D5 /* SetGenderController.swift */; };
 		4F25D19C21F4A36E004E7DB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F25D19B21F4A36E004E7DB4 /* AppDelegate.swift */; };
 		4F25D1A121F4A36E004E7DB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F25D19F21F4A36E004E7DB4 /* Main.storyboard */; };
 		4F25D1A321F4A370004E7DB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F25D1A221F4A370004E7DB4 /* Assets.xcassets */; };
@@ -63,6 +65,8 @@
 		4F05E6262236762A00EC43D5 /* DetailEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEventCell.swift; sourceTree = "<group>"; };
 		4F05E62822377E9000EC43D5 /* ScheduleDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailController.swift; sourceTree = "<group>"; };
 		4F05E62A2237808300EC43D5 /* ScheduleEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleEvent.swift; sourceTree = "<group>"; };
+		4F05E62C22378C6A00EC43D5 /* SetNameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNameController.swift; sourceTree = "<group>"; };
+		4F05E62E2237972B00EC43D5 /* SetGenderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGenderController.swift; sourceTree = "<group>"; };
 		4F25D19821F4A36E004E7DB4 /* easyBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easyBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F25D19B21F4A36E004E7DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F25D1A021F4A36E004E7DB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 				4FB50DAF21F89EAF007D88ED /* MessageController.swift */,
 				4FB50DB121F89FD9007D88ED /* MessageSubtitleCell.swift */,
 				4FEB78912220042F00B24099 /* AboutController.swift */,
+				4F05E62C22378C6A00EC43D5 /* SetNameController.swift */,
+				4F05E62E2237972B00EC43D5 /* SetGenderController.swift */,
 			);
 			path = PersonPage;
 			sourceTree = "<group>";
@@ -400,7 +406,9 @@
 				4F05E6192236427300EC43D5 /* EventDetailController.swift in Sources */,
 				4F25D1B421F4B77F004E7DB4 /* PersonController.swift in Sources */,
 				4F5CAF582225199400E7A723 /* ScheduleController.swift in Sources */,
+				4F05E62D22378C6A00EC43D5 /* SetNameController.swift in Sources */,
 				4F05E61C22366BB300EC43D5 /* DetailGroupCell.swift in Sources */,
+				4F05E62F2237972B00EC43D5 /* SetGenderController.swift in Sources */,
 				4FB50DB021F89EAF007D88ED /* MessageController.swift in Sources */,
 				4F5CAF5A222553D200E7A723 /* EventCell.swift in Sources */,
 				4FB50DAC21F82B4E007D88ED /* SettingsController.swift in Sources */,

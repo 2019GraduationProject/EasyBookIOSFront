@@ -76,6 +76,20 @@ class AddLocalEventController: UITableViewController {
         tableView.cellForRow(at: [2, 0])?.selectionStyle = .default
     }
     
+    /// 退出本界面时收回键盘
+    ///
+    /// - Parameter animated: Bool
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        if eventNameTextField.isFirstResponder {
+            eventNameTextField.resignFirstResponder()
+        }
+        else if eventLocationTextField.isFirstResponder {
+            eventLocationTextField.resignFirstResponder()
+        }
+    }
+    
     /// 滑动屏幕取消输入框光标
     ///
     /// - Parameter scrollView: scrollView
