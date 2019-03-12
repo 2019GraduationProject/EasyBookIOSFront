@@ -11,9 +11,9 @@ import UIKit
 class LocalDiscoverController: UITableViewController {
     
     let localEventData: [Event] = [
-        Event(name: "本科毕业设计", date: EventDate(monthAndDay: "03-15"), location: "南京大学软件学院院楼710", group: ["预约访谈app组", "微信小程序组"], clause: [Clause(startTime: "14:00", endTime: "15:00"), Clause(startTime: "15:00", endTime: "16:00")]),
-        Event(name: "软件工程与计算II小组会", date: EventDate(monthAndDay: "03-23"), location: "南大仙林图书馆220", group: ["电影网站组"], clause: [Clause(startTime: "13:30", endTime: "17:00")]),
-        Event(name: "EL游戏设计比赛小组会", date: EventDate(monthAndDay: "03-30"), location: "南大仙林图书馆202", group: ["EL游戏设计组"], clause: [Clause(startTime: "13:00", endTime: "17:30")])
+        Event(name: "本科毕业设计", date: EventDate(monthAndDay: "02-28"), location: "南京大学软件学院院楼710", group: ["预约访谈app组", "微信小程序组"], clause: [Clause(startTime: "14:00", endTime: "15:00"), Clause(startTime: "15:00", endTime: "16:00")]),
+        Event(name: "软件工程与计算II小组会", date: EventDate(monthAndDay: "03-01"), location: "南大仙林图书馆220", group: ["电影网站组"], clause: [Clause(startTime: "13:30", endTime: "17:00")]),
+        Event(name: "EL游戏设计比赛小组会", date: EventDate(monthAndDay: "03-18"), location: "南大仙林图书馆202", group: ["EL游戏设计组"], clause: [Clause(startTime: "13:00", endTime: "17:30")])
     ]
     
     override func viewDidLoad() {

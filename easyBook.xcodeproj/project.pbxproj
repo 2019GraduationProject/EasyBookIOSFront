@@ -14,6 +14,8 @@
 		4F05E62122366BE500EC43D5 /* DetailClauseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F05E61F22366BE500EC43D5 /* DetailClauseCell.xib */; };
 		4F05E6232236731000EC43D5 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05E6222236731000EC43D5 /* Event.swift */; };
 		4F05E6272236762A00EC43D5 /* DetailEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05E6262236762A00EC43D5 /* DetailEventCell.swift */; };
+		4F05E62922377E9000EC43D5 /* ScheduleDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05E62822377E9000EC43D5 /* ScheduleDetailController.swift */; };
+		4F05E62B2237808300EC43D5 /* ScheduleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05E62A2237808300EC43D5 /* ScheduleEvent.swift */; };
 		4F25D19C21F4A36E004E7DB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F25D19B21F4A36E004E7DB4 /* AppDelegate.swift */; };
 		4F25D1A121F4A36E004E7DB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F25D19F21F4A36E004E7DB4 /* Main.storyboard */; };
 		4F25D1A321F4A370004E7DB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F25D1A221F4A370004E7DB4 /* Assets.xcassets */; };
@@ -59,6 +61,8 @@
 		4F05E61F22366BE500EC43D5 /* DetailClauseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailClauseCell.xib; sourceTree = "<group>"; };
 		4F05E6222236731000EC43D5 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		4F05E6262236762A00EC43D5 /* DetailEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEventCell.swift; sourceTree = "<group>"; };
+		4F05E62822377E9000EC43D5 /* ScheduleDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailController.swift; sourceTree = "<group>"; };
+		4F05E62A2237808300EC43D5 /* ScheduleEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleEvent.swift; sourceTree = "<group>"; };
 		4F25D19821F4A36E004E7DB4 /* easyBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easyBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F25D19B21F4A36E004E7DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F25D1A021F4A36E004E7DB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 				4FAD16E922324B6300D3C953 /* SelectGroupCell.swift */,
 				4FAD16ED22329C4D00D3C953 /* ChosenGroupController.swift */,
 				4FAD16EF22329F2100D3C953 /* SelectedGroupCell.swift */,
+				4F05E62822377E9000EC43D5 /* ScheduleDetailController.swift */,
+				4F05E62A2237808300EC43D5 /* ScheduleEvent.swift */,
 			);
 			path = SchedulePage;
 			sourceTree = "<group>";
@@ -378,6 +384,7 @@
 				4F05E62022366BE500EC43D5 /* DetailClauseCell.swift in Sources */,
 				4FB7DD9421F5F6740070CC8B /* NavigationHelper.swift in Sources */,
 				4FB50DAE21F87CFD007D88ED /* EditInfoController.swift in Sources */,
+				4F05E62B2237808300EC43D5 /* ScheduleEvent.swift in Sources */,
 				4FAD16E62232290B00D3C953 /* MyGroupCell.swift in Sources */,
 				4FAD16F022329F2100D3C953 /* SelectedGroupCell.swift in Sources */,
 				4FB506CD22334A2A003A780D /* DiscoverController.swift in Sources */,
@@ -404,6 +411,7 @@
 				4F05E6272236762A00EC43D5 /* DetailEventCell.swift in Sources */,
 				4F74AE3E222EC0A000D92C90 /* ClauseCell.swift in Sources */,
 				4FEB789922226E2100B24099 /* ResetPasswordController.swift in Sources */,
+				4F05E62922377E9000EC43D5 /* ScheduleDetailController.swift in Sources */,
 				4FAD16EA22324B6300D3C953 /* SelectGroupCell.swift in Sources */,
 				4FB50DB221F89FD9007D88ED /* MessageSubtitleCell.swift in Sources */,
 				4F25D19C21F4A36E004E7DB4 /* AppDelegate.swift in Sources */,

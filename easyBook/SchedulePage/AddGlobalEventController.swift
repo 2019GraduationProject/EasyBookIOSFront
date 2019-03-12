@@ -101,7 +101,7 @@ class AddGlobalEventController: UITableViewController {
         }
     }
     
-    /// 因为第三个分区单元格动态添加，会引起 cell 高度的变化，所以要重新设置
+    /// 因为动态添加分区单元格，会引起cell高度的变化，所以要重新设置
     override func tableView(_ tableView: UITableView,
                             heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 1 && indexPath.row >= 1 {
@@ -116,7 +116,6 @@ class AddGlobalEventController: UITableViewController {
     override func tableView(_ tableView: UITableView,
                             indentationLevelForRowAt indexPath: IndexPath) -> Int {
         if indexPath.section == 1 && indexPath.row >= 1 {
-            // 当执行到日期选择器所在的 indexPat h就创建一个 indexPath 然后强插
             let newIndexPath = IndexPath(row: 1, section: indexPath.section)
             return super.tableView(tableView, indentationLevelForRowAt: newIndexPath)
         } else {

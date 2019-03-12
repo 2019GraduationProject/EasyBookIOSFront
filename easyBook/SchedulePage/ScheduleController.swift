@@ -19,6 +19,11 @@ class ScheduleController: UIViewController, UITableViewDataSource, UITableViewDe
     var popMenuManager: PopMenuManager!
     
     var datesWithEvent = ["2019-02-28", "2019-03-01", "2019-03-18", "2019-04-15"]
+    var scheduleData = [
+        ScheduleEvent(name: "本科毕业设计", date: "2019-02-28", startTime: "14:00", endTime: "15:00", location: "南京大学软件学院院楼710", group: ["预约访谈app组", "微信小程序组"]),
+        ScheduleEvent(name: "软件工程与计算II小组会", date: "2019-03-01", startTime: "13:30", endTime: "17:00", location: "南大仙林图书馆220", group: ["电影网站组"]),
+        ScheduleEvent(name: "EL游戏设计比赛小组会", date: "2019-03-18", startTime: "13:00", endTime: "17:30", location: "南大仙林图书馆202", group: ["EL游戏设计组"])
+    ]
     
     fileprivate lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -38,6 +43,9 @@ class ScheduleController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // 去掉 tableview 多余的分割线
+        self.tableView.tableFooterView = UIView.init()
 
         self.view.addGestureRecognizer(self.scopeGesture)
         self.tableView.panGestureRecognizer.require(toFail: self.scopeGesture)
@@ -137,18 +145,18 @@ class ScheduleController: UIViewController, UITableViewDataSource, UITableViewDe
     // MARK:- UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return scheduleData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let reuseIdentifier = String(describing: EventCell.self)
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! EventCell
         
-        cell.startTimeLabel.text = "15:00"
-        cell.endTImeLabel.text = "16:30"
-        cell.eventNameLabel.text = "本科毕业设计"
-        cell.groupNameLabel.text = "iOS访谈app组"
-        cell.locationLabel.text = "南京大学软件学院院楼710"
+        cell.startTimeLabel.text = scheduleData[indexPath.row].startTime
+        cell.endTImeLabel.text = scheduleData[indexPath.row].endTime
+        cell.eventNameLabel.text = scheduleData[indexPath.row].name
+        cell.groupNameLabel.text = scheduleData[indexPath.row].group.joined(separator: ", ")
+        cell.locationLabel.text = scheduleData[indexPath.row].location
         
         return cell
     }
@@ -166,14 +174,15 @@ class ScheduleController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "toScheduleDetail" {
+            let destination = segue.destination as! ScheduleDetailController
+            let row = tableView.indexPathForSelectedRow!.row
+            destination.scheduleInfo = scheduleData[row]
+        }
     }
-    */
 
 }
