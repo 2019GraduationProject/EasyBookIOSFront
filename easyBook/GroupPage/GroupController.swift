@@ -14,7 +14,6 @@ class GroupController: UITableViewController, UISearchResultsUpdating {
     
     var searchController: UISearchController!
     
-    
     var naviBarShadowImage = UIImage(named: "separator") // 存储导航条图片
     var initialOffsetY: CGFloat! // 初始位移量
     var isInitialCompute = true // 是否是第一次计算初始位移的标志
@@ -42,6 +41,7 @@ class GroupController: UITableViewController, UISearchResultsUpdating {
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
         tableView.tableHeaderView = searchController.searchBar
+        
         // 设置搜索条外观
         searchController.searchBar.tintColor = UIColor(named: "themeColor")
         searchController.searchBar.placeholder = "搜索群组"
@@ -111,7 +111,7 @@ class GroupController: UITableViewController, UISearchResultsUpdating {
         })
         
         attendedSearchResult = attendedGroupNameList.filter({ (groupName) -> Bool in
-            return groupName.localizedStandardContains(text)
+            return groupName.localizedCaseInsensitiveContains(text)
         })
     }
 

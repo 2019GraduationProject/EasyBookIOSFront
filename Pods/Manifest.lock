@@ -1,12 +1,20 @@
 PODS:
   - BEMCheckBox (1.4.1)
   - FSCalendar (2.8.0)
+  - FTIndicator (1.2.9):
+    - FTIndicator/FTNotificationIndicator (= 1.2.9)
+    - FTIndicator/FTProgressIndicator (= 1.2.9)
+    - FTIndicator/FTToastIndicator (= 1.2.9)
+  - FTIndicator/FTNotificationIndicator (1.2.9)
+  - FTIndicator/FTProgressIndicator (1.2.9)
+  - FTIndicator/FTToastIndicator (1.2.9)
   - NewPopMenu (2.1.2)
   - Parchment (1.5.0)
 
 DEPENDENCIES:
   - BEMCheckBox
   - FSCalendar
+  - FTIndicator
   - NewPopMenu (~> 2.0)
   - Parchment
 
@@ -14,15 +22,17 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BEMCheckBox
     - FSCalendar
+    - FTIndicator
     - NewPopMenu
     - Parchment
 
 SPEC CHECKSUMS:
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
+  FTIndicator: f7f071fd159e5befa1d040a9ef2e3ab53fa9322c
   NewPopMenu: c6129e08e8192f6257ceb5f9a4357e1b59c6e2e7
   Parchment: 5a8c9c73549a6d73a7c1b606c27246910d2e5720
 
-PODFILE CHECKSUM: 9486324883f0672af7a6b0399832b9a31884513b
+PODFILE CHECKSUM: 19e4771a3fc32d37401b07304b8720bad4a7ac8c
 
 COCOAPODS: 1.5.3

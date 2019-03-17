@@ -10,5 +10,6 @@ target 'easyBook' do
   pod 'NewPopMenu', '~> 2.0'
   pod 'BEMCheckBox'
   pod 'Parchment'
+  pod 'FTIndicator'
   
 end

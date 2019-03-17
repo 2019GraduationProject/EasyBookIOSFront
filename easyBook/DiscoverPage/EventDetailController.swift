@@ -25,6 +25,12 @@ class EventDetailController: UITableViewController {
         eventDateLabel.text = eventInfo.date.year + "-" + eventInfo.date.monthAndDay
         locationLabel.text = eventInfo.location
         
+        // 设置多行文本在 label 中自动换行
+        eventNameLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+        eventNameLabel.numberOfLines = 0
+        locationLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+        locationLabel.numberOfLines = 0
+        
         // 创建重用的单元格
         self.tableView.register(UINib(nibName: "DetailGroupCell", bundle: nil), forCellReuseIdentifier: "DetailGroupCell")
         self.tableView.register(UINib(nibName: "DetailClauseCell", bundle: nil), forCellReuseIdentifier: "DetailClauseCell")

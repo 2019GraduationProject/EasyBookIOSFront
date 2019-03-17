@@ -76,6 +76,7 @@ class SettingsController: UITableViewController {
                 }
             }
             let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+            cancelAction.setValue(UIColor.darkText, forKey: "titleTextColor")
             
             actionSheet.addAction(logoutAction)
             actionSheet.addAction(cancelAction)

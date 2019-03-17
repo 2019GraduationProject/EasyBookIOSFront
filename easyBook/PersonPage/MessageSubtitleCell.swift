@@ -10,7 +10,6 @@ import UIKit
 
 class MessageSubtitleCell: UITableViewCell {
     
-    @IBOutlet weak var avatarImageView: CustomImageView!
     @IBOutlet weak var groupNameLabel: UILabel!
     @IBOutlet weak var abstractLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!

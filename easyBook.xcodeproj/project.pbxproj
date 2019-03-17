@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F02564D223CB20800E0EF88 /* SetIntroducationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F02564C223CB20800E0EF88 /* SetIntroducationController.swift */; };
+		4F02564F223D411800E0EF88 /* AvatarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F02564E223D411800E0EF88 /* AvatarController.swift */; };
 		4F05E6192236427300EC43D5 /* EventDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05E6182236427300EC43D5 /* EventDetailController.swift */; };
 		4F05E61C22366BB300EC43D5 /* DetailGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F05E61A22366BB300EC43D5 /* DetailGroupCell.swift */; };
 		4F05E61D22366BB300EC43D5 /* DetailGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F05E61B22366BB300EC43D5 /* DetailGroupCell.xib */; };
@@ -56,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		2AD79F6977566D102C2CC0DF /* Pods-easyBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easyBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-easyBook/Pods-easyBook.debug.xcconfig"; sourceTree = "<group>"; };
+		4F02564C223CB20800E0EF88 /* SetIntroducationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetIntroducationController.swift; sourceTree = "<group>"; };
+		4F02564E223D411800E0EF88 /* AvatarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarController.swift; sourceTree = "<group>"; };
 		4F05E6182236427300EC43D5 /* EventDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailController.swift; sourceTree = "<group>"; };
 		4F05E61A22366BB300EC43D5 /* DetailGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGroupCell.swift; sourceTree = "<group>"; };
 		4F05E61B22366BB300EC43D5 /* DetailGroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailGroupCell.xib; sourceTree = "<group>"; };
@@ -195,6 +199,8 @@
 				4FEB78912220042F00B24099 /* AboutController.swift */,
 				4F05E62C22378C6A00EC43D5 /* SetNameController.swift */,
 				4F05E62E2237972B00EC43D5 /* SetGenderController.swift */,
+				4F02564C223CB20800E0EF88 /* SetIntroducationController.swift */,
+				4F02564E223D411800E0EF88 /* AvatarController.swift */,
 			);
 			path = PersonPage;
 			sourceTree = "<group>";
@@ -339,6 +345,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-easyBook/Pods-easyBook-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/FTIndicator/FTIndicator.framework",
 				"${BUILT_PRODUCTS_DIR}/NewPopMenu/PopMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/Parchment/Parchment.framework",
 			);
@@ -348,6 +355,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMCheckBox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FTIndicator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parchment.framework",
 			);
@@ -386,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FB7DDA321F6CE250070CC8B /* GroupSubtitleCell.swift in Sources */,
+				4F02564D223CB20800E0EF88 /* SetIntroducationController.swift in Sources */,
 				4F05E6232236731000EC43D5 /* Event.swift in Sources */,
 				4F05E62022366BE500EC43D5 /* DetailClauseCell.swift in Sources */,
 				4FB7DD9421F5F6740070CC8B /* NavigationHelper.swift in Sources */,
@@ -412,6 +421,7 @@
 				4FB50DB021F89EAF007D88ED /* MessageController.swift in Sources */,
 				4F5CAF5A222553D200E7A723 /* EventCell.swift in Sources */,
 				4FB50DAC21F82B4E007D88ED /* SettingsController.swift in Sources */,
+				4F02564F223D411800E0EF88 /* AvatarController.swift in Sources */,
 				4FCB547021F56ECA00D5FAFB /* UIViewLayerHelper.swift in Sources */,
 				4FEB7897222111FE00B24099 /* RegisterController.swift in Sources */,
 				4FB506D822349649003A780D /* GlobalDiscoverController.swift in Sources */,

@@ -61,7 +61,6 @@ class MessageController: UITableViewController {
         let reuseIdentifier = String(describing: MessageSubtitleCell.self)
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! MessageSubtitleCell
      
-        cell.avatarImageView.image = UIImage(named: "new_group_40x40_")
         cell.groupNameLabel.text = "群组1"
         cell.abstractLabel.text = "明日会议取消"
         cell.timeLabel.text = "10:33"
