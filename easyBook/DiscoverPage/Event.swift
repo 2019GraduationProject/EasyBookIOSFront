@@ -13,6 +13,8 @@ struct Event: Codable {
     var location = ""
     var group: [String] = []
     var clause: [Clause] = []
+    var isOver = false
+    
     
     init(name: String, date: EventDate, location: String, group: [String], clause: [Clause]) {
         self.name = name
@@ -20,6 +22,16 @@ struct Event: Codable {
         self.location = location
         self.group = group
         self.clause = clause
+        self.isOver = false
+    }
+    
+    init(name: String, date: EventDate, location: String, group: [String], clause: [Clause], isOver: Bool) {
+        self.name = name
+        self.date = date
+        self.location = location
+        self.group = group
+        self.clause = clause
+        self.isOver = isOver
     }
     
 }

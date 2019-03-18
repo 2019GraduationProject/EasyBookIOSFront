@@ -19,6 +19,11 @@ class CustomImageView: UIImageView {
     
 }
 
+@IBDesignable
+class CustomUILabel: UILabel {
+    
+}
+
 extension UIView {
     
     // 属性栏中可显示

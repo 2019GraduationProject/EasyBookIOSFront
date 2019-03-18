@@ -28,6 +28,12 @@
 		4F25D1B621F4C9B3004E7DB4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F25D1B521F4C9B3004E7DB4 /* TabBarController.swift */; };
 		4F5CAF582225199400E7A723 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5CAF572225199400E7A723 /* ScheduleController.swift */; };
 		4F5CAF5A222553D200E7A723 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5CAF59222553D200E7A723 /* EventCell.swift */; };
+		4F7212F2223F6527004A6B9C /* MyPublishController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7212F1223F6527004A6B9C /* MyPublishController.swift */; };
+		4F7212F4223F94DD004A6B9C /* EndedEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7212F3223F94DD004A6B9C /* EndedEventCell.swift */; };
+		4F7212F7223FC74C004A6B9C /* EndedClauseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7212F5223FC74C004A6B9C /* EndedClauseCell.swift */; };
+		4F7212F8223FC74C004A6B9C /* EndedClauseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F7212F6223FC74C004A6B9C /* EndedClauseCell.xib */; };
+		4F7212FA223FC830004A6B9C /* UpcomingEventDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7212F9223FC830004A6B9C /* UpcomingEventDetailController.swift */; };
+		4F7212FC223FC8A9004A6B9C /* EndedEventDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7212FB223FC8A9004A6B9C /* EndedEventDetailController.swift */; };
 		4F74AE37222E3B6B00D92C90 /* AddLocalEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F74AE36222E3B6B00D92C90 /* AddLocalEventController.swift */; };
 		4F74AE3E222EC0A000D92C90 /* ClauseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F74AE3C222EC0A000D92C90 /* ClauseCell.swift */; };
 		4F74AE3F222EC0A000D92C90 /* ClauseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F74AE3D222EC0A000D92C90 /* ClauseCell.xib */; };
@@ -82,6 +88,12 @@
 		4F5CAF542224E75900E7A723 /* easyBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "easyBook-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F5CAF572225199400E7A723 /* ScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
 		4F5CAF59222553D200E7A723 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		4F7212F1223F6527004A6B9C /* MyPublishController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPublishController.swift; sourceTree = "<group>"; };
+		4F7212F3223F94DD004A6B9C /* EndedEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndedEventCell.swift; sourceTree = "<group>"; };
+		4F7212F5223FC74C004A6B9C /* EndedClauseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndedClauseCell.swift; sourceTree = "<group>"; };
+		4F7212F6223FC74C004A6B9C /* EndedClauseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EndedClauseCell.xib; sourceTree = "<group>"; };
+		4F7212F9223FC830004A6B9C /* UpcomingEventDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventDetailController.swift; sourceTree = "<group>"; };
+		4F7212FB223FC8A9004A6B9C /* EndedEventDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndedEventDetailController.swift; sourceTree = "<group>"; };
 		4F74AE36222E3B6B00D92C90 /* AddLocalEventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocalEventController.swift; sourceTree = "<group>"; };
 		4F74AE3C222EC0A000D92C90 /* ClauseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClauseCell.swift; sourceTree = "<group>"; };
 		4F74AE3D222EC0A000D92C90 /* ClauseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClauseCell.xib; sourceTree = "<group>"; };
@@ -201,6 +213,12 @@
 				4F05E62E2237972B00EC43D5 /* SetGenderController.swift */,
 				4F02564C223CB20800E0EF88 /* SetIntroducationController.swift */,
 				4F02564E223D411800E0EF88 /* AvatarController.swift */,
+				4F7212F1223F6527004A6B9C /* MyPublishController.swift */,
+				4F7212F3223F94DD004A6B9C /* EndedEventCell.swift */,
+				4F7212F5223FC74C004A6B9C /* EndedClauseCell.swift */,
+				4F7212F6223FC74C004A6B9C /* EndedClauseCell.xib */,
+				4F7212F9223FC830004A6B9C /* UpcomingEventDetailController.swift */,
+				4F7212FB223FC8A9004A6B9C /* EndedEventDetailController.swift */,
 			);
 			path = PersonPage;
 			sourceTree = "<group>";
@@ -327,6 +345,7 @@
 				4F25D1A321F4A370004E7DB4 /* Assets.xcassets in Resources */,
 				4F05E62122366BE500EC43D5 /* DetailClauseCell.xib in Resources */,
 				4F05E61D22366BB300EC43D5 /* DetailGroupCell.xib in Resources */,
+				4F7212F8223FC74C004A6B9C /* EndedClauseCell.xib in Resources */,
 				4F25D1A121F4A36E004E7DB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FB7DDA321F6CE250070CC8B /* GroupSubtitleCell.swift in Sources */,
+				4F7212FA223FC830004A6B9C /* UpcomingEventDetailController.swift in Sources */,
 				4F02564D223CB20800E0EF88 /* SetIntroducationController.swift in Sources */,
 				4F05E6232236731000EC43D5 /* Event.swift in Sources */,
 				4F05E62022366BE500EC43D5 /* DetailClauseCell.swift in Sources */,
@@ -424,13 +444,17 @@
 				4F02564F223D411800E0EF88 /* AvatarController.swift in Sources */,
 				4FCB547021F56ECA00D5FAFB /* UIViewLayerHelper.swift in Sources */,
 				4FEB7897222111FE00B24099 /* RegisterController.swift in Sources */,
+				4F7212F7223FC74C004A6B9C /* EndedClauseCell.swift in Sources */,
 				4FB506D822349649003A780D /* GlobalDiscoverController.swift in Sources */,
 				4FB7DDA121F6CD720070CC8B /* GroupBasicCell.swift in Sources */,
 				4F05E6272236762A00EC43D5 /* DetailEventCell.swift in Sources */,
+				4F7212FC223FC8A9004A6B9C /* EndedEventDetailController.swift in Sources */,
 				4F74AE3E222EC0A000D92C90 /* ClauseCell.swift in Sources */,
 				4FEB789922226E2100B24099 /* ResetPasswordController.swift in Sources */,
 				4F05E62922377E9000EC43D5 /* ScheduleDetailController.swift in Sources */,
 				4FAD16EA22324B6300D3C953 /* SelectGroupCell.swift in Sources */,
+				4F7212F2223F6527004A6B9C /* MyPublishController.swift in Sources */,
+				4F7212F4223F94DD004A6B9C /* EndedEventCell.swift in Sources */,
 				4FB50DB221F89FD9007D88ED /* MessageSubtitleCell.swift in Sources */,
 				4F25D19C21F4A36E004E7DB4 /* AppDelegate.swift in Sources */,
 			);

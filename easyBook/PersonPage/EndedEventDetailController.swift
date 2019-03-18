@@ -1,23 +1,34 @@
 //
-//  EventDetailController.swift
+//  EndedEventDetailController.swift
 //  easyBook
 //
-//  Created by 黄小白 on 2019/3/11.
+//  Created by 黄小白 on 2019/3/18.
 //  Copyright © 2019 Sherley Huang's studio. All rights reserved.
 //
 
 import UIKit
 
-class EventDetailController: UITableViewController {
+class EndedEventDetailController: UITableViewController {
     
     @IBOutlet weak var eventNameLabel: UILabel!
     @IBOutlet weak var eventDateLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     
+    var naviBarShadowImage = UIImage(named: "separator") // 存储导航条图片
+    var initialOffsetY : CGFloat! // 初始位移量
+    var isInitialCompute = true // 是否是第一次计算初始位移的标志
+    
     var eventInfo: Event!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.navigationItem.title = "详情"
+        // 设置导航条标题字体颜色为黑色
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.darkText]
+        navigationController?.navigationBar.shadowImage = naviBarShadowImage
+        navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
         
         tableView.sectionFooterHeight = 0
         
@@ -33,7 +44,13 @@ class EventDetailController: UITableViewController {
         
         // 创建重用的单元格
         self.tableView.register(UINib(nibName: "DetailGroupCell", bundle: nil), forCellReuseIdentifier: "DetailGroupCell")
-        self.tableView.register(UINib(nibName: "DetailClauseCell", bundle: nil), forCellReuseIdentifier: "DetailClauseCell")
+        self.tableView.register(UINib(nibName: "EndedClauseCell", bundle: nil), forCellReuseIdentifier: "EndedClauseCell")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
     }
     
     /// 取消 section 的点击效果
@@ -52,10 +69,10 @@ class EventDetailController: UITableViewController {
         }
     }
 
-    // MARK: - Table view data source
     
+    // MARK: - Table view data source
+
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // return the number of sections
         return 3
     }
 
@@ -73,13 +90,13 @@ class EventDetailController: UITableViewController {
         if indexPath.section == 1 {
             let reuseIdentifier = String(describing: DetailGroupCell.self)
             let cell = self.tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! DetailGroupCell
-
+            
             cell.groupNameLabel.text = eventInfo.group[indexPath.row]
             return cell
         }
         else if indexPath.section == 2 {
-            let reuseIdentifier = String(describing: DetailClauseCell.self)
-            let cell = self.tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! DetailClauseCell
+            let reuseIdentifier = String(describing: EndedClauseCell.self)
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! EndedClauseCell
             
             if eventInfo.clause.count > 1 {
                 cell.timePeriodLabel.text = "时间段" + (indexPath.row + 1).description
@@ -124,12 +141,5 @@ class EventDetailController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30
     }
-    
-    
-    // MARK: - Event Listeners
 
-    @IBAction func tapBackButton(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
 }
