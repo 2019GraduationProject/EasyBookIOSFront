@@ -30,6 +30,10 @@ class UpcomingEventDetailController: UITableViewController {
         navigationController?.navigationBar.shadowImage = naviBarShadowImage
         navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
         
+        let rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editEvent))
+        rightBarButtonItem.tintColor = UIColor(named: "themeColor")
+        self.navigationItem.rightBarButtonItem = rightBarButtonItem
+        
         tableView.sectionFooterHeight = 0
         
         eventNameLabel.text = eventInfo.name
@@ -137,11 +141,37 @@ class UpcomingEventDetailController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 取消点击行则选中的状态
         self.tableView.deselectRow(at: indexPath, animated: true)
+        
+        // 取消事件的监听
+        if indexPath.section == 3 {
+            let actionSheet = UIAlertController(title: nil, message: "事件取消后无法恢复，系统会自动通知所有预约的用户。", preferredStyle: .actionSheet)
+            
+            let confirmAction = UIAlertAction(title: "确定", style: .default) { (_) in
+                // TODO 确认取消的逻辑写这里
+            }
+            confirmAction.setValue(UIColor.darkText, forKey: "titleTextColor")
+            
+            let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+            cancelAction.setValue(UIColor(named: "themeColor"), forKey: "titleTextColor")
+            
+            actionSheet.addAction(confirmAction)
+            actionSheet.addAction(cancelAction)
+            
+            present(actionSheet, animated: true, completion: nil)
+        }
     }
     
     /// 修改每个section之间的间距：修改section的header的大小
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30
+    }
+    
+    
+    // MARK: - Event Listeners
+    
+    // 修改按钮监听
+    @objc func editEvent(){
+        print("edit...")
     }
 
 }

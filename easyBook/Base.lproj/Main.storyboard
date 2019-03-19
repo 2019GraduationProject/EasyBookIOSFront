@@ -726,7 +726,7 @@
                                 <action selector="tapCanelButton:" destination="Vgr-Fq-EOa" id="kvh-sg-3Uc"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="发布" id="KLt-yN-jaA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="KLt-yN-jaA">
                             <color key="tintColor" name="themeColor"/>
                             <connections>
                                 <action selector="tapDeliverButton:" destination="Vgr-Fq-EOa" id="R9F-fi-Rbu"/>
@@ -1108,7 +1108,7 @@
                                 <action selector="tapCancelbutton:" destination="13W-6n-ypH" id="ZVe-n6-vXv"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="发布" id="ZcL-3U-GUN">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ZcL-3U-GUN">
                             <color key="tintColor" name="themeColor"/>
                             <connections>
                                 <action selector="tapDeliverButton:" destination="13W-6n-ypH" id="if1-dN-GRP"/>
@@ -2198,28 +2198,31 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="mwg-XY-5xs">
-                                            <rect key="frame" x="20" y="15" width="335" height="40"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mwg-XY-5xs">
+                                            <rect key="frame" x="20" y="14" width="335" height="42"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zMP-1o-oUM">
                                                     <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="群组1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuH-Hj-Sja">
-                                                            <rect key="frame" x="0.0" y="0.0" width="42.5" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuH-Hj-Sja">
+                                                            <rect key="frame" x="0.0" y="0.0" width="35" height="20.5"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fi-NK-pdX">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="10:33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fi-NK-pdX">
                                                             <rect key="frame" x="305.5" y="3.5" width="29.5" height="13.5"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="8Fi-NK-pdX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GuH-Hj-Sja" secondAttribute="trailing" constant="20" id="Whw-os-igp"/>
+                                                    </constraints>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="明日会议取消" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIb-Da-hEQ">
-                                                    <rect key="frame" x="0.0" y="26.5" width="335" height="13.5"/>
+                                                    <rect key="frame" x="0.0" y="28.5" width="335" height="13.5"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -2234,9 +2237,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="abstractLabel" destination="hIb-Da-hEQ" id="jIB-8G-Klf"/>
-                                    <outlet property="groupNameLabel" destination="GuH-Hj-Sja" id="ujc-H7-DiJ"/>
+                                    <outlet property="contentLabel" destination="hIb-Da-hEQ" id="0kV-xg-co8"/>
                                     <outlet property="timeLabel" destination="8Fi-NK-pdX" id="Zh8-K7-SUZ"/>
+                                    <outlet property="titleLabel" destination="GuH-Hj-Sja" id="HBt-FI-3jT"/>
+                                    <segue destination="QPs-AH-B8D" kind="show" identifier="toMessageDetail" id="4sQ-Hh-6Gv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -2535,6 +2539,67 @@
             </objects>
             <point key="canvasLocation" x="2272.8000000000002" y="3062.5187406296855"/>
         </scene>
+        <!--Message Detail Controller-->
+        <scene sceneID="0dn-CV-wKN">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="QPs-AH-B8D" customClass="MessageDetailController" customModule="easyBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d7l-hR-YlZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="EXh-tS-5kN">
+                                <rect key="frame" x="30" y="94" width="315" height="543"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9tm-W9-c7m">
+                                        <rect key="frame" x="4" y="0.0" width="307" height="46.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消息标题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5n-gk-Znf">
+                                                <rect key="frame" x="0.0" y="0.0" width="82" height="24"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019-02-28 14:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdg-Lq-66W">
+                                                <rect key="frame" x="0.0" y="32" width="104.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc4-L1-0m0">
+                                        <rect key="frame" x="0.0" y="62.5" width="315" height="480.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9tm-W9-c7m" firstAttribute="leading" secondItem="EXh-tS-5kN" secondAttribute="leading" constant="4" id="7a0-tM-i9Y"/>
+                                    <constraint firstItem="Xc4-L1-0m0" firstAttribute="width" secondItem="EXh-tS-5kN" secondAttribute="width" id="WsQ-W4-EL7"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vRp-ha-KGN" firstAttribute="trailing" secondItem="EXh-tS-5kN" secondAttribute="trailing" constant="30" id="8Ub-E6-fa8"/>
+                            <constraint firstAttribute="bottom" secondItem="EXh-tS-5kN" secondAttribute="bottom" constant="30" id="IKp-Ik-NVd"/>
+                            <constraint firstItem="EXh-tS-5kN" firstAttribute="top" secondItem="vRp-ha-KGN" secondAttribute="top" constant="30" id="MDI-YK-FT2"/>
+                            <constraint firstItem="EXh-tS-5kN" firstAttribute="leading" secondItem="vRp-ha-KGN" secondAttribute="leading" constant="30" id="zmD-U8-WK5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vRp-ha-KGN"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentTextView" destination="Xc4-L1-0m0" id="FUg-3O-PPL"/>
+                        <outlet property="timeLabel" destination="cdg-Lq-66W" id="28a-wh-wVW"/>
+                        <outlet property="titleLabel" destination="G5n-gk-Znf" id="8wR-Lr-7lq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oj1-9V-3LN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1461.5999999999999" y="3793.8530734632686"/>
+        </scene>
         <!--Upcoming Event Detail Controller-->
         <scene sceneID="Qgt-Qe-ZRA">
             <objects>
@@ -2724,7 +2789,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s5i-Bp-hFv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1870" y="3794"/>
+            <point key="canvasLocation" x="2273" y="3794"/>
         </scene>
         <!--Ended Event Detail Controller-->
         <scene sceneID="l4C-Ss-fjx">
@@ -2893,7 +2958,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tbr-E5-PPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2658" y="3794"/>
+            <point key="canvasLocation" x="3076" y="3794"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="4yQ-3A-6St">

@@ -13,8 +13,7 @@ struct Event: Codable {
     var location = ""
     var group: [String] = []
     var clause: [Clause] = []
-    var isOver = false
-    
+    var isOver = false 
     
     init(name: String, date: EventDate, location: String, group: [String], clause: [Clause]) {
         self.name = name

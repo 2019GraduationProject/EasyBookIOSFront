@@ -10,8 +10,8 @@ import UIKit
 
 class MessageSubtitleCell: UITableViewCell {
     
-    @IBOutlet weak var groupNameLabel: UILabel!
-    @IBOutlet weak var abstractLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     
 

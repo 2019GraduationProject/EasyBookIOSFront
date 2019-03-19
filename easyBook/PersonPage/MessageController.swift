@@ -14,7 +14,12 @@ class MessageController: UITableViewController {
     var initialOffsetY : CGFloat! // 初始位移量
     var isInitialCompute = true // 是否是第一次计算初始位移的标志
  
-    var messageNum = 6 // 消息数量
+    var messageData: [Message] = [
+        Message(title: "本科毕业设计", content: "事件地点从南京大学软件学院院楼710改为南京大学软件学院院楼712", time: "2019-02-25 14:56"),
+        Message(title: "软件工程与计算II小组会", content: "事件开始时间从13:30改为14:30", time: "2019-02-28 10:15"),
+        Message(title: "软件工程与计算II小组会", content: "事件地点从南大仙林图书馆220改为南大仙林图书馆221", time: "2019-02-28 12:15"),
+        Message(title: "大数据时代讲座", content: "事件取消", time: "2019-03-25 15:00")
+    ]
     
     
     override func viewDidLoad() {
@@ -29,6 +34,15 @@ class MessageController: UITableViewController {
         
         // 去掉 tableview 多余的分割线
         self.tableView.tableFooterView = UIView.init()
+    }
+    
+    /// 去掉子页面返回按钮后的文字
+    ///
+    /// - Parameter animated:
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // 设置返回按钮后的文字
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     /// 屏幕从初始位置往下滚动，显示 tab bar，否则设置 tab bar 透明
@@ -54,16 +68,16 @@ class MessageController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return messageNum
+        return messageData.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let reuseIdentifier = String(describing: MessageSubtitleCell.self)
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! MessageSubtitleCell
      
-        cell.groupNameLabel.text = "群组1"
-        cell.abstractLabel.text = "明日会议取消"
-        cell.timeLabel.text = "10:33"
+        cell.titleLabel.text = messageData[indexPath.row].title
+        cell.contentLabel.text = messageData[indexPath.row].content
+        cell.timeLabel.text = messageData[indexPath.row].time
         
         return cell
     }
@@ -82,7 +96,7 @@ class MessageController: UITableViewController {
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         let deleteAction = UIContextualAction(style: .destructive, title: "删除") { (_, _, completion) in
-            self.messageNum -= 1
+            self.messageData.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .automatic)
             // 收起滑动侧边栏
             completion(true)
@@ -93,49 +107,16 @@ class MessageController: UITableViewController {
         return config
     }
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "toMessageDetail" {
+            let messageDetailVC = segue.destination as! MessageDetailController
+            let row = tableView.indexPathForSelectedRow!.row
+            messageDetailVC.message = messageData[row]
+        }
     }
-    */
 
 }
