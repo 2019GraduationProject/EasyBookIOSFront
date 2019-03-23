@@ -189,6 +189,27 @@ class GroupController: UITableViewController, UISearchResultsUpdating {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 取消点击行则选中的状态
         self.tableView.deselectRow(at: indexPath, animated: true)
+        
+        if indexPath.section == 1 {
+            if let myGroupDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "MyGroupDetailController") as? MyGroupDetailController {
+                if searchController.isActive {
+                    myGroupDetailVC.groupName = createdSearchResult[indexPath.row]
+                } else {
+                    myGroupDetailVC.groupName = createdGroupNameList[indexPath.row]
+                }
+                self.navigationController?.pushViewController(myGroupDetailVC, animated: true)
+            }
+        }
+        else if indexPath.section == 2 {
+            if let groupDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "GroupDetailController") as? GroupDetailController {
+                if searchController.isActive {
+                    groupDetailVC.groupName = attendedSearchResult[indexPath.row]
+                } else {
+                    groupDetailVC.groupName = attendedGroupNameList[indexPath.row]
+                }
+                self.navigationController?.pushViewController(groupDetailVC, animated: true)
+            }
+        }
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
