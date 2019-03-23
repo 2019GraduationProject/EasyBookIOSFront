@@ -136,7 +136,7 @@ class MyGroupDetailController: UITableViewController {
             if let memberDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "MemberDetailController") as? MemberDetailController {
                 let memberInfo = memberList[indexPath.row]
                 memberDetailVC.memberInfo = memberInfo
-                memberDetailVC.showRemoveBtn = !memberInfo.isHolder
+                memberDetailVC.showBtn = !memberInfo.isHolder
                 self.navigationController?.pushViewController(memberDetailVC, animated: true)
             }
         }
@@ -160,7 +160,7 @@ class MyGroupDetailController: UITableViewController {
     
     /// 修改每个section之间的间距：修改section的header的大小
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if section == 3 {
+        if section == 2 || section == 3 {
             return 15
         } else {
             return 30

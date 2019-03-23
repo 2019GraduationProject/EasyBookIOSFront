@@ -1,8 +1,8 @@
 //
-//  Member.swift
+//  Group.swift
 //  easyBook
 //
-//  Created by 黄小白 on 2019/3/22.
+//  Created by 黄小白 on 2019/3/23.
 //  Copyright © 2019 Sherley Huang's studio. All rights reserved.
 //
 
@@ -34,6 +34,20 @@ struct Member: Codable {
         self.phone = phone
         self.personBg = personBg
         self.isHolder = isHolder
+    }
+    
+}
+
+struct Invitation: Codable {
+    
+    var inviter: String
+    var inviterAvatar: String
+    var message: String
+    
+    init(inviter: String, inviterAvatar: String, message: String) {
+        self.inviter = inviter
+        self.inviterAvatar = inviterAvatar
+        self.message = message
     }
     
 }

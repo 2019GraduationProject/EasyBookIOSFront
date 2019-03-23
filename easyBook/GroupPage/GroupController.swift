@@ -76,6 +76,11 @@ class GroupController: UITableViewController, UISearchResultsUpdating {
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        searchController.isActive = false
+    }
+    
     /// 屏幕从初始位置往下滚动，显示 tab bar，否则设置 tab bar 透明
     ///
     /// - Parameter scrollView: tableView 本身的 scrollView
@@ -190,24 +195,28 @@ class GroupController: UITableViewController, UISearchResultsUpdating {
         // 取消点击行则选中的状态
         self.tableView.deselectRow(at: indexPath, animated: true)
         
-        if indexPath.section == 1 {
-            if let myGroupDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "MyGroupDetailController") as? MyGroupDetailController {
-                if searchController.isActive {
-                    myGroupDetailVC.groupName = createdSearchResult[indexPath.row]
-                } else {
-                    myGroupDetailVC.groupName = createdGroupNameList[indexPath.row]
-                }
-                self.navigationController?.pushViewController(myGroupDetailVC, animated: true)
+        if searchController.isActive {
+            searchController.isActive = false
+            if indexPath.section == 0 {
+                self.toMyGroupDetailVC(row: indexPath.row)
+            }
+            else if indexPath.section == 1 {
+                self.toGroupDetailVC(row: indexPath.row)
             }
         }
-        else if indexPath.section == 2 {
-            if let groupDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "GroupDetailController") as? GroupDetailController {
-                if searchController.isActive {
-                    groupDetailVC.groupName = attendedSearchResult[indexPath.row]
-                } else {
-                    groupDetailVC.groupName = attendedGroupNameList[indexPath.row]
+        else {
+            if indexPath.section == 0 {
+                if indexPath.row == 0 {
+                    if let invitationVC = self.storyboard?.instantiateViewController(withIdentifier: "InvitationController") as? InvitationController {
+                        self.navigationController?.pushViewController(invitationVC, animated: true)
+                    }
                 }
-                self.navigationController?.pushViewController(groupDetailVC, animated: true)
+            }
+            else if indexPath.section == 1 {
+                self.toMyGroupDetailVC(row: indexPath.row)
+            }
+            else if indexPath.section == 2 {
+                self.toGroupDetailVC(row: indexPath.row)
             }
         }
     }
@@ -269,6 +278,30 @@ class GroupController: UITableViewController, UISearchResultsUpdating {
 //        return headerView
 //    }
 
+    
+    // MARK: - Event Listeners
+    
+    func toGroupDetailVC(row: Int) {
+        if let groupDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "GroupDetailController") as? GroupDetailController {
+            if searchController.isActive {
+                groupDetailVC.groupName = attendedSearchResult[row]
+            } else {
+                groupDetailVC.groupName = attendedGroupNameList[row]
+            }
+            self.navigationController?.pushViewController(groupDetailVC, animated: true)
+        }
+    }
+    
+    func toMyGroupDetailVC(row: Int) {
+        if let myGroupDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "MyGroupDetailController") as? MyGroupDetailController {
+            if searchController.isActive {
+                myGroupDetailVC.groupName = createdSearchResult[row]
+            } else {
+                myGroupDetailVC.groupName = createdGroupNameList[row]
+            }
+            self.navigationController?.pushViewController(myGroupDetailVC, animated: true)
+        }
+    }
 
     /*
     // MARK: - Navigation

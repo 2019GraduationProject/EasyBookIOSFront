@@ -14,12 +14,12 @@ class GroupDetailController: UITableViewController {
     var groupName: String!
     
     let memberList: [Member] = [
-        Member(avatar: "default_avater_80x80_", name: "黄小白", gender: "female", introducation: "iOS开发工程师", phone: "13912575745", personBg: "default_user_bg_375x320", isHolder: true),
-        Member(avatar: "avatar_boy_1_80x80_", name: "成员2", gender: "male", introducation: "后端工程师", phone: "13912345678", personBg: "default_user_bg_375x320"),
+        Member(avatar: "avatar_boy_1_80x80_", name: "何老师", gender: "male", introducation: "NJU软件工程学院研究员", phone: "18023492265", personBg: "default_user_bg_375x320", isHolder: true),
+        Member(avatar: "default_avater_80x80_", name: "黄小白", gender: "female", introducation: "iOS开发工程师", phone: "13912575745", personBg: "default_user_bg_375x320"),
+        Member(avatar: "avatar_boy_3_80x80_", name: "成员2", gender: "male", introducation: "后端工程师", phone: "13912345678", personBg: "default_user_bg_375x320"),
         Member(avatar: "avatar_boy_2_80x80_", name: "成员3", gender: "male", introducation: "架构师", phone: "18015886463", personBg: "default_user_bg_375x320"),
-        Member(avatar: "avatar_girl_1_80x80_", name: "成员4", gender: "female", introducation: "前端工程师", phone: "15151283345", personBg: "default_user_bg_375x320"),
+        Member(avatar: "avatar_girl_1_80x80_", name: "成员4", gender: "female", introducation: "机器学习研究生", phone: "15151283345", personBg: "default_user_bg_375x320"),
         Member(avatar: "avatar_girl_2_80x80_", name: "成员5", gender: "female", introducation: "UI设计师", phone: "13754432290", personBg: "default_user_bg_375x320"),
-        Member(avatar: "avatar_boy_3_80x80_", name: "成员6", gender: "male", introducation: "机器学习研究生", phone: "15823294579", personBg: "default_user_bg_375x320"),
     ]
     
     var naviBarShadowImage = UIImage(named: "separator") // 存储导航条图片
@@ -43,6 +43,15 @@ class GroupDetailController: UITableViewController {
         self.groupNameLabel.text = groupName
     }
     
+    /// 取消 section 的点击效果
+    /// ⚠️注：若在viewDidLoad()中写，则还未加载到第一个section，会报空指针
+    ///
+    /// - Parameter animated: Bool
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.cellForRow(at: [0, 0])?.selectionStyle = .none
+    }
+
     /// 去掉子页面返回按钮后的文字
     ///
     /// - Parameter animated:
@@ -135,7 +144,7 @@ class GroupDetailController: UITableViewController {
             if let memberDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "MemberDetailController") as? MemberDetailController {
                 let memberInfo = memberList[indexPath.row]
                 memberDetailVC.memberInfo = memberInfo
-                memberDetailVC.showRemoveBtn = false
+                memberDetailVC.showBtn = false
                 self.navigationController?.pushViewController(memberDetailVC, animated: true)
             }
         }
@@ -159,7 +168,12 @@ class GroupDetailController: UITableViewController {
     
     /// 修改每个section之间的间距：修改section的header的大小
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 30
+        if section == 2 {
+            return 15
+        } else {
+            return 30
+        }
+//        return 30
     }
 
     

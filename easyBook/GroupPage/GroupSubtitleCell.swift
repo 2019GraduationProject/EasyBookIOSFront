@@ -25,5 +25,12 @@ class GroupSubtitleCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
+    // MARK: - Event Listeners
+    
+    @IBAction func tapApproveBtn(_ sender: UIButton) {
+        // TODO
+    }
 
 }
