@@ -58,6 +58,11 @@ class ChosenGroupController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 取消点击行则选中的状态
         self.tableView.deselectRow(at: indexPath, animated: true)
+        
+        if let groupInfoVC = self.storyboard?.instantiateViewController(withIdentifier: "GroupInfoController") as? GroupInfoController {
+            groupInfoVC.groupName = chosenGroupList[indexPath.row]
+            self.navigationController?.pushViewController(groupInfoVC, animated: true)
+        }
     }
     
     /// 修改每个 section 的 header 的高度

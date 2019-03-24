@@ -66,6 +66,9 @@
 		4FBC86122245D4D400949405 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC86112245D4D400949405 /* Group.swift */; };
 		4FBC86142246063B00949405 /* InvitationDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC86132246063B00949405 /* InvitationDetailController.swift */; };
 		4FBC86162246111A00949405 /* InviteMemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC86152246111A00949405 /* InviteMemberController.swift */; };
+		4FBC861822465B3300949405 /* SendMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC861722465B3300949405 /* SendMessageController.swift */; };
+		4FBC861A224758AC00949405 /* NewGroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC8619224758AC00949405 /* NewGroupController.swift */; };
+		4FBC861C22476FE600949405 /* GroupInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC861B22476FE600949405 /* GroupInfoController.swift */; };
 		4FCB547021F56ECA00D5FAFB /* UIViewLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCB546F21F56ECA00D5FAFB /* UIViewLayerHelper.swift */; };
 		4FEB78922220042F00B24099 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB78912220042F00B24099 /* AboutController.swift */; };
 		4FEB7895222024CC00B24099 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB7894222024CC00B24099 /* LoginController.swift */; };
@@ -138,6 +141,9 @@
 		4FBC86112245D4D400949405 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		4FBC86132246063B00949405 /* InvitationDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationDetailController.swift; sourceTree = "<group>"; };
 		4FBC86152246111A00949405 /* InviteMemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteMemberController.swift; sourceTree = "<group>"; };
+		4FBC861722465B3300949405 /* SendMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageController.swift; sourceTree = "<group>"; };
+		4FBC8619224758AC00949405 /* NewGroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupController.swift; sourceTree = "<group>"; };
+		4FBC861B22476FE600949405 /* GroupInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupInfoController.swift; sourceTree = "<group>"; };
 		4FCB546F21F56ECA00D5FAFB /* UIViewLayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewLayerHelper.swift; sourceTree = "<group>"; };
 		4FEB78912220042F00B24099 /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
 		4FEB7894222024CC00B24099 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -220,6 +226,7 @@
 				4FAD16EF22329F2100D3C953 /* SelectedGroupCell.swift */,
 				4F05E62822377E9000EC43D5 /* ScheduleDetailController.swift */,
 				4F05E62A2237808300EC43D5 /* ScheduleEvent.swift */,
+				4FBC861B22476FE600949405 /* GroupInfoController.swift */,
 			);
 			path = SchedulePage;
 			sourceTree = "<group>";
@@ -283,6 +290,8 @@
 				4FBC86112245D4D400949405 /* Group.swift */,
 				4FBC86132246063B00949405 /* InvitationDetailController.swift */,
 				4FBC86152246111A00949405 /* InviteMemberController.swift */,
+				4FBC861722465B3300949405 /* SendMessageController.swift */,
+				4FBC8619224758AC00949405 /* NewGroupController.swift */,
 			);
 			path = GroupPage;
 			sourceTree = "<group>";
@@ -459,7 +468,9 @@
 				4FB50DAE21F87CFD007D88ED /* EditInfoController.swift in Sources */,
 				4F05E62B2237808300EC43D5 /* ScheduleEvent.swift in Sources */,
 				4FAD16E62232290B00D3C953 /* MyGroupCell.swift in Sources */,
+				4FBC861A224758AC00949405 /* NewGroupController.swift in Sources */,
 				4FBC86162246111A00949405 /* InviteMemberController.swift in Sources */,
+				4FBC861C22476FE600949405 /* GroupInfoController.swift in Sources */,
 				4FAD16F022329F2100D3C953 /* SelectedGroupCell.swift in Sources */,
 				4FB506CD22334A2A003A780D /* DiscoverController.swift in Sources */,
 				4F74AE37222E3B6B00D92C90 /* AddLocalEventController.swift in Sources */,
@@ -500,6 +511,7 @@
 				4FEB789922226E2100B24099 /* ResetPasswordController.swift in Sources */,
 				4F05E62922377E9000EC43D5 /* ScheduleDetailController.swift in Sources */,
 				4FAD16EA22324B6300D3C953 /* SelectGroupCell.swift in Sources */,
+				4FBC861822465B3300949405 /* SendMessageController.swift in Sources */,
 				4F7212F2223F6527004A6B9C /* MyPublishController.swift in Sources */,
 				4F7212F4223F94DD004A6B9C /* EndedEventCell.swift in Sources */,
 				4FB50DB221F89FD9007D88ED /* MessageSubtitleCell.swift in Sources */,

@@ -49,7 +49,7 @@ class MyGroupDetailController: UITableViewController {
     /// - Parameter animated:
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        // 设置返回按钮后的文字
+        // 去掉返回按钮后的文字
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
@@ -93,10 +93,20 @@ class MyGroupDetailController: UITableViewController {
             
             cell.avatarImageView.image = UIImage(named: memberList[indexPath.row].avatar)
             cell.memberNameLabel.text = memberList[indexPath.row].name
+            
+            // 优先显示“群主”标签
             if memberList[indexPath.row].isHolder {
-                cell.groupHolderLabel.isHidden = false
-            } else {
-                cell.groupHolderLabel.isHidden = true
+                cell.identityLabel.isHidden = false
+                cell.identityLabel.text = "群主"
+            }
+            // 若为本人且不是群主，显示“我”标签
+            // TODO
+            else if memberList[indexPath.row].name == "黄小白" {
+                cell.identityLabel.isHidden = false
+                cell.identityLabel.text = "我"
+            }
+            else {
+                cell.identityLabel.isHidden = true
             }
             
             return cell
@@ -167,14 +177,20 @@ class MyGroupDetailController: UITableViewController {
         }
     }
     
-    /*
+    
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "toSetGroupName" {
+            let destination = segue.destination as! UINavigationController
+            let setGroupNameVC = destination.topViewController as! SetGroupNameController
+            if self.groupNameLabel.text == "未命名" {
+                setGroupNameVC.name = ""
+            } else {
+                setGroupNameVC.name = self.groupNameLabel.text!
+            }
+        }
     }
-    */
 
 }

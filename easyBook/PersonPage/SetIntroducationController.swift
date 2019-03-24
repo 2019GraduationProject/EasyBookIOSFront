@@ -8,9 +8,9 @@
 
 import UIKit
 
-class SetIntroducationController: UITableViewController {
+class SetIntroducationController: UITableViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var introTextView: UITextView!
+    @IBOutlet weak var introTextField: UITextField!
     var briefIntro: String = ""
     
     
@@ -19,8 +19,10 @@ class SetIntroducationController: UITableViewController {
         
         // 去掉 tableview 多余的分割线
         self.tableView.tableFooterView = UIView.init()
-        introTextView.text = briefIntro
-        introTextView.becomeFirstResponder()
+        introTextField.text = briefIntro
+        introTextField.becomeFirstResponder()
+        introTextField.enablesReturnKeyAutomatically = true
+        introTextField.delegate = self
     }
     
     /// 退出本界面时收回键盘
@@ -28,7 +30,7 @@ class SetIntroducationController: UITableViewController {
     /// - Parameter animated: Bool
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        introTextView.resignFirstResponder()
+        introTextField.resignFirstResponder()
     }
     
     
@@ -36,6 +38,14 @@ class SetIntroducationController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.1
+    }
+    
+    
+    // MARK: - UITextFieldDelegate
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        introTextField.resignFirstResponder()
+        return true
     }
     
     

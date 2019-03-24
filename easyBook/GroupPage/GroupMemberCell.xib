@@ -65,7 +65,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="avatarImageView" destination="Q4T-58-1cW" id="f4n-QG-szZ"/>
-                <outlet property="groupHolderLabel" destination="IFC-6A-O76" id="qEq-RP-sKv"/>
+                <outlet property="identityLabel" destination="IFC-6A-O76" id="pBn-pM-mkk"/>
                 <outlet property="memberNameLabel" destination="2y7-BQ-cgh" id="NyA-PJ-bMH"/>
             </connections>
             <point key="canvasLocation" x="181.59999999999999" y="160.11994002998503"/>

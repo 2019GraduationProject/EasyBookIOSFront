@@ -31,6 +31,10 @@ class SetGroupNameController: UITableViewController {
         nameTextField.resignFirstResponder()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.cellForRow(at: [0, 0])?.selectionStyle = .none
+    }
     
     // MARK: - Table View
     

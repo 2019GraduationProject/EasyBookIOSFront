@@ -15,9 +15,9 @@ class GroupDetailController: UITableViewController {
     
     let memberList: [Member] = [
         Member(avatar: "avatar_boy_1_80x80_", name: "何老师", gender: "male", introducation: "NJU软件工程学院研究员", phone: "18023492265", personBg: "default_user_bg_375x320", isHolder: true),
-        Member(avatar: "default_avater_80x80_", name: "黄小白", gender: "female", introducation: "iOS开发工程师", phone: "13912575745", personBg: "default_user_bg_375x320"),
         Member(avatar: "avatar_boy_3_80x80_", name: "成员2", gender: "male", introducation: "后端工程师", phone: "13912345678", personBg: "default_user_bg_375x320"),
         Member(avatar: "avatar_boy_2_80x80_", name: "成员3", gender: "male", introducation: "架构师", phone: "18015886463", personBg: "default_user_bg_375x320"),
+        Member(avatar: "default_avater_80x80_", name: "黄小白", gender: "female", introducation: "iOS开发工程师", phone: "13912575745", personBg: "default_user_bg_375x320"),
         Member(avatar: "avatar_girl_1_80x80_", name: "成员4", gender: "female", introducation: "机器学习研究生", phone: "15151283345", personBg: "default_user_bg_375x320"),
         Member(avatar: "avatar_girl_2_80x80_", name: "成员5", gender: "female", introducation: "UI设计师", phone: "13754432290", personBg: "default_user_bg_375x320"),
     ]
@@ -102,9 +102,17 @@ class GroupDetailController: UITableViewController {
             cell.avatarImageView.image = UIImage(named: memberList[indexPath.row].avatar)
             cell.memberNameLabel.text = memberList[indexPath.row].name
             if memberList[indexPath.row].isHolder {
-                cell.groupHolderLabel.isHidden = false
-            } else {
-                cell.groupHolderLabel.isHidden = true
+                cell.identityLabel.isHidden = false
+                cell.identityLabel.text = "群主"
+            }
+            // 若为本人且不是群主，显示“我”标签
+            // TODO
+            else if memberList[indexPath.row].name == "黄小白" {
+                cell.identityLabel.isHidden = false
+                cell.identityLabel.text = "我"
+            }
+            else {
+                cell.identityLabel.isHidden = true
             }
             
             return cell
@@ -172,23 +180,6 @@ class GroupDetailController: UITableViewController {
             return 15
         } else {
             return 30
-        }
-//        return 30
-    }
-
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toSetGroupName" {
-            let destination = segue.destination as! UINavigationController
-            let setGroupNameVC = destination.topViewController as! SetGroupNameController
-            if self.groupNameLabel.text == "未命名" {
-                setGroupNameVC.name = ""
-            } else {
-                setGroupNameVC.name = self.groupNameLabel.text!
-            }
         }
     }
 

@@ -33,6 +33,11 @@ class EditInfoController: UITableViewController {
         briefIntroLabel.numberOfLines = 0
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.cellForRow(at: [0, 2])?.selectionStyle = .none
+    }
+    
     /// 屏幕从初始位置往下滚动，显示 tab bar，否则设置 tab bar 透明
     ///
     /// - Parameter scrollView: tableView 本身的 scrollView

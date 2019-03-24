@@ -56,6 +56,8 @@ class MemberDetailController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.navigationBar.tintColor = UIColor(named: "themeDarkBlack")
+        // 去掉返回按钮后的文字
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     
@@ -65,8 +67,9 @@ class MemberDetailController: UIViewController {
         if btnType == "remove" {
             // TODO
         } else {
-            print("add member")
-            // TODO
+            if let sendMessageVC = self.storyboard?.instantiateViewController(withIdentifier: "SendMessageController") as? SendMessageController {
+                self.navigationController?.pushViewController(sendMessageVC, animated: true)
+            }
         }
     }
     

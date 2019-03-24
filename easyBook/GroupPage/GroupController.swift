@@ -210,6 +210,10 @@ class GroupController: UITableViewController, UISearchResultsUpdating {
                     if let invitationVC = self.storyboard?.instantiateViewController(withIdentifier: "InvitationController") as? InvitationController {
                         self.navigationController?.pushViewController(invitationVC, animated: true)
                     }
+                } else {
+                    if let newGroupVC = self.storyboard?.instantiateViewController(withIdentifier: "NewGroupController") as? NewGroupController {
+                        self.navigationController?.pushViewController(newGroupVC, animated: true)
+                    }
                 }
             }
             else if indexPath.section == 1 {

@@ -12,7 +12,7 @@ class GroupMemberCell: UITableViewCell {
     
     @IBOutlet weak var avatarImageView: CustomImageView!
     @IBOutlet weak var memberNameLabel: UILabel!
-    @IBOutlet weak var groupHolderLabel: UILabel!
+    @IBOutlet weak var identityLabel: UILabel!
     
     
     override func awakeFromNib() {

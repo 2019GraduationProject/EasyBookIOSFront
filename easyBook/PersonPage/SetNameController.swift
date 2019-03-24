@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SetNameController: UITableViewController {
+class SetNameController: UITableViewController, UITextFieldDelegate {
 
     @IBOutlet weak var nameTextField: UITextField!
     var name: String = ""
@@ -21,6 +21,8 @@ class SetNameController: UITableViewController {
         self.tableView.tableFooterView = UIView.init()
         nameTextField.text = name
         nameTextField.becomeFirstResponder()
+        nameTextField.enablesReturnKeyAutomatically = true
+        nameTextField.delegate = self
     }
     
     /// 退出本界面时收回键盘
@@ -36,6 +38,14 @@ class SetNameController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.1
+    }
+    
+    
+    // MARK: - UITextFieldDelegate
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        nameTextField.resignFirstResponder()
+        return true
     }
     
 
