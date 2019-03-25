@@ -9,7 +9,7 @@ target 'easyBook' do
   pod 'FSCalendar'
   pod 'NewPopMenu', '~> 2.0'
   pod 'BEMCheckBox'
-  pod 'Parchment'
+  pod 'SwipeMenuViewController'
   pod 'FTIndicator'
   
 end

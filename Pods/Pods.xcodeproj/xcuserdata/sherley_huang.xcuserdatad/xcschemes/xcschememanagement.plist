@@ -24,12 +24,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Parchment.xcscheme</key>
+		<key>Pods-easyBook.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-easyBook.xcscheme</key>
+		<key>SwipeMenuViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
