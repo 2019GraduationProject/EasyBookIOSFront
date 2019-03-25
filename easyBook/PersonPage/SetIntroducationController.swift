@@ -11,7 +11,14 @@ import UIKit
 class SetIntroducationController: UITableViewController, UITextFieldDelegate {
 
     @IBOutlet weak var introTextField: UITextField!
+    @IBOutlet weak var countLabel: UILabel!
+    
     var briefIntro: String = ""
+    var count: Int! {
+        didSet {
+            self.countLabel.text = (30 - count).description
+        }
+    }
     
     
     override func viewDidLoad() {
@@ -23,6 +30,8 @@ class SetIntroducationController: UITableViewController, UITextFieldDelegate {
         introTextField.becomeFirstResponder()
         introTextField.enablesReturnKeyAutomatically = true
         introTextField.delegate = self
+        
+        count = briefIntro.count
     }
     
     /// 退出本界面时收回键盘
@@ -46,6 +55,20 @@ class SetIntroducationController: UITableViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         introTextField.resignFirstResponder()
         return true
+    }
+    
+    /// 设置手动输入字数不超30位
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let text = introTextField.text else {
+            return true
+        }
+        
+        let newLength = text.count + string.count - range.length
+        if newLength <= 30 {
+            count = newLength
+        }
+        
+        return newLength <= 30
     }
     
     

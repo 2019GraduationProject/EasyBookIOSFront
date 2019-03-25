@@ -89,13 +89,19 @@ class LocalDiscoverController: UITableViewController, UISearchBarDelegate {
         // 取消点击行则选中的状态
         self.tableView.deselectRow(at: indexPath, animated: true)
         
-        if let eventDetailNaviController = self.storyboard?.instantiateViewController(withIdentifier: "EventDetailNaviController") as? UINavigationController {
-            let eventDetailVC = eventDetailNaviController.topViewController as! EventDetailController
+//        if let eventDetailNaviController = self.storyboard?.instantiateViewController(withIdentifier: "EventDetailNaviController") as? UINavigationController {
+//            let eventDetailVC = eventDetailNaviController.topViewController as! EventDetailController
+//            let eventInfo = self.eventSearchResult[indexPath.row]
+//            eventDetailVC.eventInfo = eventInfo
+//
+//            eventDetailNaviController.modalTransitionStyle = .coverVertical
+//            present(eventDetailNaviController, animated: true, completion: nil)
+//        }
+        
+        if let eventDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "EventDetailController") as? EventDetailController {
             let eventInfo = self.eventSearchResult[indexPath.row]
             eventDetailVC.eventInfo = eventInfo
-            
-            eventDetailNaviController.modalTransitionStyle = .coverVertical
-            present(eventDetailNaviController, animated: true, completion: nil)
+            self.navigationController?.pushViewController(eventDetailVC, animated: true)
         }
     }
 

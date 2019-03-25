@@ -38,6 +38,15 @@ class EditInfoController: UITableViewController {
         tableView.cellForRow(at: [0, 2])?.selectionStyle = .none
     }
     
+    /// 去掉子页面返回按钮后的文字
+    ///
+    /// - Parameter animated:
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // 设置返回按钮后的文字
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
     /// 屏幕从初始位置往下滚动，显示 tab bar，否则设置 tab bar 透明
     ///
     /// - Parameter scrollView: tableView 本身的 scrollView
@@ -67,14 +76,6 @@ class EditInfoController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 取消点击行则选中的状态
         self.tableView.deselectRow(at: indexPath, animated: true)
-        
-        if indexPath.row == 0 {
-            if let avatarNaviController = self.storyboard?.instantiateViewController(withIdentifier: "AvatarNaviController") as? UINavigationController {
-                
-                avatarNaviController.modalTransitionStyle = .coverVertical
-                present(avatarNaviController, animated: true, completion: nil)
-            }
-        }
     }
 
     

@@ -12,6 +12,13 @@ import FTIndicator
 class NewGroupController: UITableViewController, UITextFieldDelegate {
     
     @IBOutlet weak var groupNameTextField: UITextField!
+    @IBOutlet weak var countLabel: UILabel!
+    
+    var count: Int! {
+        didSet {
+            self.countLabel.text = (12 - count).description
+        }
+    }
     
     var naviBarShadowImage = UIImage(named: "separator") // 存储导航条图片
     var initialOffsetY : CGFloat! // 初始位移量
@@ -36,6 +43,8 @@ class NewGroupController: UITableViewController, UITextFieldDelegate {
         groupNameTextField.enablesReturnKeyAutomatically = true
         groupNameTextField.becomeFirstResponder()
         groupNameTextField.delegate = self
+        
+        count = 0
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -76,6 +85,20 @@ class NewGroupController: UITableViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         groupNameTextField.resignFirstResponder()
         return true
+    }
+    
+    /// 设置手动输入字数不超12位
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let text = groupNameTextField.text else {
+            return true
+        }
+        
+        let newLength = text.count + string.count - range.length
+        if newLength <= 12 {
+            count = newLength
+        }
+        
+        return newLength <= 12
     }
     
     

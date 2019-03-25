@@ -104,6 +104,8 @@ class DiscoverController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+        pagingViewController.collectionView.isHidden = false
+        
         // Running layout here fixes an issue where only the first
         // cell in the menu is shown initially.
         navigationController?.view.layoutIfNeeded()
@@ -118,6 +120,10 @@ class DiscoverController: UIViewController {
         hiddenScrollView.contentSize = tableVC.tableView.contentSize
         hiddenScrollView.contentInset = tableVC.tableView.contentInset
         hiddenScrollView.contentOffset = tableVC.tableView.contentOffset
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        pagingViewController.collectionView.isHidden = true
     }
 
 }
@@ -138,8 +144,8 @@ extension DiscoverController: PagingViewControllerDataSource {
         let insets = UIEdgeInsets(top: pagingViewController.menuItemSize.height, left: 0, bottom: 0, right: 0)
         tableVC.tableView.scrollIndicatorInsets = insets
         tableVC.tableView.contentInset = insets
+        
         return tableVC
-
     }
 
     func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, pagingItemForIndex index: Int) -> T {

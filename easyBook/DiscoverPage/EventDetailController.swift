@@ -19,6 +19,10 @@ class EventDetailController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "详情"
+        // 设置导航条标题字体颜色为黑色
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.darkText]
+        
         tableView.sectionFooterHeight = 0
         
         eventNameLabel.text = eventInfo.name
@@ -123,13 +127,6 @@ class EventDetailController: UITableViewController {
     /// 修改每个section之间的间距：修改section的header的大小
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30
-    }
-    
-    
-    // MARK: - Event Listeners
-
-    @IBAction func tapBackButton(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true, completion: nil)
     }
     
 }

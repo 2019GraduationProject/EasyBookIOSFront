@@ -153,10 +153,9 @@ class MyGroupDetailController: UITableViewController {
         else if indexPath.section == 3 {
             let actionSheet = UIAlertController(title: nil, message: "确认解散该群？", preferredStyle: .actionSheet)
             
-            let confirmAction = UIAlertAction(title: "确认解散", style: .default) { (_) in
+            let confirmAction = UIAlertAction(title: "确认解散", style: .destructive) { (_) in
                 // TODO
             }
-            confirmAction.setValue(UIColor.darkText, forKey: "titleTextColor")
             
             let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
             cancelAction.setValue(UIColor(named: "themeColor"), forKey: "titleTextColor")

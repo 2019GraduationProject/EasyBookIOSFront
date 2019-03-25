@@ -157,12 +157,11 @@ class GroupDetailController: UITableViewController {
             }
         }
         else if indexPath.section == 2 {
-            let actionSheet = UIAlertController(title: nil, message: "确认退出该群？", preferredStyle: .actionSheet)
+            let actionSheet = UIAlertController(title: nil, message: "退出该群后需要群主邀请才可重新加入。", preferredStyle: .actionSheet)
             
-            let confirmAction = UIAlertAction(title: "确认退出", style: .default) { (_) in
+            let confirmAction = UIAlertAction(title: "确认退出", style: .destructive) { (_) in
                 // TODO
             }
-            confirmAction.setValue(UIColor.darkText, forKey: "titleTextColor")
             
             let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
             cancelAction.setValue(UIColor(named: "themeColor"), forKey: "titleTextColor")

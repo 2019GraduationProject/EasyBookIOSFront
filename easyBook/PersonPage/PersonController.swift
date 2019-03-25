@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PersonController: UITableViewController {
+class PersonController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var userBgImageView: UIImageView!
     
@@ -20,6 +20,9 @@ class PersonController: UITableViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         // 设置导航条标题字体颜色为白色
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
+        // 设置返回按钮颜色
+        navigationController?.navigationBar.tintColor = UIColor(named: "themeDarkBlack")
     }
     
     // 设置状态栏字体颜色为白色
@@ -46,6 +49,44 @@ class PersonController: UITableViewController {
         // 取消点击行则选中的状态
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    
+    // MARK: - UIImagePickerControllerDelegate
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        userBgImageView.image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        // 关闭相册
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    // MARK: - Event Listeners
+    
+    @IBAction func tapBgImageView(_ sender: UITapGestureRecognizer) {
+        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        let choosePhotoAction = UIAlertAction(title: "更换背景图片", style: .default) { (_) in
+            guard UIImagePickerController.isSourceTypeAvailable(.photoLibrary) else {
+                return
+            }
+            
+            let picker = UIImagePickerController()
+            picker.sourceType = .photoLibrary
+            picker.delegate = self
+            self.present(picker, animated: true, completion: nil)
+        }
+        choosePhotoAction.setValue(UIColor.darkText, forKey: "titleTextColor")
+        
+        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        cancelAction.setValue(UIColor(named: "themeColor"), forKey: "titleTextColor")
+        
+        actionSheet.addAction(choosePhotoAction)
+        actionSheet.addAction(cancelAction)
+        
+        present(actionSheet, animated: true, completion: nil)
+    }
+    
+    
 
     /*
     // MARK: - Navigation

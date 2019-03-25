@@ -18,12 +18,18 @@ class AvatarController: UIViewController, UIImagePickerControllerDelegate, UINav
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // 设置导航条背景透明
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
-        // 设置导航条标题字体颜色为白色
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        self.navigationItem.title = "个人头像"
+//        self.navigationItem.title = "个人头像"
+//        // 设置导航条标题字体颜色为白色
+//        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
+        // 设置返回按钮颜色
+        navigationController?.navigationBar.tintColor = UIColor.white
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // 设置返回按钮颜色
+        navigationController?.navigationBar.tintColor = UIColor(named: "themeDarkBlack")
     }
     
     // 设置状态栏字体颜色为白色
@@ -42,10 +48,6 @@ class AvatarController: UIViewController, UIImagePickerControllerDelegate, UINav
     
     
     // MARK: - Event Listeners
-
-    @IBAction func tapBackButton(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true, completion: nil)
-    }
     
     @IBAction func tapMoreButton(_ sender: UIBarButtonItem) {
         let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
@@ -104,16 +106,5 @@ class AvatarController: UIViewController, UIImagePickerControllerDelegate, UINav
         
         present(actionSheet, animated: true, completion: nil)
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

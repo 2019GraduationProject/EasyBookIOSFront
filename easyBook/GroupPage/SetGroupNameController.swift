@@ -8,19 +8,29 @@
 
 import UIKit
 
-class SetGroupNameController: UITableViewController {
+class SetGroupNameController: UITableViewController, UITextFieldDelegate {
 
     @IBOutlet weak var nameTextField: UITextField!
-    var name: String = ""
+    @IBOutlet weak var countLabel: UILabel!
     
+    var name: String = ""
+    var count: Int! {
+        didSet {
+            self.countLabel.text = (12 - count).description
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // 去掉 tableview 多余的分割线
         self.tableView.tableFooterView = UIView.init()
+        
         nameTextField.text = name
         nameTextField.becomeFirstResponder()
+        nameTextField.delegate = self
+        
+        count = name.count
     }
     
     /// 退出本界面时收回键盘
@@ -40,6 +50,28 @@ class SetGroupNameController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.1
+    }
+    
+    
+    // MARK: - UITextFieldDelegate
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        nameTextField.resignFirstResponder()
+        return true
+    }
+    
+    /// 设置手动输入字数不超12位
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let text = nameTextField.text else {
+            return true
+        }
+        
+        let newLength = text.count + string.count - range.length
+        if newLength <= 12 {
+            count = newLength
+        }
+        
+        return newLength <= 12
     }
     
     
