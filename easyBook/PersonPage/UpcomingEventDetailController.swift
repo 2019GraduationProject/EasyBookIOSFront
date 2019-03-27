@@ -55,6 +55,9 @@ class UpcomingEventDetailController: UITableViewController {
         super.viewWillDisappear(animated)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        
+        // 去掉子页面返回按钮后的文字
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     /// 取消 section 的点击效果
@@ -70,6 +73,10 @@ class UpcomingEventDetailController: UITableViewController {
         
         for x in 0...(tableView(self.tableView, numberOfRowsInSection: 2) - 1) {
             tableView.cellForRow(at: [2, x])?.selectionStyle = .none
+        }
+        
+        if eventInfo.group.count == 1 && eventInfo.group[0] == "全部用户" {
+            tableView.cellForRow(at: [1, 0])?.selectionStyle = .none
         }
     }
     
@@ -97,6 +104,9 @@ class UpcomingEventDetailController: UITableViewController {
             let reuseIdentifier = String(describing: DetailGroupCell.self)
             let cell = self.tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! DetailGroupCell
             
+            if eventInfo.group[indexPath.row] == "全部用户" {
+                cell.detailBtn.isHidden = true
+            }
             cell.groupNameLabel.text = eventInfo.group[indexPath.row]
             return cell
         }
@@ -142,6 +152,20 @@ class UpcomingEventDetailController: UITableViewController {
         // 取消点击行则选中的状态
         self.tableView.deselectRow(at: indexPath, animated: true)
         
+        // 群组详情
+        if indexPath.section == 1 {
+            let cell  = tableView.cellForRow(at: indexPath) as! DetailGroupCell
+            if cell.groupNameLabel.text == "全部用户" {
+                return
+            }
+            else {
+                if let groupInfoVC = self.storyboard?.instantiateViewController(withIdentifier: "GroupInfoController") as? GroupInfoController {
+                    groupInfoVC.groupName = eventInfo.group[indexPath.row]
+                    self.navigationController?.pushViewController(groupInfoVC, animated: true)
+                }
+            }
+        }
+        
         // 取消事件的监听
         if indexPath.section == 3 {
             let actionSheet = UIAlertController(title: nil, message: "事件取消后无法恢复，系统会自动通知所有预约的用户。", preferredStyle: .actionSheet)
@@ -171,7 +195,25 @@ class UpcomingEventDetailController: UITableViewController {
     
     // 修改按钮监听
     @objc func editEvent(){
-        print("edit...")
+        if eventInfo.group.count == 1 && eventInfo.group[0] == "全部用户" {
+            if let addGlobalEventNaviController = self.storyboard?.instantiateViewController(withIdentifier: "AddGlobalEventNaviController") as? UINavigationController {
+                
+                let addGlobalEventVC = addGlobalEventNaviController.topViewController as! AddGlobalEventController
+                addGlobalEventVC.isEdit = true
+                addGlobalEventVC.eventInfo = self.eventInfo
+                
+                self.present(addGlobalEventNaviController, animated: true)
+            }
+        } else {
+            if let addLocalEventNaviController = self.storyboard?.instantiateViewController(withIdentifier: "AddLocalEventNaviController") as? UINavigationController {
+                
+                let addLocalEventVC = addLocalEventNaviController.topViewController as! AddLocalEventController
+                addLocalEventVC.isEdit = true
+                addLocalEventVC.eventInfo = self.eventInfo
+                
+                self.present(addLocalEventNaviController, animated: true)
+            }
+        }
     }
 
 }

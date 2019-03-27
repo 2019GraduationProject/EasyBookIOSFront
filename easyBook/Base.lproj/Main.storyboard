@@ -5394,7 +5394,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YCM-9l-qEe">
-                                                    <rect key="frame" x="20" y="17.5" width="307" height="20.5"/>
+                                                    <rect key="frame" x="20" y="17.5" width="335" height="20.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="群聊名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29t-0E-u6A">
                                                             <rect key="frame" x="0.0" y="0.0" width="69.5" height="20.5"/>
@@ -5403,7 +5403,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未命名" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaJ-mJ-cBK">
-                                                            <rect key="frame" x="255" y="0.0" width="52" height="20.5"/>
+                                                            <rect key="frame" x="283" y="0.0" width="52" height="20.5"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <color key="textColor" name="themeGray"/>
                                                             <nil key="highlightedColor"/>
@@ -5413,7 +5413,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="YCM-9l-qEe" firstAttribute="leading" secondItem="QI3-Fq-7Kd" secondAttribute="leading" constant="20" id="Klg-eL-lT3"/>
-                                                <constraint firstAttribute="trailing" secondItem="YCM-9l-qEe" secondAttribute="trailing" constant="48" id="RLg-P9-F9k"/>
+                                                <constraint firstAttribute="trailing" secondItem="YCM-9l-qEe" secondAttribute="trailing" constant="20" id="RLg-P9-F9k"/>
                                                 <constraint firstItem="YCM-9l-qEe" firstAttribute="centerY" secondItem="QI3-Fq-7Kd" secondAttribute="centerY" id="eBp-jp-ubO"/>
                                             </constraints>
                                         </tableViewCellContentView>

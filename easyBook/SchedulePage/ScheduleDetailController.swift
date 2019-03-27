@@ -74,6 +74,10 @@ class ScheduleDetailController: UITableViewController {
         for x in 0...(tableView(self.tableView, numberOfRowsInSection: 0) - 1) {
             tableView.cellForRow(at: [0, x])?.selectionStyle = .none
         }
+        
+        if scheduleInfo.group.count == 1 && scheduleInfo.group[0] == "全部用户" {
+            tableView.cellForRow(at: [1, 0])?.selectionStyle = .none
+        }
     }
     
     /// 屏幕从初始位置往下滚动，显示 tab bar，否则设置 tab bar 透明
@@ -114,6 +118,9 @@ class ScheduleDetailController: UITableViewController {
             let reuseIdentifier = String(describing: DetailGroupCell.self)
             let cell = self.tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! DetailGroupCell
             
+            if scheduleInfo.group[indexPath.row] == "全部用户" {
+                cell.detailBtn.isHidden = true
+            }
             cell.groupNameLabel.text = scheduleInfo.group[indexPath.row]
             return cell
         }
@@ -149,9 +156,15 @@ class ScheduleDetailController: UITableViewController {
         self.tableView.deselectRow(at: indexPath, animated: true)
         
         if indexPath.section == 1 {
-            if let groupInfoVC = self.storyboard?.instantiateViewController(withIdentifier: "GroupInfoController") as? GroupInfoController {
-                groupInfoVC.groupName = scheduleInfo.group[indexPath.row]
-                self.navigationController?.pushViewController(groupInfoVC, animated: true)
+            let cell  = tableView.cellForRow(at: indexPath) as! DetailGroupCell
+            if cell.groupNameLabel.text == "全部用户" {
+                return
+            }
+            else {
+                if let groupInfoVC = self.storyboard?.instantiateViewController(withIdentifier: "GroupInfoController") as? GroupInfoController {
+                    groupInfoVC.groupName = scheduleInfo.group[indexPath.row]
+                    self.navigationController?.pushViewController(groupInfoVC, animated: true)
+                }
             }
         }
     }

@@ -7,268 +7,365 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		058A9865FA9EE59831A70C904A9189CA /* FTIndicator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F025D760E44FC4C2632DE7C4858A6D0F /* FTIndicator-dummy.m */; };
-		06DE3F9B88DF6448AFA1A178BC5C61B9 /* ContentScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8399F1E6DB5AAAF6E215BFC4016FAF2 /* ContentScrollView.swift */; };
-		0EBE2DB914C91FE2689975529A11247C /* FSCalendarDelegationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 7375A3BF86690FB4933250D2D4EF7726 /* FSCalendarDelegationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		160B28C75D434CD2C52DEE1760C8D8BD /* BEMCheckBox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 798C799F83D797C2CEDA015780EEAD52 /* BEMCheckBox-dummy.m */; };
-		16BE90421DB9C2ECAA7159CE3E9250A2 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D13C9CA5AC36316B484F5720E6F2225 /* FSCalendarDelegationProxy.m */; };
-		1C33A8C8F95A3B3D864DC22B9E5B3CB5 /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 1891B82D62FACDD784F5A2958CBEF081 /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1FBB4AD750A3BAC3239644A9F0359319 /* FTProgressIndicator.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DE02C99E67CD972E8B0EC18EF3CAFEE9 /* FTProgressIndicator.bundle */; };
-		2139806CB0D807CAB7C1589355912CD1 /* FTIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD474347E27FBE351BDEC6F5BD14D45 /* FTIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2357E79402DE4F7F3CB1281F85D51E1E /* SwipeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6285D7418F0A9FF2322681E1C3C2DA2 /* SwipeMenuView.swift */; };
-		259FC6DCE1BA2BB0EED84730C30B5AF3 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BBC4264E224873593BBD10DAE64D7B /* FSCalendarExtensions.m */; };
-		28E98E4D75B85CFC393DD2AD54FFAE8D /* PopMenuAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01127C4D55DA6D32FF602BFCA793D9DC /* PopMenuAppearance.swift */; };
-		2B7261AB881EDD8430D190AB62D58C59 /* BEMCheckBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 77C153495841300BF1CAAC8F1B6DC484 /* BEMCheckBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E260B55818E6B32298C21C3E556EF98 /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 133279E7B8C6C715740AA204283BA841 /* BEMCheckBox.m */; };
-		358950BA6E8EE4C99587456B849C41CA /* FSCalendarDelegationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = E519B942CAC71AF28618CE0C43B0CA98 /* FSCalendarDelegationProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02B6166834FDE582A7475C4D021C532A /* MJRefreshBackStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 61D99C2BC98358437E3A4F87B4694455 /* MJRefreshBackStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04E5A6920974A68B2D15090CBE56D58B /* NSBundle+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = DC32C0218C3623E77C4D91903BCFDAFB /* NSBundle+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		058A9865FA9EE59831A70C904A9189CA /* FTIndicator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE24CBBD8F35BA31DE5229112E164FE /* FTIndicator-dummy.m */; };
+		0A2A7BA6A9AE0D6D258E046702B8F0BF /* Pods-easyBook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD454CF42856F7E6C6C355B6F4729918 /* Pods-easyBook-dummy.m */; };
+		0CBE8DF24C1FCB9A518E94FF59598D64 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211F44540E0482C3C70090E9BF8AFE89 /* UIViewExtension.swift */; };
+		0EBE2DB914C91FE2689975529A11247C /* FSCalendarDelegationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = F43464208CF54E50D6D3C1512CE8B1C0 /* FSCalendarDelegationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10884584B45C6564993981E004AE6B5B /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C2ACDD8B343B6FFF5AFD9CA1FEAF52AC /* MJRefresh.bundle */; };
+		1364E587347DB7B32700946C39D69836 /* MJRefreshBackGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = C87224423AD01D42C071C351CCA4FF32 /* MJRefreshBackGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15C2EB04D6B8F976B266429E8761AAB9 /* SwipeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF442CBFCAE4EDF03AE1E56310C0E9A /* SwipeMenuView.swift */; };
+		160B28C75D434CD2C52DEE1760C8D8BD /* BEMCheckBox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDDCEB432445660903C3357B664567F /* BEMCheckBox-dummy.m */; };
+		16145634E76498599E08EE59BF2BA9D9 /* MJRefreshBackNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CE5BC5C7C9646FFEF01569C34985C0E /* MJRefreshBackNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16BE90421DB9C2ECAA7159CE3E9250A2 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5E64874F1894B076700285CA633B2 /* FSCalendarDelegationProxy.m */; };
+		19A2D61A783C422B8828408F98E56290 /* MJRefreshAutoFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = EE133C23F6229A753710607BDD8F1CEF /* MJRefreshAutoFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C33A8C8F95A3B3D864DC22B9E5B3CB5 /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 444D256B5307033E3FB89E849F888B4F /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FBB4AD750A3BAC3239644A9F0359319 /* FTProgressIndicator.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5711F50A97E4512C5C7BD3E9E2CA18E3 /* FTProgressIndicator.bundle */; };
+		205C539389D123F0D635AEEE94E23A57 /* MJRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0144B068FEFC19FA898589F9155A8460 /* MJRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2139806CB0D807CAB7C1589355912CD1 /* FTIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EE3DADAE1F2EBA37F316A5F2175559 /* FTIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		259FC6DCE1BA2BB0EED84730C30B5AF3 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2658EF64A813E597B8E3CB89E18F45D6 /* FSCalendarExtensions.m */; };
+		28E98E4D75B85CFC393DD2AD54FFAE8D /* PopMenuAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E628C9A7B6479B1108261F8137F3277 /* PopMenuAppearance.swift */; };
+		2AE9F2C800AA6D4A6EDD9DB4B93DCDCF /* MJRefreshAutoGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A31B53DB68AF9A8F790E2314F53D1C /* MJRefreshAutoGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B7261AB881EDD8430D190AB62D58C59 /* BEMCheckBox.h in Headers */ = {isa = PBXBuildFile; fileRef = EA4F81D2A2DF4F576CC52FEC2ECCF320 /* BEMCheckBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E260B55818E6B32298C21C3E556EF98 /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5494416BA94CFC70B597A34E9AD75F /* BEMCheckBox.m */; };
+		2EFA8D0D3C31B3A77612C955773F7D36 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 154C3A3684C6F3A915B1C2A7CFF91E24 /* MJRefreshBackNormalFooter.m */; };
+		30E34EC2956ABC7E22ABD9D38EC23C8C /* Pods-easyBook-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC8837F2E896BCCD56A51214F774C281 /* Pods-easyBook-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31D52A4583BB36984AEC4C6D71265746 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD9894CACD4956A541F302A8A5B84F7 /* MJRefreshStateHeader.m */; };
+		358950BA6E8EE4C99587456B849C41CA /* FSCalendarDelegationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DD11B6AA60AB6E1BE13E33F88AC4B58 /* FSCalendarDelegationProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35CCA902DF0D8C0AB9C3A7C8AF4FD40D /* UIScrollView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 53A26002E7E8B07F9F1D6659723EFC5C /* UIScrollView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		366A0A2B7CC87D039FD802C7FF82BEE7 /* MJRefreshNormalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C720B7A42C3406B30C53E9D8584DD5 /* MJRefreshNormalHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3676F08333878303A290EBD834CD06FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */; };
-		389AB31471187DB059CDF638BDFAFE87 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 869A46B88B9D32F8D30DC7F33D11EF40 /* FSCalendarWeekdayView.m */; };
+		370474488F17310C2E917826EE8B93FB /* MJRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC39B32E784442A6B8CE6A16C2F5E04 /* MJRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		389AB31471187DB059CDF638BDFAFE87 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3A4E51C590AFC87B0A6CAA0D5D98A /* FSCalendarWeekdayView.m */; };
 		3AD167FD7CCAE9D5A84252096DF0A5BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */; };
-		3E854A186108E25107EA25E175E71D2D /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 9869A46C77830419098D94D6D383E2D5 /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F83D27E9BA1ADE337C01425F52365D8 /* UIColor+Contrast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FDF06368A97AED30CD6EC7B77B0F8 /* UIColor+Contrast.swift */; };
-		420D6C910CEB92F34E4E2F15BBE8EA4E /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 024B8C05F9A3391B9BABAD9982A9122A /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E854A186108E25107EA25E175E71D2D /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 121485C8EC7D743D65F5D89CBAF476D7 /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F83D27E9BA1ADE337C01425F52365D8 /* UIColor+Contrast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7703583C6D3CF96519BA3CFB326027D9 /* UIColor+Contrast.swift */; };
+		420D6C910CEB92F34E4E2F15BBE8EA4E /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E02EE42E30B07B6F4AD3E44D0DB2172 /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46F4BB52114D41735DAFB54A2643C110 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53654F6C69F2B1C06A517CAB5691730 /* UIKit.framework */; };
-		4BA56434E3C216B81E93EFD1EE71852D /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E1C778E0AE4BEC04FE0B054B41F3B96 /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51EB3D81DA46415F61FC8BBAF839177F /* FSCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55FB0598155AA5055403BBD3D8F32FFA /* FSCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52655A2FF25DAD7F31C29C345613311B /* UIEdgeInsetsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF177130D08AEF5BD3763DC3DCF06AA9 /* UIEdgeInsetsExtension.swift */; };
-		5912A8F894C3A4FEB8AE52804B84C73D /* UIView+Shadows.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60729E2508E1C75A74CB2FDC81FDA8C /* UIView+Shadows.swift */; };
-		5B32F3F091530FF033F8982ACF0BEA29 /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A0913E985F0DB36F0ECCF0E057B48 /* BEMPathManager.m */; };
-		5EB963BE6A1B8082476E115E7567DA67 /* PopMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3071332448EFC8B404FD1CCD16BBECEB /* PopMenuViewController.swift */; };
-		6F7B29EE7D6A3C0DF84D8AD711E27278 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEEE72532D4F1AC1F5E7BBDEDB4BB40 /* UIViewExtension.swift */; };
-		71C07575BF136256A3C777B713C21A62 /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A9BFEBF6C49B923C8464AACA937712B /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72F65A074F27669F4F68B1A78A087EB6 /* SwipeMenuViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D85E45AE5CC44545E19309C645704C /* SwipeMenuViewController-dummy.m */; };
-		78F693056A297B915E5C3CCF8BFCBF46 /* FTProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D410AEE4347C2EFE9BC1DAB5BF48CC /* FTProgressIndicator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
+		482B75E0CB8031D3F673F70242FA41FB /* MJRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 869792D92D80B013EEB7DDE9C536F6A7 /* MJRefresh-dummy.m */; };
+		4BA56434E3C216B81E93EFD1EE71852D /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5104A2FB052DA8A5374F0D36C560EA84 /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E75F1293990391FB686C2BBD734E715 /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8F68B84B7C4E4AEF90BE1912A3AE3 /* MJRefreshFooter.m */; };
+		51EB3D81DA46415F61FC8BBAF839177F /* FSCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 795EC08DCD4F7B5AAC40F6F102E93E8C /* FSCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57F9EB19DF46EC2590C8B10DB89D146E /* MJRefreshConst.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E6BB9971225BD19629C24E04DC6807 /* MJRefreshConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5912A8F894C3A4FEB8AE52804B84C73D /* UIView+Shadows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276F46F92DC67A5B6C3EDAE40FE1EC31 /* UIView+Shadows.swift */; };
+		5B32F3F091530FF033F8982ACF0BEA29 /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF9E92BF86DCF4AFE6238BBC00AFD82 /* BEMPathManager.m */; };
+		5EB963BE6A1B8082476E115E7567DA67 /* PopMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EE85CBD0BFE63607B25A7620591D5F /* PopMenuViewController.swift */; };
+		62E84F67014328D5ED1B0F65775CDDFA /* MJRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 33516929D52610CD6299A143E2B3B045 /* MJRefreshFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C7D22626A2F5AD4BB1ACC02D8F10731 /* MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = BE113CB989B23E30063066B15128C5A1 /* MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D2FD545E0B463F0210B5242E1477721 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF237F78A1C2B7ACD6C3837C5F79F1E /* MJRefreshAutoStateFooter.m */; };
+		6E560D2FE4A36AB742453E3CF5F4CE68 /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B32162F4D52FD9D1D2C9588A99816D /* MJRefreshAutoNormalFooter.m */; };
+		71C07575BF136256A3C777B713C21A62 /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6008784ADC000EB1C557BEF9698FF905 /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7203872DAF858D609912A7D0F768FEAF /* UIScrollView+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 9436136E1739805B8DE067CB72FC8E69 /* UIScrollView+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72BA18069C0DFC671464EB497250D358 /* MJRefreshBackFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2707948A8871CB9A263FEA7A2F8A2254 /* MJRefreshBackFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78F693056A297B915E5C3CCF8BFCBF46 /* FTProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C22EE98B8EE11D9FAE2436CDACF62E /* FTProgressIndicator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
+		79E7436378404C9DD06E9F65180D62A4 /* MJRefreshAutoNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 03AD527B8F1281F835C3197A25268D58 /* MJRefreshAutoNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A8B0A3D45337E904FA69BB89D644CCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53654F6C69F2B1C06A517CAB5691730 /* UIKit.framework */; };
-		7D889EB19290493EB8B4AC6DD7591C75 /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4695CD457AE482B12F7157C21F41D91C /* BEMCheckBoxGroup.m */; };
+		7D889EB19290493EB8B4AC6DD7591C75 /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C364827762F0B1B9FE6612FEDC9EA /* BEMCheckBoxGroup.m */; };
 		7DF9A5F9DFCE74B7046F13F12C6600D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */; };
-		82BFE9790CF23DF1F897AC259283ABD9 /* FTProgressIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5EC58CFF79536FDB185183705F497E /* FTProgressIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8358297F263636F67DB852B1F03AABFE /* PopMenuDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEBABF8BEB943A0840717F760DB42AE /* PopMenuDismissAnimationController.swift */; };
-		849C9E5D2FE0810D1A9E3368F5D6D87C /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F581A0DBC932E9E7CEC8D734EA8801A /* FSCalendarCalculator.m */; };
-		85585F91CD314B17F392B4896C1D27EC /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E740467A8692C587508807D02F0269 /* FSCalendarConstants.m */; };
-		871C17723D819803AA7900ADC1624DF1 /* BEMPathManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F477E88DC4C20902FFABC8323FDE6010 /* BEMPathManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8ADBFB5BFB8A9D71C46FF887E1D016BE /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C11D6063E615154632803F659CB6E6B /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E1D53B04A456FD6D7AEDB3E099994D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */; };
-		973FE8759B5FB18DA9C8C4AEC6E3E650 /* FSCalendarSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA03B239FB655FDD841A8150A51E5712 /* FSCalendarSeparatorDecorationView.m */; };
-		9B01E64E39C4286FB2E88586C4E0AF82 /* PopMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53F3DEB72049C7155245D7910B07973 /* PopMenuManager.swift */; };
-		9D22607CAFC856C9C93995FFD9360E07 /* FTNotificationIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ADE6E515DAB5336318A64DCE520D6AA /* FTNotificationIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F9B9007891D36363BE6BE0CB08C1006 /* MJRefreshStateHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAC94FDE5ADF36205EFCB2FE8F50900 /* MJRefreshStateHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FC1CEA91F90834F660AA84E603B37AD /* MJRefreshGifHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9BD5887FD4EFBC5CC417B57FEA2F6D /* MJRefreshGifHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		801ADD5F788AC7CB9A8CCBA3E18B9F27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */; };
+		81727E0FB34C0FE08D39BDE52687701F /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6427C4C0F2541D1286268B7A04C2B59 /* UIScrollView+MJExtension.m */; };
+		8234F492BBE286EA25736C05B5728C82 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58719D6869FC8063D15A1C92F75D6C3C /* UIView+MJExtension.m */; };
+		82BFE9790CF23DF1F897AC259283ABD9 /* FTProgressIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC54F434AC67C2F09F6184543CA6DDC3 /* FTProgressIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8358297F263636F67DB852B1F03AABFE /* PopMenuDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E228FDC707F32E7A85D35DF05433C6F /* PopMenuDismissAnimationController.swift */; };
+		849C9E5D2FE0810D1A9E3368F5D6D87C /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D0DD0E940FC11CA7FC08FC198B642A /* FSCalendarCalculator.m */; };
+		85585F91CD314B17F392B4896C1D27EC /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC267F89EFD98B5850001C763D89F84 /* FSCalendarConstants.m */; };
+		871C17723D819803AA7900ADC1624DF1 /* BEMPathManager.h in Headers */ = {isa = PBXBuildFile; fileRef = ED195625086FC09265C31BEE66D9724D /* BEMPathManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ADBFB5BFB8A9D71C46FF887E1D016BE /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 96A752AA2B17E8146044D46479F4B6AA /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94237113054B0D5CE28D86E2C827BD72 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D992FB5C7F88AD02CF14B67F7580BDC0 /* MJRefreshGifHeader.m */; };
+		94792512E63E255CADC5FBDF3648D2AB /* SwipeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3AA9DF42C0A810697E50DEEBDCA6E6 /* SwipeMenuViewController.swift */; };
+		973FE8759B5FB18DA9C8C4AEC6E3E650 /* FSCalendarSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A356F45D9E796796A91411E146919FE5 /* FSCalendarSeparatorDecorationView.m */; };
+		9A9931F189A4EF1FABC8C731BC11AEFE /* NSBundle+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AB27D001FEE21F46131940D8FCBAE /* NSBundle+MJRefresh.m */; };
+		9B01E64E39C4286FB2E88586C4E0AF82 /* PopMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35515A5C1B82DF0FEFF02CC69B3F630 /* PopMenuManager.swift */; };
+		9D22607CAFC856C9C93995FFD9360E07 /* FTNotificationIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A12CBC2EB309AADA168D84AE485495 /* FTNotificationIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A101BC33ADAF31FAB408D708A49A0D3A /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885E1D3649BC7A6933533106D01A151F /* TabItemView.swift */; };
 		A308531FC6F8C112AC66458A75786796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */; };
-		A52D89B20F7855358EB3EA8E69F3ABB0 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9DFF82DCE48ABF84DA900D279AA0AC /* FSCalendarCollectionViewLayout.m */; };
-		A95C02BA915435B4D48FBB1BC442263E /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA19E8B5DFA13DACDD2D409A4D8F259 /* FSCalendarTransitionCoordinator.m */; };
-		A9B720490D2E5AD9EA2880D971F8434F /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB86D7AC1E9939884F283E6246AF6ED2 /* FSCalendarCollectionView.m */; };
-		AD1382D57AD33AA8504B82B67188FCE4 /* Pods-easyBook-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC8837F2E896BCCD56A51214F774C281 /* Pods-easyBook-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD9D4DB8C6704028CC726D51E7E35547 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1A8E84BB8ABC5973A9910764FFAF9E /* FSCalendar.m */; };
-		B699AB06B601C260690EDC9714616DFC /* FTIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8098C3DBCC0C0D816AE3B9679DF9B8CE /* FTIndicator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B70D0C94D90F7EA5915EFF4ACEB60716 /* Pods-easyBook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD454CF42856F7E6C6C355B6F4729918 /* Pods-easyBook-dummy.m */; };
-		BB74BA7BC0E43A711C4AA878A0BF6E6D /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F6029615B495D8E42183DE2E12B2B56 /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDB6BA43250DFF70689481AAC9750E82 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AF846237080DD355D55E6A5B7E23E6B6 /* FSCalendarDelegationFactory.m */; };
-		C060623B11B9070CC76819833F3FA84C /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5B3314725C9854E36029F20F0955C /* FSCalendar-dummy.m */; };
-		C183BD42255A04935F66B5E1292B1D14 /* PopMenuGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B668F79411389F55F80AA62E614E1 /* PopMenuGradientView.swift */; };
-		C1DF12D5F3004547BFD9D4C804E93F01 /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9B5E093823B83C80C5B2360E862180 /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C569DBF903736327A6EBB4809D8B5169 /* BEMCheckBox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C73DDE5F886A78DE93084348944C9003 /* BEMCheckBox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C799C6B47B5AB46B7364CA83BA4AC586 /* FTNotificationIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D197D394BC6555A5B95ABB83A0CDDD /* FTNotificationIndicator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
-		C8498D5D4BC978CD661B1B051DD17E74 /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BFB1A16E7E00E6C0522212DBF9A44C /* FSCalendarHeaderView.m */; };
-		D015B21B7FDFD7E02CF568E2D0A0C5F2 /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3FCB73C2F29D6AD39E95DBA6CD52B /* BEMAnimationManager.m */; };
-		D06935A59B3E3CFBF971E9613C80C49D /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D790005DE1AE4B65AA6556D006A62 /* FSCalendarAppearance.m */; };
-		D06BE75418956D16F85175D408CC09DB /* PopMenuAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9038A4024033041B54C0BE2979EF872A /* PopMenuAction.swift */; };
-		D13E500E72B7D039A573333D60B7444F /* FSCalendarSeparatorDecorationView.h in Headers */ = {isa = PBXBuildFile; fileRef = A992E3EC998FB34A9398258F5E242F11 /* FSCalendarSeparatorDecorationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7597C04B8FE1D1E5D30E304B965022A /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 175AF2D77D660DBF356A119A543D9D5C /* FSCalendarCell.m */; };
-		DA64643B599B79D744F40C8AF8B9CDB1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8F934A70D54F4CAD6C54A7629BFC98 /* UIColorExtension.swift */; };
-		DB15E0418457EF68D0CDF9066E0376A6 /* FTIndicator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 647456F895BD39C5296BDA89B7B1BD4D /* FTIndicator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBB3602ECDF06051AD95CF6898AD4D0B /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = FF02DF7F105CFD488FCC9FB8A7A963BE /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEEDC5B5A52A7343CE425F0A411C442B /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F0676FC906EBCAA172FDCA23D6A9BF /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF3DDBD8DD5317070D06A1F2B5228EDA /* PopMenuPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3CF9A54AF249158482481512C43F09 /* PopMenuPresentAnimationController.swift */; };
+		A3C1FA4A056E3887254FD671E96C2554 /* UIEdgeInsetsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EC31E330F3FA085F1B55A82EE9F0C8 /* UIEdgeInsetsExtension.swift */; };
+		A52D89B20F7855358EB3EA8E69F3ABB0 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A25C04E7211B89D0729898BDB286DE89 /* FSCalendarCollectionViewLayout.m */; };
+		A7ED1FA2F59F020062DE3B579AF84F55 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9383B9E74A81D5F39E0A12FBCBE279F7 /* MJRefreshComponent.m */; };
+		A95C02BA915435B4D48FBB1BC442263E /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5CC8331A02BBC049D38A3A12A3F19B /* FSCalendarTransitionCoordinator.m */; };
+		A9B720490D2E5AD9EA2880D971F8434F /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B879404DE3CD5A180D2F4D267AA221 /* FSCalendarCollectionView.m */; };
+		AD9D4DB8C6704028CC726D51E7E35547 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A518A5B5CD8FE67F9385B7B08F8211 /* FSCalendar.m */; };
+		B356C813D009D8F48B49B93F970B1F1B /* UIView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 647671084F0C9CA0BE24C77008C6C280 /* UIView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B50A173CC006987E8682D89650F14F63 /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5071287C56B0FF28FDE9CE364D340395 /* MJRefreshAutoGifFooter.m */; };
+		B699AB06B601C260690EDC9714616DFC /* FTIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 032777DD18C9AF86C471D435B8E409B8 /* FTIndicator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B7170162BEBD63676519BFABE4D76287 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C1030847CCC0D98A7C442B2ADA106B /* MJRefreshHeader.m */; };
+		B967DE3AFEE4C96AAB002B8095B6C7C2 /* MJRefreshAutoStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 154424195056A88EF153E879AD52139A /* MJRefreshAutoStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB74BA7BC0E43A711C4AA878A0BF6E6D /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = C89E33F66091281F7EA058C33C64AD4A /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD549FDDF8E18393542908E05DF10310 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */; };
+		BDB6BA43250DFF70689481AAC9750E82 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB8E9C167F24B58D586496992CAE281 /* FSCalendarDelegationFactory.m */; };
+		C060623B11B9070CC76819833F3FA84C /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A02B28615681317BF3637AFE5934F754 /* FSCalendar-dummy.m */; };
+		C1117CCC45FA6780A4E9CC0879D5C3EA /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 691FE7728D58143057816E720C793FB5 /* MJRefreshBackStateFooter.m */; };
+		C183BD42255A04935F66B5E1292B1D14 /* PopMenuGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1462F980B675AFD6D2005D40183B69CD /* PopMenuGradientView.swift */; };
+		C1DF12D5F3004547BFD9D4C804E93F01 /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = A753E01D2C8125C6225F43B98747D8B0 /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C370C89A9C75E25344FE6A39208879AD /* ContentScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C1E22597E14985CD90154CCA5883F /* ContentScrollView.swift */; };
+		C569DBF903736327A6EBB4809D8B5169 /* BEMCheckBox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B2F674AD67284A45A4E2E6A7A3DD2BD /* BEMCheckBox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C799C6B47B5AB46B7364CA83BA4AC586 /* FTNotificationIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 404B2C8FC29375F614E8A0CD28C1F57A /* FTNotificationIndicator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
+		C8498D5D4BC978CD661B1B051DD17E74 /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE70B1E856120E94C36CF417EE8817FF /* FSCalendarHeaderView.m */; };
+		CF76306C6168AD7A6C076288CA899B02 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB008B2FCA3A36A8D16F2418807F75 /* UIScrollView+MJRefresh.m */; };
+		D015B21B7FDFD7E02CF568E2D0A0C5F2 /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EADCC7F53310AF931E9B7A91B4496EAD /* BEMAnimationManager.m */; };
+		D06935A59B3E3CFBF971E9613C80C49D /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCAE57E9E97F3905725A93B28C3695D /* FSCalendarAppearance.m */; };
+		D06BE75418956D16F85175D408CC09DB /* PopMenuAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077D9A2F18767C1E03E0FD07968320AA /* PopMenuAction.swift */; };
+		D13E500E72B7D039A573333D60B7444F /* FSCalendarSeparatorDecorationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CB49F0C44AA6628D8D53C1444BD7C76 /* FSCalendarSeparatorDecorationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7597C04B8FE1D1E5D30E304B965022A /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 936EDF2437F3364FDA1BEE8707BF224A /* FSCalendarCell.m */; };
+		D83AA4722A4A3BF8D8257F270465FB56 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E916B1A2A91C2F793FB60CAE0EBA4D09 /* UIColorExtension.swift */; };
+		DB15E0418457EF68D0CDF9066E0376A6 /* FTIndicator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DAD316418CC3BC977446EE11EED32E7 /* FTIndicator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB70C0344D46C9DBD3DBD9CA84C639D3 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D384DFD16A8CC5855AED40F4987F53B /* MJRefreshAutoFooter.m */; };
+		DBB3602ECDF06051AD95CF6898AD4D0B /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D3966A1FBB6A76764EC993AE7663D104 /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE93A21E73281E81B87BE4DD3FD4C9EF /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DF3EB5EB1E21D71A049D19C3BD0AD6 /* TabView.swift */; };
+		DEEDC5B5A52A7343CE425F0A411C442B /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0166D5F9EA109844877148CAF72A1C /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEF65EB64591CE2D6F99463627951710 /* MJRefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 869B16518C14F6759EF4CF64114523AA /* MJRefreshComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF3DDBD8DD5317070D06A1F2B5228EDA /* PopMenuPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4F82C4A421D54E3109F65EC1A7D1F /* PopMenuPresentAnimationController.swift */; };
 		E064011AA68E40CEEE93CAF4532211DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F55B96F9FD27342C0F09BBB7DEE1AE /* QuartzCore.framework */; };
-		E092E1E2EFC4A44E17BED161E1EE0BF5 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D0D30DF01994022A5CF056BD21A318 /* TabView.swift */; };
-		E0E61217ABCC6A0D4CD0D234734A0964 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A0193FF3EF68BE1A71EE9BFF7C591 /* FSCalendarStickyHeader.m */; };
-		E13E55CC7AE054693EDDB19984B45EAD /* NewPopMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8077001A6D76497A85F0EF67137DAA /* NewPopMenu-dummy.m */; };
-		E316941897275D9FDA0A6C2582A5F9EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */; };
-		E3C3B9D0161A38659248F1AB2EF7F0A7 /* FTToastIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7953F95D08B4117A37FDA7D9CB4BBE /* FTToastIndicator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
-		E417ADED531D1263DB5DEC4806489059 /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE3D8A1D7064FF1CAA04A664D558FE1 /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E42B052CAE8408EA8360AE3F6E2F6867 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD614182949F59AED5C52C9FE4F08B20 /* Haptics.swift */; };
-		E4BE02B3B07AC7C262C708F529E90020 /* SwipeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144B76D6743A748623CBC0AC667898EE /* SwipeMenuViewController.swift */; };
-		EBF1D54D3B489BFC82C66BC76D76F369 /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8990B2AF305567EE1F14CFA44E7CD1 /* TabItemView.swift */; };
-		F197432CD327C9DC2C48A595CAA45DA2 /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 17395A1288A3DABEF4FBCB714101B6AF /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F62BBD5C1FFDAF0B944E04435E7BF896 /* BEMCheckBoxGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = C3FBC21A2BA405160004D22EA64CAE41 /* BEMCheckBoxGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9DA37C83B8D98ADF4ACEC732C333217 /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = B3401BECF6A1B8A0244B8282437FE16D /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9E1906FCD1FCAAF21892AE6719DF36A /* FTToastIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D25ABF00567BAD8B8BBBF86A2F3F7A0 /* FTToastIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBC534DE437FF4D69F21B27E511B799C /* SwipeMenuViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 257BC870430C1B39BEAF07476C5AF8D8 /* SwipeMenuViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC53AA980AFE7ED3FDF191F460AD6BA8 /* BEMAnimationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 533A652FD95A5BB5581217EEA07B2BB4 /* BEMAnimationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC9A4F7DCCD9305E6CFBA6CF34274EE1 /* PopMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = C1756EBAEF12229C6EA39AC794952212 /* PopMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF998358CF29253DF75BD67B05C9405F /* NewPopMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA81DB9A1B70CEC05AFE501FADDE4D52 /* NewPopMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0E61217ABCC6A0D4CD0D234734A0964 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAAB035056193C611B4578DE12558BF /* FSCalendarStickyHeader.m */; };
+		E13E55CC7AE054693EDDB19984B45EAD /* NewPopMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1FF98EAA646EFA55C80770B4404A /* NewPopMenu-dummy.m */; };
+		E3C3B9D0161A38659248F1AB2EF7F0A7 /* FTToastIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC75F41F99A2D2DEF9F12C8D37423C4 /* FTToastIndicator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
+		E417ADED531D1263DB5DEC4806489059 /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 25CBB3F0E0A717175D16D3D7D3BBD3AE /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E42B052CAE8408EA8360AE3F6E2F6867 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C3CC439C4A1F52D5EF6DE908282809 /* Haptics.swift */; };
+		EDDE7BB579C56AC8196AEC460149526B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */; };
+		EEDC5683FF36946364A3C8344630705B /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C13B170766E3590D731A9B1BDAE598 /* MJRefreshBackFooter.m */; };
+		EF873453BEEE867C2F8C43660CEB4A78 /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077C1F41016CEA7B67E80AC7E913F97 /* MJRefreshNormalHeader.m */; };
+		F024CC151BA9C2DCEEEDB1857C832CB8 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7835C7D07403589937A9474279F045 /* MJRefreshConst.m */; };
+		F197432CD327C9DC2C48A595CAA45DA2 /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 647DD148FAD897926D7C2FEC648C3364 /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F41FA61294C6ABEEAEDC06A420AD696E /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F63C33761D2F471538D38E9C8FCCF63 /* MJRefreshBackGifFooter.m */; };
+		F62BBD5C1FFDAF0B944E04435E7BF896 /* BEMCheckBoxGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F1440F2424C0E434A46D02564D4998 /* BEMCheckBoxGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9DA37C83B8D98ADF4ACEC732C333217 /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = B887F7AB499848644FED4F782D5B35DF /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9E1906FCD1FCAAF21892AE6719DF36A /* FTToastIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = DD4015D35A0A0DF622979B22E105F574 /* FTToastIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC53AA980AFE7ED3FDF191F460AD6BA8 /* BEMAnimationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E362A8C15A10F54254B00A86714A3CC6 /* BEMAnimationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC9A4F7DCCD9305E6CFBA6CF34274EE1 /* PopMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F5906EF34C28989E40F986C6452EDB /* PopMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCC4FF173F44EF5C89440B1A31F611B8 /* SwipeMenuViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6036A0F1EAAA4AA8CA6266A9EEFC2EA4 /* SwipeMenuViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF07147DC67F14943F0547EE83227501 /* SwipeMenuViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5335A1A6C4DD6CF77BF6A8B49B387C6E /* SwipeMenuViewController-dummy.m */; };
+		FF998358CF29253DF75BD67B05C9405F /* NewPopMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E64072BEFE143674AFEB8F86DD05C24 /* NewPopMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3788E1A4DA25AACE967BF409AB88BDAC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 977310FD771A8546FE31D757343292CC;
-			remoteInfo = FTIndicator;
-		};
-		3C0DFB77DB615C83A76858559D8E61BD /* PBXContainerItemProxy */ = {
+		14C869A85D4C2697EDC684673C6622BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1921C72E1ADC97E3D04CA25FFB58DBFC;
 			remoteInfo = FSCalendar;
 		};
-		46EB89CEB279B76C593B0F720E7B4861 /* PBXContainerItemProxy */ = {
+		1B374D71A3D81205169524477354F08D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2984E119D425AD26A0B5DB4F342FEAF4;
-			remoteInfo = NewPopMenu;
-		};
-		4C46DB93D45E2BA7673D546435B41769 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BE85D633AE769A1CD745083EB5E6B84E;
+			remoteGlobalIDString = 71A5BC51F0F11D02C1DCFD575DF2B98B;
 			remoteInfo = SwipeMenuViewController;
 		};
-		96AF1AA77FB2DD57770F4754E91F7A87 /* PBXContainerItemProxy */ = {
+		2533CA288F8EF794F3C1772C664A9F67 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6ADA5765F8A0E665B378C9356B7C05DC;
 			remoteInfo = BEMCheckBox;
 		};
+		6BF67043F69809EAF5B041A907EDBB03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2984E119D425AD26A0B5DB4F342FEAF4;
+			remoteInfo = NewPopMenu;
+		};
+		A3914AB8274FA614042A4F7404A1F820 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 546B747B9DB0515E059EEBA0B9E98B42;
+			remoteInfo = MJRefresh;
+		};
+		E57DF49B7A73658E910D50A3FF92EE00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 977310FD771A8546FE31D757343292CC;
+			remoteInfo = FTIndicator;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01127C4D55DA6D32FF602BFCA793D9DC /* PopMenuAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopMenuAppearance.swift; path = PopMenu/Classes/PopMenuAppearance.swift; sourceTree = "<group>"; };
-		024B8C05F9A3391B9BABAD9982A9122A /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
-		04217267B2D538346FA6C9BDF8AD08B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		08BFB1A16E7E00E6C0522212DBF9A44C /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
-		0A9B5E093823B83C80C5B2360E862180 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
-		0B2D3888E69C4B067A25FAD64DA2A9BE /* FSCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.xcconfig; sourceTree = "<group>"; };
-		133279E7B8C6C715740AA204283BA841 /* BEMCheckBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBox.m; path = Classes/BEMCheckBox.m; sourceTree = "<group>"; };
-		144B76D6743A748623CBC0AC667898EE /* SwipeMenuViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeMenuViewController.swift; path = Sources/Classes/SwipeMenuViewController.swift; sourceTree = "<group>"; };
+		0144B068FEFC19FA898589F9155A8460 /* MJRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-umbrella.h"; sourceTree = "<group>"; };
+		02DA72A61AD8D6FE12A578A04507ACFF /* BEMCheckBox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BEMCheckBox.modulemap; sourceTree = "<group>"; };
+		032777DD18C9AF86C471D435B8E409B8 /* FTIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTIndicator.m; path = FTIndicator/FTIndicator.m; sourceTree = "<group>"; };
+		03AD527B8F1281F835C3197A25268D58 /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoNormalFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
+		077D9A2F18767C1E03E0FD07968320AA /* PopMenuAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopMenuAction.swift; path = "PopMenu/View Controller & Views/PopMenuAction.swift"; sourceTree = "<group>"; };
+		07A518A5B5CD8FE67F9385B7B08F8211 /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
+		09AE556FC836E2BBE50E6F0D65E03E3E /* PopMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PopMenu.framework; path = NewPopMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A7835C7D07403589937A9474279F045 /* MJRefreshConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConst.m; path = MJRefresh/MJRefreshConst.m; sourceTree = "<group>"; };
+		0A85C64CF4541B41FA3C52F3320C934C /* FTIndicator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FTIndicator.modulemap; sourceTree = "<group>"; };
+		0CF9E92BF86DCF4AFE6238BBC00AFD82 /* BEMPathManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMPathManager.m; path = Classes/BEMPathManager.m; sourceTree = "<group>"; };
+		0DAD316418CC3BC977446EE11EED32E7 /* FTIndicator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTIndicator-umbrella.h"; sourceTree = "<group>"; };
+		0E76AD9162E4249F9CFC61D9C9CE3498 /* FTIndicator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTIndicator-prefix.pch"; sourceTree = "<group>"; };
+		121485C8EC7D743D65F5D89CBAF476D7 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
+		1462F980B675AFD6D2005D40183B69CD /* PopMenuGradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopMenuGradientView.swift; path = PopMenu/Classes/Helpers/PopMenuGradientView.swift; sourceTree = "<group>"; };
+		154424195056A88EF153E879AD52139A /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoStateFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
+		154C3A3684C6F3A915B1C2A7CFF91E24 /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackNormalFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
 		166B49C290AB951362C9A2691E796369 /* Pods-easyBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-easyBook.debug.xcconfig"; sourceTree = "<group>"; };
-		16D410AEE4347C2EFE9BC1DAB5BF48CC /* FTProgressIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTProgressIndicator.m; path = FTIndicator/FTProgressIndicator/FTProgressIndicator.m; sourceTree = "<group>"; };
-		17395A1288A3DABEF4FBCB714101B6AF /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
-		175AF2D77D660DBF356A119A543D9D5C /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
-		1891B82D62FACDD784F5A2958CBEF081 /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
-		1AA19E8B5DFA13DACDD2D409A4D8F259 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarTransitionCoordinator.m; path = FSCalendar/FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
-		1F6029615B495D8E42183DE2E12B2B56 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
-		1F7D790005DE1AE4B65AA6556D006A62 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
-		24AFF4717EFE034B12CA8D42B1AC69A3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		257BC870430C1B39BEAF07476C5AF8D8 /* SwipeMenuViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeMenuViewController-umbrella.h"; sourceTree = "<group>"; };
-		2B8990B2AF305567EE1F14CFA44E7CD1 /* TabItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabItemView.swift; path = Sources/Classes/TabItemView.swift; sourceTree = "<group>"; };
-		2C11D6063E615154632803F659CB6E6B /* FSCalendarExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = FSCalendar/FSCalendarExtensions.h; sourceTree = "<group>"; };
-		2DB064F55567B886C7CC1272B99D42F1 /* FTIndicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FTIndicator.framework; path = FTIndicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3071332448EFC8B404FD1CCD16BBECEB /* PopMenuViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopMenuViewController.swift; path = "PopMenu/View Controller & Views/PopMenuViewController.swift"; sourceTree = "<group>"; };
-		36F0676FC906EBCAA172FDCA23D6A9BF /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
-		3E1C778E0AE4BEC04FE0B054B41F3B96 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
-		3E8F934A70D54F4CAD6C54A7629BFC98 /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Sources/Classes/UIColorExtension.swift; sourceTree = "<group>"; };
-		3F581A0DBC932E9E7CEC8D734EA8801A /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
+		19475ADE3799875AB292A334518B47DD /* SwipeMenuViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwipeMenuViewController.framework; path = SwipeMenuViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19EE85CBD0BFE63607B25A7620591D5F /* PopMenuViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopMenuViewController.swift; path = "PopMenu/View Controller & Views/PopMenuViewController.swift"; sourceTree = "<group>"; };
+		1BD9894CACD4956A541F302A8A5B84F7 /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshStateHeader.m; path = MJRefresh/Custom/Header/MJRefreshStateHeader.m; sourceTree = "<group>"; };
+		1F63C33761D2F471538D38E9C8FCCF63 /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackGifFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
+		211F44540E0482C3C70090E9BF8AFE89 /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Sources/Classes/UIViewExtension.swift; sourceTree = "<group>"; };
+		23F5906EF34C28989E40F986C6452EDB /* PopMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PopMenu.h; path = PopMenu/PopMenu.h; sourceTree = "<group>"; };
+		25CBB3F0E0A717175D16D3D7D3BBD3AE /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		2658EF64A813E597B8E3CB89E18F45D6 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
+		26FA2659AFE4B93C1C64FC7D00CAE45E /* BEMCheckBox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEMCheckBox-prefix.pch"; sourceTree = "<group>"; };
+		2707948A8871CB9A263FEA7A2F8A2254 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackFooter.h; path = MJRefresh/Base/MJRefreshBackFooter.h; sourceTree = "<group>"; };
+		276F46F92DC67A5B6C3EDAE40FE1EC31 /* UIView+Shadows.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Shadows.swift"; path = "PopMenu/Classes/Helpers/UIView+Shadows.swift"; sourceTree = "<group>"; };
+		2AAAB035056193C611B4578DE12558BF /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		2C9BD5887FD4EFBC5CC417B57FEA2F6D /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshGifHeader.h; path = MJRefresh/Custom/Header/MJRefreshGifHeader.h; sourceTree = "<group>"; };
+		2DC39B32E784442A6B8CE6A16C2F5E04 /* MJRefreshHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshHeader.h; path = MJRefresh/Base/MJRefreshHeader.h; sourceTree = "<group>"; };
+		2E2C1E22597E14985CD90154CCA5883F /* ContentScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentScrollView.swift; path = Sources/Classes/ContentScrollView.swift; sourceTree = "<group>"; };
+		33516929D52610CD6299A143E2B3B045 /* MJRefreshFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshFooter.h; path = MJRefresh/Base/MJRefreshFooter.h; sourceTree = "<group>"; };
+		353060CC8CBB4EA7A56ECCD8F6F5BF4F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35A12CBC2EB309AADA168D84AE485495 /* FTNotificationIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTNotificationIndicator.h; path = FTIndicator/FTNotificationIndicator/FTNotificationIndicator.h; sourceTree = "<group>"; };
+		3CAB008B2FCA3A36A8D16F2418807F75 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJRefresh.m"; path = "MJRefresh/UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		3CCAE57E9E97F3905725A93B28C3695D /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
+		3DAD1FF98EAA646EFA55C80770B4404A /* NewPopMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NewPopMenu-dummy.m"; sourceTree = "<group>"; };
+		3E3AA9DF42C0A810697E50DEEBDCA6E6 /* SwipeMenuViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeMenuViewController.swift; path = Sources/Classes/SwipeMenuViewController.swift; sourceTree = "<group>"; };
+		3EAC94FDE5ADF36205EFCB2FE8F50900 /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshStateHeader.h; path = MJRefresh/Custom/Header/MJRefreshStateHeader.h; sourceTree = "<group>"; };
+		3EC75F41F99A2D2DEF9F12C8D37423C4 /* FTToastIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTToastIndicator.m; path = FTIndicator/FTToastIndicator/FTToastIndicator.m; sourceTree = "<group>"; };
+		3F1C4C17726D46CA285A96D9601D383D /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FSCalendar.modulemap; sourceTree = "<group>"; };
+		404B2C8FC29375F614E8A0CD28C1F57A /* FTNotificationIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTNotificationIndicator.m; path = FTIndicator/FTNotificationIndicator/FTNotificationIndicator.m; sourceTree = "<group>"; };
+		42C720B7A42C3406B30C53E9D8584DD5 /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshNormalHeader.h; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.h; sourceTree = "<group>"; };
+		444D256B5307033E3FB89E849F888B4F /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
 		4592B08D13DB7D2723454069284FCA73 /* Pods-easyBook-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-easyBook-resources.sh"; sourceTree = "<group>"; };
-		4695CD457AE482B12F7157C21F41D91C /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBoxGroup.m; path = Classes/BEMCheckBoxGroup.m; sourceTree = "<group>"; };
-		4D2A0193FF3EF68BE1A71EE9BFF7C591 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
-		4EB53526237A84061616C669DFAE0448 /* NewPopMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NewPopMenu-prefix.pch"; sourceTree = "<group>"; };
-		533A652FD95A5BB5581217EEA07B2BB4 /* BEMAnimationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMAnimationManager.h; path = Classes/BEMAnimationManager.h; sourceTree = "<group>"; };
-		55A39F4DB7E2852460BB61B069D5BC95 /* FTIndicator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTIndicator-prefix.pch"; sourceTree = "<group>"; };
-		55D759589A4D3DB1671D7C028ACEFB92 /* SwipeMenuViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeMenuViewController.xcconfig; sourceTree = "<group>"; };
-		55FB0598155AA5055403BBD3D8F32FFA /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-umbrella.h"; sourceTree = "<group>"; };
-		5A9BFEBF6C49B923C8464AACA937712B /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = FSCalendar/FSCalendarHeaderView.h; sourceTree = "<group>"; };
-		5D25ABF00567BAD8B8BBBF86A2F3F7A0 /* FTToastIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTToastIndicator.h; path = FTIndicator/FTToastIndicator/FTToastIndicator.h; sourceTree = "<group>"; };
-		61C0F486281B8DA6C3ADC51FC17F5BF4 /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
-		639FDF06368A97AED30CD6EC7B77B0F8 /* UIColor+Contrast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Contrast.swift"; path = "PopMenu/Classes/Helpers/UIColor+Contrast.swift"; sourceTree = "<group>"; };
-		647456F895BD39C5296BDA89B7B1BD4D /* FTIndicator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTIndicator-umbrella.h"; sourceTree = "<group>"; };
+		45DF3EB5EB1E21D71A049D19C3BD0AD6 /* TabView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabView.swift; path = Sources/Classes/TabView.swift; sourceTree = "<group>"; };
+		478CAE41BA79CD13548F30C0B158DFF8 /* SwipeMenuViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeMenuViewController-prefix.pch"; sourceTree = "<group>"; };
+		4791A1A564EB7587C81C825F6901798A /* NewPopMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NewPopMenu-prefix.pch"; sourceTree = "<group>"; };
+		5071287C56B0FF28FDE9CE364D340395 /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoGifFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
+		50D4F82C4A421D54E3109F65EC1A7D1F /* PopMenuPresentAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopMenuPresentAnimationController.swift; path = PopMenu/Transitions/PopMenuPresentAnimationController.swift; sourceTree = "<group>"; };
+		5104A2FB052DA8A5374F0D36C560EA84 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		5335A1A6C4DD6CF77BF6A8B49B387C6E /* SwipeMenuViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeMenuViewController-dummy.m"; sourceTree = "<group>"; };
+		53A26002E7E8B07F9F1D6659723EFC5C /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJExtension.h"; path = "MJRefresh/UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		53EC15E5E7C298909C4F99414E42BB14 /* BEMCheckBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BEMCheckBox.framework; path = BEMCheckBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		544B963DCAA5899713E8C61AF4D5313B /* SwipeMenuViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeMenuViewController.xcconfig; sourceTree = "<group>"; };
+		5711F50A97E4512C5C7BD3E9E2CA18E3 /* FTProgressIndicator.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = FTProgressIndicator.bundle; path = FTIndicator/FTProgressIndicator/FTProgressIndicator.bundle; sourceTree = "<group>"; };
+		58719D6869FC8063D15A1C92F75D6C3C /* UIView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MJExtension.m"; path = "MJRefresh/UIView+MJExtension.m"; sourceTree = "<group>"; };
+		58D5E64874F1894B076700285CA633B2 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = FSCalendar/FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		5AF3A4E51C590AFC87B0A6CAA0D5D98A /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		5C5F95FBDBBCA908658A7F23BF1F363B /* SwipeMenuViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwipeMenuViewController.modulemap; sourceTree = "<group>"; };
+		5CF237F78A1C2B7ACD6C3837C5F79F1E /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoStateFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
+		5D5CC8331A02BBC049D38A3A12A3F19B /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarTransitionCoordinator.m; path = FSCalendar/FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		6008784ADC000EB1C557BEF9698FF905 /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = FSCalendar/FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		6036A0F1EAAA4AA8CA6266A9EEFC2EA4 /* SwipeMenuViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeMenuViewController-umbrella.h"; sourceTree = "<group>"; };
+		61D99C2BC98358437E3A4F87B4694455 /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackStateFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
+		638566273D9BDC22C182C011B3994255 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		647671084F0C9CA0BE24C77008C6C280 /* UIView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MJExtension.h"; path = "MJRefresh/UIView+MJExtension.h"; sourceTree = "<group>"; };
+		647DD148FAD897926D7C2FEC648C3364 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
 		64A5E0A59DB03ADF944CAEE0785D42AD /* Pods-easyBook-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-easyBook-frameworks.sh"; sourceTree = "<group>"; };
-		6981C163E3F06C11B9019EBF902FCD62 /* BEMCheckBox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BEMCheckBox.modulemap; sourceTree = "<group>"; };
-		6B8077001A6D76497A85F0EF67137DAA /* NewPopMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NewPopMenu-dummy.m"; sourceTree = "<group>"; };
-		6BD474347E27FBE351BDEC6F5BD14D45 /* FTIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTIndicator.h; path = FTIndicator/FTIndicator.h; sourceTree = "<group>"; };
-		7198E126BBE173F6CA18B562FB2FA815 /* FTIndicator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTIndicator.xcconfig; sourceTree = "<group>"; };
-		71E740467A8692C587508807D02F0269 /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
-		7375A3BF86690FB4933250D2D4EF7726 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = FSCalendar/FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
-		77C153495841300BF1CAAC8F1B6DC484 /* BEMCheckBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMCheckBox.h; path = Classes/BEMCheckBox.h; sourceTree = "<group>"; };
-		798C799F83D797C2CEDA015780EEAD52 /* BEMCheckBox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BEMCheckBox-dummy.m"; sourceTree = "<group>"; };
-		7C3CF9A54AF249158482481512C43F09 /* PopMenuPresentAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopMenuPresentAnimationController.swift; path = PopMenu/Transitions/PopMenuPresentAnimationController.swift; sourceTree = "<group>"; };
-		7D13C9CA5AC36316B484F5720E6F2225 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = FSCalendar/FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
-		8098C3DBCC0C0D816AE3B9679DF9B8CE /* FTIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTIndicator.m; path = FTIndicator/FTIndicator.m; sourceTree = "<group>"; };
-		813B16B48A190D2C0A9EDA0B9563B42D /* NewPopMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NewPopMenu.modulemap; sourceTree = "<group>"; };
+		67D6B5C6E9895376F539D28A9C5ECBE8 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJRefresh.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68C3CC439C4A1F52D5EF6DE908282809 /* Haptics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Haptics.swift; path = PopMenu/Classes/Helpers/Haptics.swift; sourceTree = "<group>"; };
+		691FE7728D58143057816E720C793FB5 /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackStateFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
+		6B2F674AD67284A45A4E2E6A7A3DD2BD /* BEMCheckBox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEMCheckBox-umbrella.h"; sourceTree = "<group>"; };
+		6D384DFD16A8CC5855AED40F4987F53B /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoFooter.m; path = MJRefresh/Base/MJRefreshAutoFooter.m; sourceTree = "<group>"; };
+		6E02EE42E30B07B6F4AD3E44D0DB2172 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
+		6E228FDC707F32E7A85D35DF05433C6F /* PopMenuDismissAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopMenuDismissAnimationController.swift; path = PopMenu/Transitions/PopMenuDismissAnimationController.swift; sourceTree = "<group>"; };
+		6EB8E9C167F24B58D586496992CAE281 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = FSCalendar/FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		719D1A0C21391EDAE0CC78492E3F2C02 /* NewPopMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NewPopMenu.modulemap; sourceTree = "<group>"; };
+		72C1030847CCC0D98A7C442B2ADA106B /* MJRefreshHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshHeader.m; path = MJRefresh/Base/MJRefreshHeader.m; sourceTree = "<group>"; };
+		7703583C6D3CF96519BA3CFB326027D9 /* UIColor+Contrast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Contrast.swift"; path = "PopMenu/Classes/Helpers/UIColor+Contrast.swift"; sourceTree = "<group>"; };
+		795EC08DCD4F7B5AAC40F6F102E93E8C /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-umbrella.h"; sourceTree = "<group>"; };
+		79C22EE98B8EE11D9FAE2436CDACF62E /* FTProgressIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTProgressIndicator.m; path = FTIndicator/FTProgressIndicator/FTProgressIndicator.m; sourceTree = "<group>"; };
+		7A8AB27D001FEE21F46131940D8FCBAE /* NSBundle+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+MJRefresh.m"; path = "MJRefresh/NSBundle+MJRefresh.m"; sourceTree = "<group>"; };
+		7CE5BC5C7C9646FFEF01569C34985C0E /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackNormalFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
+		7DD11B6AA60AB6E1BE13E33F88AC4B58 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = FSCalendar/FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		83F1440F2424C0E434A46D02564D4998 /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMCheckBoxGroup.h; path = Classes/BEMCheckBoxGroup.h; sourceTree = "<group>"; };
 		83F55B96F9FD27342C0F09BBB7DEE1AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		864D9F8E2A3D8AAA61A17FCC5A4143E7 /* Pods-easyBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-easyBook.release.xcconfig"; sourceTree = "<group>"; };
-		869A46B88B9D32F8D30DC7F33D11EF40 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
-		8B3A0913E985F0DB36F0ECCF0E057B48 /* BEMPathManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMPathManager.m; path = Classes/BEMPathManager.m; sourceTree = "<group>"; };
-		8F580DE70CB7C098928005648322AF73 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9038A4024033041B54C0BE2979EF872A /* PopMenuAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopMenuAction.swift; path = "PopMenu/View Controller & Views/PopMenuAction.swift"; sourceTree = "<group>"; };
-		914D4263CA56A44FF9D09FFB6086EFDD /* SwipeMenuViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwipeMenuViewController.modulemap; sourceTree = "<group>"; };
+		869792D92D80B013EEB7DDE9C536F6A7 /* MJRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJRefresh-dummy.m"; sourceTree = "<group>"; };
+		869B16518C14F6759EF4CF64114523AA /* MJRefreshComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshComponent.h; path = MJRefresh/Base/MJRefreshComponent.h; sourceTree = "<group>"; };
+		86EC31E330F3FA085F1B55A82EE9F0C8 /* UIEdgeInsetsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIEdgeInsetsExtension.swift; path = Sources/Classes/UIEdgeInsetsExtension.swift; sourceTree = "<group>"; };
+		885E1D3649BC7A6933533106D01A151F /* TabItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabItemView.swift; path = Sources/Classes/TabItemView.swift; sourceTree = "<group>"; };
+		8CB49F0C44AA6628D8D53C1444BD7C76 /* FSCalendarSeparatorDecorationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarSeparatorDecorationView.h; path = FSCalendar/FSCalendarSeparatorDecorationView.h; sourceTree = "<group>"; };
+		8D2B247F82165A37B53E29E125A9D879 /* MJRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.xcconfig; sourceTree = "<group>"; };
+		9077C1F41016CEA7B67E80AC7E913F97 /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshNormalHeader.m; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.m; sourceTree = "<group>"; };
+		90A31B53DB68AF9A8F790E2314F53D1C /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
 		914EE5CE2EC4579808FD6A6DE9E2AAD9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		936EDF2437F3364FDA1BEE8707BF224A /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
+		9383B9E74A81D5F39E0A12FBCBE279F7 /* MJRefreshComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshComponent.m; path = MJRefresh/Base/MJRefreshComponent.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97BBC4264E224873593BBD10DAE64D7B /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
-		9869A46C77830419098D94D6D383E2D5 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
-		9ADE6E515DAB5336318A64DCE520D6AA /* FTNotificationIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTNotificationIndicator.h; path = FTIndicator/FTNotificationIndicator/FTNotificationIndicator.h; sourceTree = "<group>"; };
+		9436136E1739805B8DE067CB72FC8E69 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJRefresh.h"; path = "MJRefresh/UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		96A752AA2B17E8146044D46479F4B6AA /* FSCalendarExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = FSCalendar/FSCalendarExtensions.h; sourceTree = "<group>"; };
+		9C0166D5F9EA109844877148CAF72A1C /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
+		9E628C9A7B6479B1108261F8137F3277 /* PopMenuAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopMenuAppearance.swift; path = PopMenu/Classes/PopMenuAppearance.swift; sourceTree = "<group>"; };
+		9E64072BEFE143674AFEB8F86DD05C24 /* NewPopMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NewPopMenu-umbrella.h"; sourceTree = "<group>"; };
+		9FD0B9DCA23FA9A0F22A23741545B7E5 /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSCalendar.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02B28615681317BF3637AFE5934F754 /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
+		A0D0DD0E940FC11CA7FC08FC198B642A /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
+		A25C04E7211B89D0729898BDB286DE89 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		A356F45D9E796796A91411E146919FE5 /* FSCalendarSeparatorDecorationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarSeparatorDecorationView.m; path = FSCalendar/FSCalendarSeparatorDecorationView.m; sourceTree = "<group>"; };
 		A53654F6C69F2B1C06A517CAB5691730 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		A97FEE450A66F2EF39468278A5ED7AFC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A992E3EC998FB34A9398258F5E242F11 /* FSCalendarSeparatorDecorationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarSeparatorDecorationView.h; path = FSCalendar/FSCalendarSeparatorDecorationView.h; sourceTree = "<group>"; };
-		AA7953F95D08B4117A37FDA7D9CB4BBE /* FTToastIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTToastIndicator.m; path = FTIndicator/FTToastIndicator/FTToastIndicator.m; sourceTree = "<group>"; };
+		A753E01D2C8125C6225F43B98747D8B0 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
 		AC8837F2E896BCCD56A51214F774C281 /* Pods-easyBook-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-easyBook-umbrella.h"; sourceTree = "<group>"; };
-		ACEBABF8BEB943A0840717F760DB42AE /* PopMenuDismissAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopMenuDismissAnimationController.swift; path = PopMenu/Transitions/PopMenuDismissAnimationController.swift; sourceTree = "<group>"; };
-		AF846237080DD355D55E6A5B7E23E6B6 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = FSCalendar/FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
-		B2C59240CDEA233C1596BCC553D5334F /* SwipeMenuViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeMenuViewController-prefix.pch"; sourceTree = "<group>"; };
-		B3401BECF6A1B8A0244B8282437FE16D /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
-		B56695F3974C05A1EEE78A84ED481F0C /* NewPopMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NewPopMenu.xcconfig; sourceTree = "<group>"; };
-		B6285D7418F0A9FF2322681E1C3C2DA2 /* SwipeMenuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeMenuView.swift; path = Sources/Classes/SwipeMenuView.swift; sourceTree = "<group>"; };
-		B661DA8E322278998F58832F54D2B112 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE70B1E856120E94C36CF417EE8817FF /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		AF92A2202E902FA8A4F08F176CB24D9B /* FSCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.xcconfig; sourceTree = "<group>"; };
+		B18C364827762F0B1B9FE6612FEDC9EA /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBoxGroup.m; path = Classes/BEMCheckBoxGroup.m; sourceTree = "<group>"; };
+		B26C6C3791713E7FADD61BAB444E3A07 /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
+		B2AFB69C7F7DB407DB0DABC31F93E21F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3EE3DADAE1F2EBA37F316A5F2175559 /* FTIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTIndicator.h; path = FTIndicator/FTIndicator.h; sourceTree = "<group>"; };
+		B6427C4C0F2541D1286268B7A04C2B59 /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJExtension.m"; path = "MJRefresh/UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		B7E6BB9971225BD19629C24E04DC6807 /* MJRefreshConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConst.h; path = MJRefresh/MJRefreshConst.h; sourceTree = "<group>"; };
+		B887F7AB499848644FED4F782D5B35DF /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
 		B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B9D197D394BC6555A5B95ABB83A0CDDD /* FTNotificationIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTNotificationIndicator.m; path = FTIndicator/FTNotificationIndicator/FTNotificationIndicator.m; sourceTree = "<group>"; };
-		BA1A8E84BB8ABC5973A9910764FFAF9E /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
-		BA81DB9A1B70CEC05AFE501FADDE4D52 /* NewPopMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NewPopMenu-umbrella.h"; sourceTree = "<group>"; };
+		B9A1A0E2C80DECC4EF0DFA1916CDC9B6 /* Pods_easyBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_easyBook.framework; path = "Pods-easyBook.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA37913EB6E143737BDA077DAA4D6B96 /* FTIndicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FTIndicator.framework; path = FTIndicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF442CBFCAE4EDF03AE1E56310C0E9A /* SwipeMenuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeMenuView.swift; path = Sources/Classes/SwipeMenuView.swift; sourceTree = "<group>"; };
+		BC54F434AC67C2F09F6184543CA6DDC3 /* FTProgressIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTProgressIndicator.h; path = FTIndicator/FTProgressIndicator/FTProgressIndicator.h; sourceTree = "<group>"; };
+		BCC267F89EFD98B5850001C763D89F84 /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
 		BD454CF42856F7E6C6C355B6F4729918 /* Pods-easyBook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-easyBook-dummy.m"; sourceTree = "<group>"; };
-		BD614182949F59AED5C52C9FE4F08B20 /* Haptics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Haptics.swift; path = PopMenu/Classes/Helpers/Haptics.swift; sourceTree = "<group>"; };
-		C1756EBAEF12229C6EA39AC794952212 /* PopMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PopMenu.h; path = PopMenu/PopMenu.h; sourceTree = "<group>"; };
+		BE113CB989B23E30063066B15128C5A1 /* MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefresh.h; path = MJRefresh/MJRefresh.h; sourceTree = "<group>"; };
 		C19BBB0C37145C91269118DD9E3C0552 /* Pods-easyBook-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-easyBook-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C21F874C8CC0DA09798E3378A61CAFD3 /* Pods-easyBook.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-easyBook.modulemap"; sourceTree = "<group>"; };
-		C35C0807F917D24C85DEFFADD1929589 /* BEMCheckBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BEMCheckBox.framework; path = BEMCheckBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3FBC21A2BA405160004D22EA64CAE41 /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMCheckBoxGroup.h; path = Classes/BEMCheckBoxGroup.h; sourceTree = "<group>"; };
-		C53F3DEB72049C7155245D7910B07973 /* PopMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopMenuManager.swift; path = PopMenu/Classes/PopMenuManager.swift; sourceTree = "<group>"; };
+		C2ACDD8B343B6FFF5AFD9CA1FEAF52AC /* MJRefresh.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MJRefresh.bundle; path = MJRefresh/MJRefresh.bundle; sourceTree = "<group>"; };
 		C62100F4F20CD1F98631A242E5BA6029 /* Pods-easyBook-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-easyBook-acknowledgements.plist"; sourceTree = "<group>"; };
-		C735F61046D3961EF12A59D3D79F819E /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSCalendar.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C73DDE5F886A78DE93084348944C9003 /* BEMCheckBox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEMCheckBox-umbrella.h"; sourceTree = "<group>"; };
-		C8399F1E6DB5AAAF6E215BFC4016FAF2 /* ContentScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentScrollView.swift; path = Sources/Classes/ContentScrollView.swift; sourceTree = "<group>"; };
-		C8968D30F9796BE52053BEF4E9A52049 /* PopMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PopMenu.framework; path = NewPopMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C978A66415BCFFF7ECCA3A438758C1C2 /* BEMCheckBox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BEMCheckBox.xcconfig; sourceTree = "<group>"; };
-		CEF5B3314725C9854E36029F20F0955C /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
-		CFEEE72532D4F1AC1F5E7BBDEDB4BB40 /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Sources/Classes/UIViewExtension.swift; sourceTree = "<group>"; };
-		DC5EC58CFF79536FDB185183705F497E /* FTProgressIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTProgressIndicator.h; path = FTIndicator/FTProgressIndicator/FTProgressIndicator.h; sourceTree = "<group>"; };
-		DE02C99E67CD972E8B0EC18EF3CAFEE9 /* FTProgressIndicator.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = FTProgressIndicator.bundle; path = FTIndicator/FTProgressIndicator/FTProgressIndicator.bundle; sourceTree = "<group>"; };
-		DF177130D08AEF5BD3763DC3DCF06AA9 /* UIEdgeInsetsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIEdgeInsetsExtension.swift; path = Sources/Classes/UIEdgeInsetsExtension.swift; sourceTree = "<group>"; };
-		E0C490776D3B83F99C45CB3039B6B831 /* SwipeMenuViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwipeMenuViewController.framework; path = SwipeMenuViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1D0D30DF01994022A5CF056BD21A318 /* TabView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabView.swift; path = Sources/Classes/TabView.swift; sourceTree = "<group>"; };
-		E2CAD455F41DA93CD69272DFF6771F7B /* BEMCheckBox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEMCheckBox-prefix.pch"; sourceTree = "<group>"; };
-		E50FBCC01A37A42FA4291AB4A9765AB0 /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FSCalendar.modulemap; sourceTree = "<group>"; };
-		E519B942CAC71AF28618CE0C43B0CA98 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = FSCalendar/FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
-		E60729E2508E1C75A74CB2FDC81FDA8C /* UIView+Shadows.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Shadows.swift"; path = "PopMenu/Classes/Helpers/UIView+Shadows.swift"; sourceTree = "<group>"; };
-		E78B668F79411389F55F80AA62E614E1 /* PopMenuGradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopMenuGradientView.swift; path = PopMenu/Classes/Helpers/PopMenuGradientView.swift; sourceTree = "<group>"; };
-		E7D85E45AE5CC44545E19309C645704C /* SwipeMenuViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeMenuViewController-dummy.m"; sourceTree = "<group>"; };
-		E93841D0C3C779A4140C38147D977B3C /* Pods_easyBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_easyBook.framework; path = "Pods-easyBook.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA03B239FB655FDD841A8150A51E5712 /* FSCalendarSeparatorDecorationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarSeparatorDecorationView.m; path = FSCalendar/FSCalendarSeparatorDecorationView.m; sourceTree = "<group>"; };
-		EC9DFF82DCE48ABF84DA900D279AA0AC /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
-		F025D760E44FC4C2632DE7C4858A6D0F /* FTIndicator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTIndicator-dummy.m"; sourceTree = "<group>"; };
-		F26745176D296DA530C5F908C61256FD /* FTIndicator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FTIndicator.modulemap; sourceTree = "<group>"; };
-		F477E88DC4C20902FFABC8323FDE6010 /* BEMPathManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMPathManager.h; path = Classes/BEMPathManager.h; sourceTree = "<group>"; };
-		FAE3D8A1D7064FF1CAA04A664D558FE1 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
-		FB86D7AC1E9939884F283E6246AF6ED2 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
-		FF02DF7F105CFD488FCC9FB8A7A963BE /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
-		FFC3FCB73C2F29D6AD39E95DBA6CD52B /* BEMAnimationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMAnimationManager.m; path = Classes/BEMAnimationManager.m; sourceTree = "<group>"; };
+		C87224423AD01D42C071C351CCA4FF32 /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackGifFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
+		C89E33F66091281F7EA058C33C64AD4A /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		CC95DB5AC54A128434D991963BAB5727 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D29DACA400A9F9951784595F9BF950F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2B32162F4D52FD9D1D2C9588A99816D /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoNormalFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
+		D3966A1FBB6A76764EC993AE7663D104 /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
+		D4B879404DE3CD5A180D2F4D267AA221 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		D839DF73E2FE750C2B16BCB08C166C35 /* FTIndicator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTIndicator.xcconfig; sourceTree = "<group>"; };
+		D992FB5C7F88AD02CF14B67F7580BDC0 /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshGifHeader.m; path = MJRefresh/Custom/Header/MJRefreshGifHeader.m; sourceTree = "<group>"; };
+		DBDDCEB432445660903C3357B664567F /* BEMCheckBox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BEMCheckBox-dummy.m"; sourceTree = "<group>"; };
+		DC32C0218C3623E77C4D91903BCFDAFB /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+MJRefresh.h"; path = "MJRefresh/NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
+		DD4015D35A0A0DF622979B22E105F574 /* FTToastIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTToastIndicator.h; path = FTIndicator/FTToastIndicator/FTToastIndicator.h; sourceTree = "<group>"; };
+		DFE24CBBD8F35BA31DE5229112E164FE /* FTIndicator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTIndicator-dummy.m"; sourceTree = "<group>"; };
+		E35515A5C1B82DF0FEFF02CC69B3F630 /* PopMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopMenuManager.swift; path = PopMenu/Classes/PopMenuManager.swift; sourceTree = "<group>"; };
+		E362A8C15A10F54254B00A86714A3CC6 /* BEMAnimationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMAnimationManager.h; path = Classes/BEMAnimationManager.h; sourceTree = "<group>"; };
+		E3C115959BF95E4809D7ED45E0A741DA /* BEMCheckBox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BEMCheckBox.xcconfig; sourceTree = "<group>"; };
+		E7C0A2446F450E1346EAE82B300E1A41 /* MJRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-prefix.pch"; sourceTree = "<group>"; };
+		E916B1A2A91C2F793FB60CAE0EBA4D09 /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Sources/Classes/UIColorExtension.swift; sourceTree = "<group>"; };
+		EA4F81D2A2DF4F576CC52FEC2ECCF320 /* BEMCheckBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMCheckBox.h; path = Classes/BEMCheckBox.h; sourceTree = "<group>"; };
+		EADCC7F53310AF931E9B7A91B4496EAD /* BEMAnimationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMAnimationManager.m; path = Classes/BEMAnimationManager.m; sourceTree = "<group>"; };
+		EB5494416BA94CFC70B597A34E9AD75F /* BEMCheckBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBox.m; path = Classes/BEMCheckBox.m; sourceTree = "<group>"; };
+		ED195625086FC09265C31BEE66D9724D /* BEMPathManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMPathManager.h; path = Classes/BEMPathManager.h; sourceTree = "<group>"; };
+		ED8A14982BB8182739AAA47A306A3106 /* NewPopMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NewPopMenu.xcconfig; sourceTree = "<group>"; };
+		EE133C23F6229A753710607BDD8F1CEF /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoFooter.h; path = MJRefresh/Base/MJRefreshAutoFooter.h; sourceTree = "<group>"; };
+		EF15B4B7AEF17541243F04C651C1FC9F /* MJRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MJRefresh.modulemap; sourceTree = "<group>"; };
+		F43464208CF54E50D6D3C1512CE8B1C0 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = FSCalendar/FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		F71E0BB5897598629C28AF7B760B758B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7C13B170766E3590D731A9B1BDAE598 /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackFooter.m; path = MJRefresh/Base/MJRefreshBackFooter.m; sourceTree = "<group>"; };
+		FBC8F68B84B7C4E4AEF90BE1912A3AE3 /* MJRefreshFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooter.m; path = MJRefresh/Base/MJRefreshFooter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1F0C1B8F00A218E460DE9D4AF55D14CF /* Frameworks */ = {
+		3B15686D48FFE0888C7510A9C2C7E3F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E316941897275D9FDA0A6C2582A5F9EA /* Foundation.framework in Frameworks */,
+				EDDE7BB579C56AC8196AEC460149526B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D1695F6D014F471B28E84A45E50DE0F /* Frameworks */ = {
+		4330790BF93619542494717EF5872A17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E1D53B04A456FD6D7AEDB3E099994D7 /* Foundation.framework in Frameworks */,
+				BD549FDDF8E18393542908E05DF10310 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +396,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6A3B7B99E487E613D7916B12E35D05B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801ADD5F788AC7CB9A8CCBA3E18B9F27 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F66B1507C29B40CAB95EFBBD92148EB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,6 +415,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		036A80269F99E3FD513A6D9E849F757C /* FTNotificationIndicator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FTNotificationIndicator;
+			sourceTree = "<group>";
+		};
 		0D7A87A398F0D91F1E1B327DC5AD954E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,13 +432,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		11E61BD61C29CB96344475D9803F377F /* FTToastIndicator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = FTToastIndicator;
-			sourceTree = "<group>";
-		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,111 +440,55 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1CBD644786FDEBE1AFE9E6CA0A84288F /* NewPopMenu */ = {
+		17846565B3D984217657B699A2B96DB4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BD614182949F59AED5C52C9FE4F08B20 /* Haptics.swift */,
-				C1756EBAEF12229C6EA39AC794952212 /* PopMenu.h */,
-				9038A4024033041B54C0BE2979EF872A /* PopMenuAction.swift */,
-				01127C4D55DA6D32FF602BFCA793D9DC /* PopMenuAppearance.swift */,
-				ACEBABF8BEB943A0840717F760DB42AE /* PopMenuDismissAnimationController.swift */,
-				E78B668F79411389F55F80AA62E614E1 /* PopMenuGradientView.swift */,
-				C53F3DEB72049C7155245D7910B07973 /* PopMenuManager.swift */,
-				7C3CF9A54AF249158482481512C43F09 /* PopMenuPresentAnimationController.swift */,
-				3071332448EFC8B404FD1CCD16BBECEB /* PopMenuViewController.swift */,
-				639FDF06368A97AED30CD6EC7B77B0F8 /* UIColor+Contrast.swift */,
-				E60729E2508E1C75A74CB2FDC81FDA8C /* UIView+Shadows.swift */,
-				42729151A9AFD72F35E083C8A72D71C3 /* Support Files */,
-			);
-			name = NewPopMenu;
-			path = NewPopMenu;
-			sourceTree = "<group>";
-		};
-		2E94686343276BC18A1065EF703B8856 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E50FBCC01A37A42FA4291AB4A9765AB0 /* FSCalendar.modulemap */,
-				0B2D3888E69C4B067A25FAD64DA2A9BE /* FSCalendar.xcconfig */,
-				CEF5B3314725C9854E36029F20F0955C /* FSCalendar-dummy.m */,
-				61C0F486281B8DA6C3ADC51FC17F5BF4 /* FSCalendar-prefix.pch */,
-				55FB0598155AA5055403BBD3D8F32FFA /* FSCalendar-umbrella.h */,
-				04217267B2D538346FA6C9BDF8AD08B9 /* Info.plist */,
+				3F1C4C17726D46CA285A96D9601D383D /* FSCalendar.modulemap */,
+				AF92A2202E902FA8A4F08F176CB24D9B /* FSCalendar.xcconfig */,
+				A02B28615681317BF3637AFE5934F754 /* FSCalendar-dummy.m */,
+				B26C6C3791713E7FADD61BAB444E3A07 /* FSCalendar-prefix.pch */,
+				795EC08DCD4F7B5AAC40F6F102E93E8C /* FSCalendar-umbrella.h */,
+				B2AFB69C7F7DB407DB0DABC31F93E21F /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/FSCalendar";
 			sourceTree = "<group>";
 		};
-		36D8827DAB8CFA7C61CB0085ABA04356 /* FTIndicator */ = {
+		35F0102059DDB741BF3FBB491825D6DA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6BD474347E27FBE351BDEC6F5BD14D45 /* FTIndicator.h */,
-				8098C3DBCC0C0D816AE3B9679DF9B8CE /* FTIndicator.m */,
-				9ADE6E515DAB5336318A64DCE520D6AA /* FTNotificationIndicator.h */,
-				B9D197D394BC6555A5B95ABB83A0CDDD /* FTNotificationIndicator.m */,
-				DC5EC58CFF79536FDB185183705F497E /* FTProgressIndicator.h */,
-				16D410AEE4347C2EFE9BC1DAB5BF48CC /* FTProgressIndicator.m */,
-				5D25ABF00567BAD8B8BBBF86A2F3F7A0 /* FTToastIndicator.h */,
-				AA7953F95D08B4117A37FDA7D9CB4BBE /* FTToastIndicator.m */,
-				66E598E2601CF147319BB16BA963B06D /* FTNotificationIndicator */,
-				A70E48314783D24C10CF6279B7BA984A /* FTProgressIndicator */,
-				11E61BD61C29CB96344475D9803F377F /* FTToastIndicator */,
-				C384FEA736BCC10D98EB2BEF4054AB56 /* Resources */,
-				6534CAFC8BC2F860F16C8DE928DC5245 /* Support Files */,
+				C2ACDD8B343B6FFF5AFD9CA1FEAF52AC /* MJRefresh.bundle */,
 			);
-			name = FTIndicator;
-			path = FTIndicator;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		42729151A9AFD72F35E083C8A72D71C3 /* Support Files */ = {
+		404E9133CBB333585352F3F2ACF760E3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8F580DE70CB7C098928005648322AF73 /* Info.plist */,
-				813B16B48A190D2C0A9EDA0B9563B42D /* NewPopMenu.modulemap */,
-				B56695F3974C05A1EEE78A84ED481F0C /* NewPopMenu.xcconfig */,
-				6B8077001A6D76497A85F0EF67137DAA /* NewPopMenu-dummy.m */,
-				4EB53526237A84061616C669DFAE0448 /* NewPopMenu-prefix.pch */,
-				BA81DB9A1B70CEC05AFE501FADDE4D52 /* NewPopMenu-umbrella.h */,
+				DCDECCE4FF63BF6123772D9EE0FAD6B1 /* BEMCheckBox */,
+				B31F5F185EDAD9EACA792FBD96C7BF26 /* FSCalendar */,
+				DDB8ECB9589D5C323EE5B6A25884C624 /* FTIndicator */,
+				D7E48C2CF75FF4D7ABBCB4D59F9601F6 /* MJRefresh */,
+				CF8D861731588499E82351566228B6C5 /* NewPopMenu */,
+				FCA271B167977AD13568C348928F371C /* SwipeMenuViewController */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/NewPopMenu";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		48EEF5B08BA8C2E7B9277CBA041343D1 /* BEMCheckBox */ = {
+		4C4AF3F6A0F3A72CACF2FC4E36FE2ADB /* FTProgressIndicator */ = {
 			isa = PBXGroup;
 			children = (
-				533A652FD95A5BB5581217EEA07B2BB4 /* BEMAnimationManager.h */,
-				FFC3FCB73C2F29D6AD39E95DBA6CD52B /* BEMAnimationManager.m */,
-				77C153495841300BF1CAAC8F1B6DC484 /* BEMCheckBox.h */,
-				133279E7B8C6C715740AA204283BA841 /* BEMCheckBox.m */,
-				C3FBC21A2BA405160004D22EA64CAE41 /* BEMCheckBoxGroup.h */,
-				4695CD457AE482B12F7157C21F41D91C /* BEMCheckBoxGroup.m */,
-				F477E88DC4C20902FFABC8323FDE6010 /* BEMPathManager.h */,
-				8B3A0913E985F0DB36F0ECCF0E057B48 /* BEMPathManager.m */,
-				B316E143A95BD1C9D25BE3C73B025CCD /* Support Files */,
+				A2109EA29EDAB5CBE0B6E0CA8C97D2B4 /* Resources */,
 			);
-			name = BEMCheckBox;
-			path = BEMCheckBox;
+			name = FTProgressIndicator;
 			sourceTree = "<group>";
 		};
-		6534CAFC8BC2F860F16C8DE928DC5245 /* Support Files */ = {
+		71931C485504695C4984629062043811 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F26745176D296DA530C5F908C61256FD /* FTIndicator.modulemap */,
-				7198E126BBE173F6CA18B562FB2FA815 /* FTIndicator.xcconfig */,
-				F025D760E44FC4C2632DE7C4858A6D0F /* FTIndicator-dummy.m */,
-				55A39F4DB7E2852460BB61B069D5BC95 /* FTIndicator-prefix.pch */,
-				647456F895BD39C5296BDA89B7B1BD4D /* FTIndicator-umbrella.h */,
-				A97FEE450A66F2EF39468278A5ED7AFC /* Info.plist */,
+				5711F50A97E4512C5C7BD3E9E2CA18E3 /* FTProgressIndicator.bundle */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/FTIndicator";
-			sourceTree = "<group>";
-		};
-		66E598E2601CF147319BB16BA963B06D /* FTNotificationIndicator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = FTNotificationIndicator;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -447,39 +496,66 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				C4867D9F0C616821700605A61F81F03B /* Pods */,
-				ED851A983A0AE9D3323A3054BE3C4824 /* Products */,
+				404E9133CBB333585352F3F2ACF760E3 /* Pods */,
+				DCD3B47329E5D8FB5A46C7A243A0D822 /* Products */,
 				CAC07A60474C8DAF0C406878D87ECACC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		931E7F501F43A781DDB4A089A996C562 /* Support Files */ = {
+		84A9E0BD4F9B5AC3415F5F4840D4CAFC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				24AFF4717EFE034B12CA8D42B1AC69A3 /* Info.plist */,
-				914D4263CA56A44FF9D09FFB6086EFDD /* SwipeMenuViewController.modulemap */,
-				55D759589A4D3DB1671D7C028ACEFB92 /* SwipeMenuViewController.xcconfig */,
-				E7D85E45AE5CC44545E19309C645704C /* SwipeMenuViewController-dummy.m */,
-				B2C59240CDEA233C1596BCC553D5334F /* SwipeMenuViewController-prefix.pch */,
-				257BC870430C1B39BEAF07476C5AF8D8 /* SwipeMenuViewController-umbrella.h */,
+				02DA72A61AD8D6FE12A578A04507ACFF /* BEMCheckBox.modulemap */,
+				E3C115959BF95E4809D7ED45E0A741DA /* BEMCheckBox.xcconfig */,
+				DBDDCEB432445660903C3357B664567F /* BEMCheckBox-dummy.m */,
+				26FA2659AFE4B93C1C64FC7D00CAE45E /* BEMCheckBox-prefix.pch */,
+				6B2F674AD67284A45A4E2E6A7A3DD2BD /* BEMCheckBox-umbrella.h */,
+				CC95DB5AC54A128434D991963BAB5727 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwipeMenuViewController";
+			path = "../Target Support Files/BEMCheckBox";
 			sourceTree = "<group>";
 		};
-		A70E48314783D24C10CF6279B7BA984A /* FTProgressIndicator */ = {
-			isa = PBXGroup;
-			children = (
-				ADBAA62660D3BB787FFEB81F1E6539DE /* Resources */,
-			);
-			name = FTProgressIndicator;
-			sourceTree = "<group>";
-		};
-		ADBAA62660D3BB787FFEB81F1E6539DE /* Resources */ = {
+		A2109EA29EDAB5CBE0B6E0CA8C97D2B4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		A21AB0BF26C85B5A99600DA251EC6789 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F71E0BB5897598629C28AF7B760B758B /* Info.plist */,
+				719D1A0C21391EDAE0CC78492E3F2C02 /* NewPopMenu.modulemap */,
+				ED8A14982BB8182739AAA47A306A3106 /* NewPopMenu.xcconfig */,
+				3DAD1FF98EAA646EFA55C80770B4404A /* NewPopMenu-dummy.m */,
+				4791A1A564EB7587C81C825F6901798A /* NewPopMenu-prefix.pch */,
+				9E64072BEFE143674AFEB8F86DD05C24 /* NewPopMenu-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NewPopMenu";
+			sourceTree = "<group>";
+		};
+		A8791E7989C2AF1670C4DA38F63B10ED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A85C64CF4541B41FA3C52F3320C934C /* FTIndicator.modulemap */,
+				D839DF73E2FE750C2B16BCB08C166C35 /* FTIndicator.xcconfig */,
+				DFE24CBBD8F35BA31DE5229112E164FE /* FTIndicator-dummy.m */,
+				0E76AD9162E4249F9CFC61D9C9CE3498 /* FTIndicator-prefix.pch */,
+				0DAD316418CC3BC977446EE11EED32E7 /* FTIndicator-umbrella.h */,
+				D29DACA400A9F9951784595F9BF950F2 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FTIndicator";
+			sourceTree = "<group>";
+		};
+		AB1AAF9392A3BC1053FF88E18E5D3346 /* FTToastIndicator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FTToastIndicator;
 			sourceTree = "<group>";
 		};
 		B2DE490EADA110DF4181D72512F8D293 /* Pods-easyBook */ = {
@@ -500,55 +576,72 @@
 			path = "Target Support Files/Pods-easyBook";
 			sourceTree = "<group>";
 		};
-		B316E143A95BD1C9D25BE3C73B025CCD /* Support Files */ = {
+		B31F5F185EDAD9EACA792FBD96C7BF26 /* FSCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				6981C163E3F06C11B9019EBF902FCD62 /* BEMCheckBox.modulemap */,
-				C978A66415BCFFF7ECCA3A438758C1C2 /* BEMCheckBox.xcconfig */,
-				798C799F83D797C2CEDA015780EEAD52 /* BEMCheckBox-dummy.m */,
-				E2CAD455F41DA93CD69272DFF6771F7B /* BEMCheckBox-prefix.pch */,
-				C73DDE5F886A78DE93084348944C9003 /* BEMCheckBox-umbrella.h */,
-				B661DA8E322278998F58832F54D2B112 /* Info.plist */,
+				9C0166D5F9EA109844877148CAF72A1C /* FSCalendar.h */,
+				07A518A5B5CD8FE67F9385B7B08F8211 /* FSCalendar.m */,
+				121485C8EC7D743D65F5D89CBAF476D7 /* FSCalendarAppearance.h */,
+				3CCAE57E9E97F3905725A93B28C3695D /* FSCalendarAppearance.m */,
+				6E02EE42E30B07B6F4AD3E44D0DB2172 /* FSCalendarCalculator.h */,
+				A0D0DD0E940FC11CA7FC08FC198B642A /* FSCalendarCalculator.m */,
+				D3966A1FBB6A76764EC993AE7663D104 /* FSCalendarCell.h */,
+				936EDF2437F3364FDA1BEE8707BF224A /* FSCalendarCell.m */,
+				5104A2FB052DA8A5374F0D36C560EA84 /* FSCalendarCollectionView.h */,
+				D4B879404DE3CD5A180D2F4D267AA221 /* FSCalendarCollectionView.m */,
+				C89E33F66091281F7EA058C33C64AD4A /* FSCalendarCollectionViewLayout.h */,
+				A25C04E7211B89D0729898BDB286DE89 /* FSCalendarCollectionViewLayout.m */,
+				444D256B5307033E3FB89E849F888B4F /* FSCalendarConstants.h */,
+				BCC267F89EFD98B5850001C763D89F84 /* FSCalendarConstants.m */,
+				F43464208CF54E50D6D3C1512CE8B1C0 /* FSCalendarDelegationFactory.h */,
+				6EB8E9C167F24B58D586496992CAE281 /* FSCalendarDelegationFactory.m */,
+				7DD11B6AA60AB6E1BE13E33F88AC4B58 /* FSCalendarDelegationProxy.h */,
+				58D5E64874F1894B076700285CA633B2 /* FSCalendarDelegationProxy.m */,
+				647DD148FAD897926D7C2FEC648C3364 /* FSCalendarDynamicHeader.h */,
+				96A752AA2B17E8146044D46479F4B6AA /* FSCalendarExtensions.h */,
+				2658EF64A813E597B8E3CB89E18F45D6 /* FSCalendarExtensions.m */,
+				6008784ADC000EB1C557BEF9698FF905 /* FSCalendarHeaderView.h */,
+				AE70B1E856120E94C36CF417EE8817FF /* FSCalendarHeaderView.m */,
+				8CB49F0C44AA6628D8D53C1444BD7C76 /* FSCalendarSeparatorDecorationView.h */,
+				A356F45D9E796796A91411E146919FE5 /* FSCalendarSeparatorDecorationView.m */,
+				A753E01D2C8125C6225F43B98747D8B0 /* FSCalendarStickyHeader.h */,
+				2AAAB035056193C611B4578DE12558BF /* FSCalendarStickyHeader.m */,
+				25CBB3F0E0A717175D16D3D7D3BBD3AE /* FSCalendarTransitionCoordinator.h */,
+				5D5CC8331A02BBC049D38A3A12A3F19B /* FSCalendarTransitionCoordinator.m */,
+				B887F7AB499848644FED4F782D5B35DF /* FSCalendarWeekdayView.h */,
+				5AF3A4E51C590AFC87B0A6CAA0D5D98A /* FSCalendarWeekdayView.m */,
+				17846565B3D984217657B699A2B96DB4 /* Support Files */,
+			);
+			name = FSCalendar;
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		B7CBA540183B6055FD9AE9B108BD77BC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				353060CC8CBB4EA7A56ECCD8F6F5BF4F /* Info.plist */,
+				5C5F95FBDBBCA908658A7F23BF1F363B /* SwipeMenuViewController.modulemap */,
+				544B963DCAA5899713E8C61AF4D5313B /* SwipeMenuViewController.xcconfig */,
+				5335A1A6C4DD6CF77BF6A8B49B387C6E /* SwipeMenuViewController-dummy.m */,
+				478CAE41BA79CD13548F30C0B158DFF8 /* SwipeMenuViewController-prefix.pch */,
+				6036A0F1EAAA4AA8CA6266A9EEFC2EA4 /* SwipeMenuViewController-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/BEMCheckBox";
+			path = "../Target Support Files/SwipeMenuViewController";
 			sourceTree = "<group>";
 		};
-		B6FBD4D38476707701D17FFE4ADFBA13 /* SwipeMenuViewController */ = {
+		B7E1273B5A0986EF5B58F109D2F4D0AC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C8399F1E6DB5AAAF6E215BFC4016FAF2 /* ContentScrollView.swift */,
-				B6285D7418F0A9FF2322681E1C3C2DA2 /* SwipeMenuView.swift */,
-				144B76D6743A748623CBC0AC667898EE /* SwipeMenuViewController.swift */,
-				2B8990B2AF305567EE1F14CFA44E7CD1 /* TabItemView.swift */,
-				E1D0D30DF01994022A5CF056BD21A318 /* TabView.swift */,
-				3E8F934A70D54F4CAD6C54A7629BFC98 /* UIColorExtension.swift */,
-				DF177130D08AEF5BD3763DC3DCF06AA9 /* UIEdgeInsetsExtension.swift */,
-				CFEEE72532D4F1AC1F5E7BBDEDB4BB40 /* UIViewExtension.swift */,
-				931E7F501F43A781DDB4A089A996C562 /* Support Files */,
+				638566273D9BDC22C182C011B3994255 /* Info.plist */,
+				EF15B4B7AEF17541243F04C651C1FC9F /* MJRefresh.modulemap */,
+				8D2B247F82165A37B53E29E125A9D879 /* MJRefresh.xcconfig */,
+				869792D92D80B013EEB7DDE9C536F6A7 /* MJRefresh-dummy.m */,
+				E7C0A2446F450E1346EAE82B300E1A41 /* MJRefresh-prefix.pch */,
+				0144B068FEFC19FA898589F9155A8460 /* MJRefresh-umbrella.h */,
 			);
-			name = SwipeMenuViewController;
-			path = SwipeMenuViewController;
-			sourceTree = "<group>";
-		};
-		C384FEA736BCC10D98EB2BEF4054AB56 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				DE02C99E67CD972E8B0EC18EF3CAFEE9 /* FTProgressIndicator.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		C4867D9F0C616821700605A61F81F03B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				48EEF5B08BA8C2E7B9277CBA041343D1 /* BEMCheckBox */,
-				EE1FA6AC19BF733AE43D4065C297B5C9 /* FSCalendar */,
-				36D8827DAB8CFA7C61CB0085ABA04356 /* FTIndicator */,
-				1CBD644786FDEBE1AFE9E6CA0A84288F /* NewPopMenu */,
-				B6FBD4D38476707701D17FFE4ADFBA13 /* SwipeMenuViewController */,
-			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/MJRefresh";
 			sourceTree = "<group>";
 		};
 		CAC07A60474C8DAF0C406878D87ECACC /* Targets Support Files */ = {
@@ -559,62 +652,175 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		ED851A983A0AE9D3323A3054BE3C4824 /* Products */ = {
+		CF8D861731588499E82351566228B6C5 /* NewPopMenu */ = {
 			isa = PBXGroup;
 			children = (
-				C35C0807F917D24C85DEFFADD1929589 /* BEMCheckBox.framework */,
-				C735F61046D3961EF12A59D3D79F819E /* FSCalendar.framework */,
-				2DB064F55567B886C7CC1272B99D42F1 /* FTIndicator.framework */,
-				E93841D0C3C779A4140C38147D977B3C /* Pods_easyBook.framework */,
-				C8968D30F9796BE52053BEF4E9A52049 /* PopMenu.framework */,
-				E0C490776D3B83F99C45CB3039B6B831 /* SwipeMenuViewController.framework */,
+				68C3CC439C4A1F52D5EF6DE908282809 /* Haptics.swift */,
+				23F5906EF34C28989E40F986C6452EDB /* PopMenu.h */,
+				077D9A2F18767C1E03E0FD07968320AA /* PopMenuAction.swift */,
+				9E628C9A7B6479B1108261F8137F3277 /* PopMenuAppearance.swift */,
+				6E228FDC707F32E7A85D35DF05433C6F /* PopMenuDismissAnimationController.swift */,
+				1462F980B675AFD6D2005D40183B69CD /* PopMenuGradientView.swift */,
+				E35515A5C1B82DF0FEFF02CC69B3F630 /* PopMenuManager.swift */,
+				50D4F82C4A421D54E3109F65EC1A7D1F /* PopMenuPresentAnimationController.swift */,
+				19EE85CBD0BFE63607B25A7620591D5F /* PopMenuViewController.swift */,
+				7703583C6D3CF96519BA3CFB326027D9 /* UIColor+Contrast.swift */,
+				276F46F92DC67A5B6C3EDAE40FE1EC31 /* UIView+Shadows.swift */,
+				A21AB0BF26C85B5A99600DA251EC6789 /* Support Files */,
+			);
+			name = NewPopMenu;
+			path = NewPopMenu;
+			sourceTree = "<group>";
+		};
+		D7E48C2CF75FF4D7ABBCB4D59F9601F6 /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				BE113CB989B23E30063066B15128C5A1 /* MJRefresh.h */,
+				EE133C23F6229A753710607BDD8F1CEF /* MJRefreshAutoFooter.h */,
+				6D384DFD16A8CC5855AED40F4987F53B /* MJRefreshAutoFooter.m */,
+				90A31B53DB68AF9A8F790E2314F53D1C /* MJRefreshAutoGifFooter.h */,
+				5071287C56B0FF28FDE9CE364D340395 /* MJRefreshAutoGifFooter.m */,
+				03AD527B8F1281F835C3197A25268D58 /* MJRefreshAutoNormalFooter.h */,
+				D2B32162F4D52FD9D1D2C9588A99816D /* MJRefreshAutoNormalFooter.m */,
+				154424195056A88EF153E879AD52139A /* MJRefreshAutoStateFooter.h */,
+				5CF237F78A1C2B7ACD6C3837C5F79F1E /* MJRefreshAutoStateFooter.m */,
+				2707948A8871CB9A263FEA7A2F8A2254 /* MJRefreshBackFooter.h */,
+				F7C13B170766E3590D731A9B1BDAE598 /* MJRefreshBackFooter.m */,
+				C87224423AD01D42C071C351CCA4FF32 /* MJRefreshBackGifFooter.h */,
+				1F63C33761D2F471538D38E9C8FCCF63 /* MJRefreshBackGifFooter.m */,
+				7CE5BC5C7C9646FFEF01569C34985C0E /* MJRefreshBackNormalFooter.h */,
+				154C3A3684C6F3A915B1C2A7CFF91E24 /* MJRefreshBackNormalFooter.m */,
+				61D99C2BC98358437E3A4F87B4694455 /* MJRefreshBackStateFooter.h */,
+				691FE7728D58143057816E720C793FB5 /* MJRefreshBackStateFooter.m */,
+				869B16518C14F6759EF4CF64114523AA /* MJRefreshComponent.h */,
+				9383B9E74A81D5F39E0A12FBCBE279F7 /* MJRefreshComponent.m */,
+				B7E6BB9971225BD19629C24E04DC6807 /* MJRefreshConst.h */,
+				0A7835C7D07403589937A9474279F045 /* MJRefreshConst.m */,
+				33516929D52610CD6299A143E2B3B045 /* MJRefreshFooter.h */,
+				FBC8F68B84B7C4E4AEF90BE1912A3AE3 /* MJRefreshFooter.m */,
+				2C9BD5887FD4EFBC5CC417B57FEA2F6D /* MJRefreshGifHeader.h */,
+				D992FB5C7F88AD02CF14B67F7580BDC0 /* MJRefreshGifHeader.m */,
+				2DC39B32E784442A6B8CE6A16C2F5E04 /* MJRefreshHeader.h */,
+				72C1030847CCC0D98A7C442B2ADA106B /* MJRefreshHeader.m */,
+				42C720B7A42C3406B30C53E9D8584DD5 /* MJRefreshNormalHeader.h */,
+				9077C1F41016CEA7B67E80AC7E913F97 /* MJRefreshNormalHeader.m */,
+				3EAC94FDE5ADF36205EFCB2FE8F50900 /* MJRefreshStateHeader.h */,
+				1BD9894CACD4956A541F302A8A5B84F7 /* MJRefreshStateHeader.m */,
+				DC32C0218C3623E77C4D91903BCFDAFB /* NSBundle+MJRefresh.h */,
+				7A8AB27D001FEE21F46131940D8FCBAE /* NSBundle+MJRefresh.m */,
+				53A26002E7E8B07F9F1D6659723EFC5C /* UIScrollView+MJExtension.h */,
+				B6427C4C0F2541D1286268B7A04C2B59 /* UIScrollView+MJExtension.m */,
+				9436136E1739805B8DE067CB72FC8E69 /* UIScrollView+MJRefresh.h */,
+				3CAB008B2FCA3A36A8D16F2418807F75 /* UIScrollView+MJRefresh.m */,
+				647671084F0C9CA0BE24C77008C6C280 /* UIView+MJExtension.h */,
+				58719D6869FC8063D15A1C92F75D6C3C /* UIView+MJExtension.m */,
+				35F0102059DDB741BF3FBB491825D6DA /* Resources */,
+				B7E1273B5A0986EF5B58F109D2F4D0AC /* Support Files */,
+			);
+			name = MJRefresh;
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		DCD3B47329E5D8FB5A46C7A243A0D822 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53EC15E5E7C298909C4F99414E42BB14 /* BEMCheckBox.framework */,
+				9FD0B9DCA23FA9A0F22A23741545B7E5 /* FSCalendar.framework */,
+				BA37913EB6E143737BDA077DAA4D6B96 /* FTIndicator.framework */,
+				67D6B5C6E9895376F539D28A9C5ECBE8 /* MJRefresh.framework */,
+				B9A1A0E2C80DECC4EF0DFA1916CDC9B6 /* Pods_easyBook.framework */,
+				09AE556FC836E2BBE50E6F0D65E03E3E /* PopMenu.framework */,
+				19475ADE3799875AB292A334518B47DD /* SwipeMenuViewController.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EE1FA6AC19BF733AE43D4065C297B5C9 /* FSCalendar */ = {
+		DCDECCE4FF63BF6123772D9EE0FAD6B1 /* BEMCheckBox */ = {
 			isa = PBXGroup;
 			children = (
-				36F0676FC906EBCAA172FDCA23D6A9BF /* FSCalendar.h */,
-				BA1A8E84BB8ABC5973A9910764FFAF9E /* FSCalendar.m */,
-				9869A46C77830419098D94D6D383E2D5 /* FSCalendarAppearance.h */,
-				1F7D790005DE1AE4B65AA6556D006A62 /* FSCalendarAppearance.m */,
-				024B8C05F9A3391B9BABAD9982A9122A /* FSCalendarCalculator.h */,
-				3F581A0DBC932E9E7CEC8D734EA8801A /* FSCalendarCalculator.m */,
-				FF02DF7F105CFD488FCC9FB8A7A963BE /* FSCalendarCell.h */,
-				175AF2D77D660DBF356A119A543D9D5C /* FSCalendarCell.m */,
-				3E1C778E0AE4BEC04FE0B054B41F3B96 /* FSCalendarCollectionView.h */,
-				FB86D7AC1E9939884F283E6246AF6ED2 /* FSCalendarCollectionView.m */,
-				1F6029615B495D8E42183DE2E12B2B56 /* FSCalendarCollectionViewLayout.h */,
-				EC9DFF82DCE48ABF84DA900D279AA0AC /* FSCalendarCollectionViewLayout.m */,
-				1891B82D62FACDD784F5A2958CBEF081 /* FSCalendarConstants.h */,
-				71E740467A8692C587508807D02F0269 /* FSCalendarConstants.m */,
-				7375A3BF86690FB4933250D2D4EF7726 /* FSCalendarDelegationFactory.h */,
-				AF846237080DD355D55E6A5B7E23E6B6 /* FSCalendarDelegationFactory.m */,
-				E519B942CAC71AF28618CE0C43B0CA98 /* FSCalendarDelegationProxy.h */,
-				7D13C9CA5AC36316B484F5720E6F2225 /* FSCalendarDelegationProxy.m */,
-				17395A1288A3DABEF4FBCB714101B6AF /* FSCalendarDynamicHeader.h */,
-				2C11D6063E615154632803F659CB6E6B /* FSCalendarExtensions.h */,
-				97BBC4264E224873593BBD10DAE64D7B /* FSCalendarExtensions.m */,
-				5A9BFEBF6C49B923C8464AACA937712B /* FSCalendarHeaderView.h */,
-				08BFB1A16E7E00E6C0522212DBF9A44C /* FSCalendarHeaderView.m */,
-				A992E3EC998FB34A9398258F5E242F11 /* FSCalendarSeparatorDecorationView.h */,
-				EA03B239FB655FDD841A8150A51E5712 /* FSCalendarSeparatorDecorationView.m */,
-				0A9B5E093823B83C80C5B2360E862180 /* FSCalendarStickyHeader.h */,
-				4D2A0193FF3EF68BE1A71EE9BFF7C591 /* FSCalendarStickyHeader.m */,
-				FAE3D8A1D7064FF1CAA04A664D558FE1 /* FSCalendarTransitionCoordinator.h */,
-				1AA19E8B5DFA13DACDD2D409A4D8F259 /* FSCalendarTransitionCoordinator.m */,
-				B3401BECF6A1B8A0244B8282437FE16D /* FSCalendarWeekdayView.h */,
-				869A46B88B9D32F8D30DC7F33D11EF40 /* FSCalendarWeekdayView.m */,
-				2E94686343276BC18A1065EF703B8856 /* Support Files */,
+				E362A8C15A10F54254B00A86714A3CC6 /* BEMAnimationManager.h */,
+				EADCC7F53310AF931E9B7A91B4496EAD /* BEMAnimationManager.m */,
+				EA4F81D2A2DF4F576CC52FEC2ECCF320 /* BEMCheckBox.h */,
+				EB5494416BA94CFC70B597A34E9AD75F /* BEMCheckBox.m */,
+				83F1440F2424C0E434A46D02564D4998 /* BEMCheckBoxGroup.h */,
+				B18C364827762F0B1B9FE6612FEDC9EA /* BEMCheckBoxGroup.m */,
+				ED195625086FC09265C31BEE66D9724D /* BEMPathManager.h */,
+				0CF9E92BF86DCF4AFE6238BBC00AFD82 /* BEMPathManager.m */,
+				84A9E0BD4F9B5AC3415F5F4840D4CAFC /* Support Files */,
 			);
-			name = FSCalendar;
-			path = FSCalendar;
+			name = BEMCheckBox;
+			path = BEMCheckBox;
+			sourceTree = "<group>";
+		};
+		DDB8ECB9589D5C323EE5B6A25884C624 /* FTIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				B3EE3DADAE1F2EBA37F316A5F2175559 /* FTIndicator.h */,
+				032777DD18C9AF86C471D435B8E409B8 /* FTIndicator.m */,
+				35A12CBC2EB309AADA168D84AE485495 /* FTNotificationIndicator.h */,
+				404B2C8FC29375F614E8A0CD28C1F57A /* FTNotificationIndicator.m */,
+				BC54F434AC67C2F09F6184543CA6DDC3 /* FTProgressIndicator.h */,
+				79C22EE98B8EE11D9FAE2436CDACF62E /* FTProgressIndicator.m */,
+				DD4015D35A0A0DF622979B22E105F574 /* FTToastIndicator.h */,
+				3EC75F41F99A2D2DEF9F12C8D37423C4 /* FTToastIndicator.m */,
+				036A80269F99E3FD513A6D9E849F757C /* FTNotificationIndicator */,
+				4C4AF3F6A0F3A72CACF2FC4E36FE2ADB /* FTProgressIndicator */,
+				AB1AAF9392A3BC1053FF88E18E5D3346 /* FTToastIndicator */,
+				71931C485504695C4984629062043811 /* Resources */,
+				A8791E7989C2AF1670C4DA38F63B10ED /* Support Files */,
+			);
+			name = FTIndicator;
+			path = FTIndicator;
+			sourceTree = "<group>";
+		};
+		FCA271B167977AD13568C348928F371C /* SwipeMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2E2C1E22597E14985CD90154CCA5883F /* ContentScrollView.swift */,
+				BBF442CBFCAE4EDF03AE1E56310C0E9A /* SwipeMenuView.swift */,
+				3E3AA9DF42C0A810697E50DEEBDCA6E6 /* SwipeMenuViewController.swift */,
+				885E1D3649BC7A6933533106D01A151F /* TabItemView.swift */,
+				45DF3EB5EB1E21D71A049D19C3BD0AD6 /* TabView.swift */,
+				E916B1A2A91C2F793FB60CAE0EBA4D09 /* UIColorExtension.swift */,
+				86EC31E330F3FA085F1B55A82EE9F0C8 /* UIEdgeInsetsExtension.swift */,
+				211F44540E0482C3C70090E9BF8AFE89 /* UIViewExtension.swift */,
+				B7CBA540183B6055FD9AE9B108BD77BC /* Support Files */,
+			);
+			name = SwipeMenuViewController;
+			path = SwipeMenuViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		08EF78522D0C15FAC07E3DF1CA39E77C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				205C539389D123F0D635AEEE94E23A57 /* MJRefresh-umbrella.h in Headers */,
+				6C7D22626A2F5AD4BB1ACC02D8F10731 /* MJRefresh.h in Headers */,
+				19A2D61A783C422B8828408F98E56290 /* MJRefreshAutoFooter.h in Headers */,
+				2AE9F2C800AA6D4A6EDD9DB4B93DCDCF /* MJRefreshAutoGifFooter.h in Headers */,
+				79E7436378404C9DD06E9F65180D62A4 /* MJRefreshAutoNormalFooter.h in Headers */,
+				B967DE3AFEE4C96AAB002B8095B6C7C2 /* MJRefreshAutoStateFooter.h in Headers */,
+				72BA18069C0DFC671464EB497250D358 /* MJRefreshBackFooter.h in Headers */,
+				1364E587347DB7B32700946C39D69836 /* MJRefreshBackGifFooter.h in Headers */,
+				16145634E76498599E08EE59BF2BA9D9 /* MJRefreshBackNormalFooter.h in Headers */,
+				02B6166834FDE582A7475C4D021C532A /* MJRefreshBackStateFooter.h in Headers */,
+				DEF65EB64591CE2D6F99463627951710 /* MJRefreshComponent.h in Headers */,
+				57F9EB19DF46EC2590C8B10DB89D146E /* MJRefreshConst.h in Headers */,
+				62E84F67014328D5ED1B0F65775CDDFA /* MJRefreshFooter.h in Headers */,
+				7FC1CEA91F90834F660AA84E603B37AD /* MJRefreshGifHeader.h in Headers */,
+				370474488F17310C2E917826EE8B93FB /* MJRefreshHeader.h in Headers */,
+				366A0A2B7CC87D039FD802C7FF82BEE7 /* MJRefreshNormalHeader.h in Headers */,
+				7F9B9007891D36363BE6BE0CB08C1006 /* MJRefreshStateHeader.h in Headers */,
+				04E5A6920974A68B2D15090CBE56D58B /* NSBundle+MJRefresh.h in Headers */,
+				35CCA902DF0D8C0AB9C3A7C8AF4FD40D /* UIScrollView+MJExtension.h in Headers */,
+				7203872DAF858D609912A7D0F768FEAF /* UIScrollView+MJRefresh.h in Headers */,
+				B356C813D009D8F48B49B93F970B1F1B /* UIView+MJExtension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		099C9FA98E5AD24AD177CEC6DA3657D1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -636,19 +842,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C442113B6F499A1447CFF90FFC2950F /* Headers */ = {
+		7F83C6ED12A291BE375CBD974442F00B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBC534DE437FF4D69F21B27E511B799C /* SwipeMenuViewController-umbrella.h in Headers */,
+				FCC4FF173F44EF5C89440B1A31F611B8 /* SwipeMenuViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		96EB88B471C5972ECC575AC8D603B33A /* Headers */ = {
+		91DB553B2633CF550F4ACA5AFD08055A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD1382D57AD33AA8504B82B67188FCE4 /* Pods-easyBook-umbrella.h in Headers */,
+				30E34EC2956ABC7E22ABD9D38EC23C8C /* Pods-easyBook-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -706,7 +912,7 @@
 			);
 			name = FSCalendar;
 			productName = FSCalendar;
-			productReference = C735F61046D3961EF12A59D3D79F819E /* FSCalendar.framework */;
+			productReference = 9FD0B9DCA23FA9A0F22A23741545B7E5 /* FSCalendar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		2984E119D425AD26A0B5DB4F342FEAF4 /* NewPopMenu */ = {
@@ -724,30 +930,25 @@
 			);
 			name = NewPopMenu;
 			productName = NewPopMenu;
-			productReference = C8968D30F9796BE52053BEF4E9A52049 /* PopMenu.framework */;
+			productReference = 09AE556FC836E2BBE50E6F0D65E03E3E /* PopMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		53DD2A07F504CF8CAA91A8DF00C19C8B /* Pods-easyBook */ = {
+		546B747B9DB0515E059EEBA0B9E98B42 /* MJRefresh */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 600E687F66CE55A92DA386ECA33FBFEF /* Build configuration list for PBXNativeTarget "Pods-easyBook" */;
+			buildConfigurationList = E6F83A3523D8341EDA917BED02337C9A /* Build configuration list for PBXNativeTarget "MJRefresh" */;
 			buildPhases = (
-				96EB88B471C5972ECC575AC8D603B33A /* Headers */,
-				5F5C0B457655EC7CBD1C021631EEEEF7 /* Sources */,
-				1F0C1B8F00A218E460DE9D4AF55D14CF /* Frameworks */,
-				2EF099C94136A27B3625461C02B37601 /* Resources */,
+				08EF78522D0C15FAC07E3DF1CA39E77C /* Headers */,
+				43D5CCDE6E144B6F6AEE48CEDD25AC1C /* Sources */,
+				4330790BF93619542494717EF5872A17 /* Frameworks */,
+				862C3C5F3DC00E80837F3E923C463301 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				782B9417457C4538EEE38FA7C7059653 /* PBXTargetDependency */,
-				473B7FCD3DA10E7811F12D8772940C5B /* PBXTargetDependency */,
-				A315E164C74C249BE61B50D4C72B40AA /* PBXTargetDependency */,
-				A42E5278CE18CA2A2034A59FA1796D1D /* PBXTargetDependency */,
-				F5714D956060CCDF0B175ABE4E08B3DB /* PBXTargetDependency */,
 			);
-			name = "Pods-easyBook";
-			productName = "Pods-easyBook";
-			productReference = E93841D0C3C779A4140C38147D977B3C /* Pods_easyBook.framework */;
+			name = MJRefresh;
+			productName = MJRefresh;
+			productReference = 67D6B5C6E9895376F539D28A9C5ECBE8 /* MJRefresh.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6ADA5765F8A0E665B378C9356B7C05DC /* BEMCheckBox */ = {
@@ -765,7 +966,25 @@
 			);
 			name = BEMCheckBox;
 			productName = BEMCheckBox;
-			productReference = C35C0807F917D24C85DEFFADD1929589 /* BEMCheckBox.framework */;
+			productReference = 53EC15E5E7C298909C4F99414E42BB14 /* BEMCheckBox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		71A5BC51F0F11D02C1DCFD575DF2B98B /* SwipeMenuViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5347A655B294BA9CD97F8613F030F74 /* Build configuration list for PBXNativeTarget "SwipeMenuViewController" */;
+			buildPhases = (
+				7F83C6ED12A291BE375CBD974442F00B /* Headers */,
+				F4623576FB34442B96B14080F0B43369 /* Sources */,
+				3B15686D48FFE0888C7510A9C2C7E3F1 /* Frameworks */,
+				888E176509252DA1878CBCFB7921C41E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwipeMenuViewController;
+			productName = SwipeMenuViewController;
+			productReference = 19475ADE3799875AB292A334518B47DD /* SwipeMenuViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		977310FD771A8546FE31D757343292CC /* FTIndicator */ = {
@@ -783,25 +1002,31 @@
 			);
 			name = FTIndicator;
 			productName = FTIndicator;
-			productReference = 2DB064F55567B886C7CC1272B99D42F1 /* FTIndicator.framework */;
+			productReference = BA37913EB6E143737BDA077DAA4D6B96 /* FTIndicator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BE85D633AE769A1CD745083EB5E6B84E /* SwipeMenuViewController */ = {
+		A091380D33FFBD674F37E6481AB1B52C /* Pods-easyBook */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 876A0FD74412A3BDD24D17FAD34543C7 /* Build configuration list for PBXNativeTarget "SwipeMenuViewController" */;
+			buildConfigurationList = 053846C95042AFD0E9F125923ED8C0FB /* Build configuration list for PBXNativeTarget "Pods-easyBook" */;
 			buildPhases = (
-				8C442113B6F499A1447CFF90FFC2950F /* Headers */,
-				AEBD21F2EC6BAF81243172C9F0319750 /* Sources */,
-				4D1695F6D014F471B28E84A45E50DE0F /* Frameworks */,
-				714789CFEDAA2B7ED59957CDD0CE56AC /* Resources */,
+				91DB553B2633CF550F4ACA5AFD08055A /* Headers */,
+				7E52798FB1598B48BEDEF1A92F6B8C77 /* Sources */,
+				E6A3B7B99E487E613D7916B12E35D05B /* Frameworks */,
+				E36BB9A2C391005A2109376A2329B2F9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5A6E517450E8B3AAEE08AA3F7793F1EB /* PBXTargetDependency */,
+				6AE29D77580B64CA4B68A8F7522EB853 /* PBXTargetDependency */,
+				E4BEE7AAAB8872D20261794B8F74A42A /* PBXTargetDependency */,
+				8DDAC2F8713025EB9166DDA9389FB8BA /* PBXTargetDependency */,
+				A0F397FCFD7DC90F1C6767A98BB43900 /* PBXTargetDependency */,
+				6E94F3986FB78B4E58A2603AAB361E31 /* PBXTargetDependency */,
 			);
-			name = SwipeMenuViewController;
-			productName = SwipeMenuViewController;
-			productReference = E0C490776D3B83F99C45CB3039B6B831 /* SwipeMenuViewController.framework */;
+			name = "Pods-easyBook";
+			productName = "Pods-easyBook";
+			productReference = B9A1A0E2C80DECC4EF0DFA1916CDC9B6 /* Pods_easyBook.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -821,29 +1046,23 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = ED851A983A0AE9D3323A3054BE3C4824 /* Products */;
+			productRefGroup = DCD3B47329E5D8FB5A46C7A243A0D822 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				6ADA5765F8A0E665B378C9356B7C05DC /* BEMCheckBox */,
 				1921C72E1ADC97E3D04CA25FFB58DBFC /* FSCalendar */,
 				977310FD771A8546FE31D757343292CC /* FTIndicator */,
+				546B747B9DB0515E059EEBA0B9E98B42 /* MJRefresh */,
 				2984E119D425AD26A0B5DB4F342FEAF4 /* NewPopMenu */,
-				53DD2A07F504CF8CAA91A8DF00C19C8B /* Pods-easyBook */,
-				BE85D633AE769A1CD745083EB5E6B84E /* SwipeMenuViewController */,
+				A091380D33FFBD674F37E6481AB1B52C /* Pods-easyBook */,
+				71A5BC51F0F11D02C1DCFD575DF2B98B /* SwipeMenuViewController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		26D313EF00B61ECBAFD36D2FF371B054 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2EF099C94136A27B3625461C02B37601 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -857,7 +1076,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		714789CFEDAA2B7ED59957CDD0CE56AC /* Resources */ = {
+		862C3C5F3DC00E80837F3E923C463301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10884584B45C6564993981E004AE6B5B /* MJRefresh.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		888E176509252DA1878CBCFB7921C41E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -876,6 +1103,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FBB4AD750A3BAC3239644A9F0359319 /* FTProgressIndicator.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E36BB9A2C391005A2109376A2329B2F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -912,6 +1146,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43D5CCDE6E144B6F6AEE48CEDD25AC1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				482B75E0CB8031D3F673F70242FA41FB /* MJRefresh-dummy.m in Sources */,
+				DB70C0344D46C9DBD3DBD9CA84C639D3 /* MJRefreshAutoFooter.m in Sources */,
+				B50A173CC006987E8682D89650F14F63 /* MJRefreshAutoGifFooter.m in Sources */,
+				6E560D2FE4A36AB742453E3CF5F4CE68 /* MJRefreshAutoNormalFooter.m in Sources */,
+				6D2FD545E0B463F0210B5242E1477721 /* MJRefreshAutoStateFooter.m in Sources */,
+				EEDC5683FF36946364A3C8344630705B /* MJRefreshBackFooter.m in Sources */,
+				F41FA61294C6ABEEAEDC06A420AD696E /* MJRefreshBackGifFooter.m in Sources */,
+				2EFA8D0D3C31B3A77612C955773F7D36 /* MJRefreshBackNormalFooter.m in Sources */,
+				C1117CCC45FA6780A4E9CC0879D5C3EA /* MJRefreshBackStateFooter.m in Sources */,
+				A7ED1FA2F59F020062DE3B579AF84F55 /* MJRefreshComponent.m in Sources */,
+				F024CC151BA9C2DCEEEDB1857C832CB8 /* MJRefreshConst.m in Sources */,
+				4E75F1293990391FB686C2BBD734E715 /* MJRefreshFooter.m in Sources */,
+				94237113054B0D5CE28D86E2C827BD72 /* MJRefreshGifHeader.m in Sources */,
+				B7170162BEBD63676519BFABE4D76287 /* MJRefreshHeader.m in Sources */,
+				EF873453BEEE867C2F8C43660CEB4A78 /* MJRefreshNormalHeader.m in Sources */,
+				31D52A4583BB36984AEC4C6D71265746 /* MJRefreshStateHeader.m in Sources */,
+				9A9931F189A4EF1FABC8C731BC11AEFE /* NSBundle+MJRefresh.m in Sources */,
+				81727E0FB34C0FE08D39BDE52687701F /* UIScrollView+MJExtension.m in Sources */,
+				CF76306C6168AD7A6C076288CA899B02 /* UIScrollView+MJRefresh.m in Sources */,
+				8234F492BBE286EA25736C05B5728C82 /* UIView+MJExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C10BCFDF0BCFD6817EFC286A00F1147 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -924,27 +1185,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F5C0B457655EC7CBD1C021631EEEEF7 /* Sources */ = {
+		7E52798FB1598B48BEDEF1A92F6B8C77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B70D0C94D90F7EA5915EFF4ACEB60716 /* Pods-easyBook-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEBD21F2EC6BAF81243172C9F0319750 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				06DE3F9B88DF6448AFA1A178BC5C61B9 /* ContentScrollView.swift in Sources */,
-				2357E79402DE4F7F3CB1281F85D51E1E /* SwipeMenuView.swift in Sources */,
-				72F65A074F27669F4F68B1A78A087EB6 /* SwipeMenuViewController-dummy.m in Sources */,
-				E4BE02B3B07AC7C262C708F529E90020 /* SwipeMenuViewController.swift in Sources */,
-				EBF1D54D3B489BFC82C66BC76D76F369 /* TabItemView.swift in Sources */,
-				E092E1E2EFC4A44E17BED161E1EE0BF5 /* TabView.swift in Sources */,
-				DA64643B599B79D744F40C8AF8B9CDB1 /* UIColorExtension.swift in Sources */,
-				52655A2FF25DAD7F31C29C345613311B /* UIEdgeInsetsExtension.swift in Sources */,
-				6F7B29EE7D6A3C0DF84D8AD711E27278 /* UIViewExtension.swift in Sources */,
+				0A2A7BA6A9AE0D6D258E046702B8F0BF /* Pods-easyBook-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -971,42 +1216,135 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4623576FB34442B96B14080F0B43369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C370C89A9C75E25344FE6A39208879AD /* ContentScrollView.swift in Sources */,
+				15C2EB04D6B8F976B266429E8761AAB9 /* SwipeMenuView.swift in Sources */,
+				FF07147DC67F14943F0547EE83227501 /* SwipeMenuViewController-dummy.m in Sources */,
+				94792512E63E255CADC5FBDF3648D2AB /* SwipeMenuViewController.swift in Sources */,
+				A101BC33ADAF31FAB408D708A49A0D3A /* TabItemView.swift in Sources */,
+				DE93A21E73281E81B87BE4DD3FD4C9EF /* TabView.swift in Sources */,
+				D83AA4722A4A3BF8D8257F270465FB56 /* UIColorExtension.swift in Sources */,
+				A3C1FA4A056E3887254FD671E96C2554 /* UIEdgeInsetsExtension.swift in Sources */,
+				0CBE8DF24C1FCB9A518E94FF59598D64 /* UIViewExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		473B7FCD3DA10E7811F12D8772940C5B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FSCalendar;
-			target = 1921C72E1ADC97E3D04CA25FFB58DBFC /* FSCalendar */;
-			targetProxy = 3C0DFB77DB615C83A76858559D8E61BD /* PBXContainerItemProxy */;
-		};
-		782B9417457C4538EEE38FA7C7059653 /* PBXTargetDependency */ = {
+		5A6E517450E8B3AAEE08AA3F7793F1EB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BEMCheckBox;
 			target = 6ADA5765F8A0E665B378C9356B7C05DC /* BEMCheckBox */;
-			targetProxy = 96AF1AA77FB2DD57770F4754E91F7A87 /* PBXContainerItemProxy */;
+			targetProxy = 2533CA288F8EF794F3C1772C664A9F67 /* PBXContainerItemProxy */;
 		};
-		A315E164C74C249BE61B50D4C72B40AA /* PBXTargetDependency */ = {
+		6AE29D77580B64CA4B68A8F7522EB853 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FTIndicator;
-			target = 977310FD771A8546FE31D757343292CC /* FTIndicator */;
-			targetProxy = 3788E1A4DA25AACE967BF409AB88BDAC /* PBXContainerItemProxy */;
+			name = FSCalendar;
+			target = 1921C72E1ADC97E3D04CA25FFB58DBFC /* FSCalendar */;
+			targetProxy = 14C869A85D4C2697EDC684673C6622BE /* PBXContainerItemProxy */;
 		};
-		A42E5278CE18CA2A2034A59FA1796D1D /* PBXTargetDependency */ = {
+		6E94F3986FB78B4E58A2603AAB361E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwipeMenuViewController;
+			target = 71A5BC51F0F11D02C1DCFD575DF2B98B /* SwipeMenuViewController */;
+			targetProxy = 1B374D71A3D81205169524477354F08D /* PBXContainerItemProxy */;
+		};
+		8DDAC2F8713025EB9166DDA9389FB8BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MJRefresh;
+			target = 546B747B9DB0515E059EEBA0B9E98B42 /* MJRefresh */;
+			targetProxy = A3914AB8274FA614042A4F7404A1F820 /* PBXContainerItemProxy */;
+		};
+		A0F397FCFD7DC90F1C6767A98BB43900 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NewPopMenu;
 			target = 2984E119D425AD26A0B5DB4F342FEAF4 /* NewPopMenu */;
-			targetProxy = 46EB89CEB279B76C593B0F720E7B4861 /* PBXContainerItemProxy */;
+			targetProxy = 6BF67043F69809EAF5B041A907EDBB03 /* PBXContainerItemProxy */;
 		};
-		F5714D956060CCDF0B175ABE4E08B3DB /* PBXTargetDependency */ = {
+		E4BEE7AAAB8872D20261794B8F74A42A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwipeMenuViewController;
-			target = BE85D633AE769A1CD745083EB5E6B84E /* SwipeMenuViewController */;
-			targetProxy = 4C46DB93D45E2BA7673D546435B41769 /* PBXContainerItemProxy */;
+			name = FTIndicator;
+			target = 977310FD771A8546FE31D757343292CC /* FTIndicator */;
+			targetProxy = E57DF49B7A73658E910D50A3FF92EE00 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		027C6E284353542BE4D3451D1953434E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D2B247F82165A37B53E29E125A9D879 /* MJRefresh.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MJRefresh/MJRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MJRefresh/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MJRefresh/MJRefresh.modulemap";
+				PRODUCT_MODULE_NAME = MJRefresh;
+				PRODUCT_NAME = MJRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0387DD7BAF1B97919C034EA3A7FFB12E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D2B247F82165A37B53E29E125A9D879 /* MJRefresh.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MJRefresh/MJRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MJRefresh/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MJRefresh/MJRefresh.modulemap";
+				PRODUCT_MODULE_NAME = MJRefresh;
+				PRODUCT_NAME = MJRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		0AA3B91655AF95B1F49159CD8085CD89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1075,7 +1413,7 @@
 		};
 		112FF1394BADAA93E760DFD708981E2A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7198E126BBE173F6CA18B562FB2FA815 /* FTIndicator.xcconfig */;
+			baseConfigurationReference = D839DF73E2FE750C2B16BCB08C166C35 /* FTIndicator.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1111,7 +1449,7 @@
 		};
 		2E47EBF3A9F593A4042087E868278816 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B56695F3974C05A1EEE78A84ED481F0C /* NewPopMenu.xcconfig */;
+			baseConfigurationReference = ED8A14982BB8182739AAA47A306A3106 /* NewPopMenu.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1145,9 +1483,47 @@
 			};
 			name = Release;
 		};
+		51F0EF0422719B04588FA32704CA1A73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 166B49C290AB951362C9A2691E796369 /* Pods-easyBook.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-easyBook/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-easyBook/Pods-easyBook.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		70B652DC8658E7DDFCEC8EB8967B593F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B2D3888E69C4B067A25FAD64DA2A9BE /* FSCalendar.xcconfig */;
+			baseConfigurationReference = AF92A2202E902FA8A4F08F176CB24D9B /* FSCalendar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1182,7 +1558,7 @@
 		};
 		71B2BFC416B97CE0EFF1F187A0D6BD40 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C978A66415BCFFF7ECCA3A438758C1C2 /* BEMCheckBox.xcconfig */;
+			baseConfigurationReference = E3C115959BF95E4809D7ED45E0A741DA /* BEMCheckBox.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1278,9 +1654,44 @@
 			};
 			name = Release;
 		};
+		8234EF4E76869F4705F9A36641CB99D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 544B963DCAA5899713E8C61AF4D5313B /* SwipeMenuViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeMenuViewController/SwipeMenuViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeMenuViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwipeMenuViewController/SwipeMenuViewController.modulemap";
+				PRODUCT_MODULE_NAME = SwipeMenuViewController;
+				PRODUCT_NAME = SwipeMenuViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		94911C91C8594A0A6BD881E9C25E337C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B56695F3974C05A1EEE78A84ED481F0C /* NewPopMenu.xcconfig */;
+			baseConfigurationReference = ED8A14982BB8182739AAA47A306A3106 /* NewPopMenu.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1313,7 +1724,114 @@
 			};
 			name = Debug;
 		};
-		9D6809396F8EF429306E7138F7419D81 /* Release */ = {
+		A793C72F5A142B988E467623153554FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF92A2202E902FA8A4F08F176CB24D9B /* FSCalendar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FSCalendar/FSCalendar.modulemap";
+				PRODUCT_MODULE_NAME = FSCalendar;
+				PRODUCT_NAME = FSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BEF84CCB996A268828D12D936174386A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 544B963DCAA5899713E8C61AF4D5313B /* SwipeMenuViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeMenuViewController/SwipeMenuViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeMenuViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwipeMenuViewController/SwipeMenuViewController.modulemap";
+				PRODUCT_MODULE_NAME = SwipeMenuViewController;
+				PRODUCT_NAME = SwipeMenuViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D53ED74F1F11F343CB1AE0F101BC8C43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3C115959BF95E4809D7ED45E0A741DA /* BEMCheckBox.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BEMCheckBox/BEMCheckBox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BEMCheckBox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BEMCheckBox/BEMCheckBox.modulemap";
+				PRODUCT_MODULE_NAME = BEMCheckBox;
+				PRODUCT_NAME = BEMCheckBox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F173800CD5F2C8DA4E8AA9A50CBF6296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 864D9F8E2A3D8AAA61A17FCC5A4143E7 /* Pods-easyBook.release.xcconfig */;
 			buildSettings = {
@@ -1352,189 +1870,9 @@
 			};
 			name = Release;
 		};
-		A793C72F5A142B988E467623153554FB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B2D3888E69C4B067A25FAD64DA2A9BE /* FSCalendar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FSCalendar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/FSCalendar/FSCalendar.modulemap";
-				PRODUCT_MODULE_NAME = FSCalendar;
-				PRODUCT_NAME = FSCalendar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C143636D5F131DB681665B8F786ADD1B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55D759589A4D3DB1671D7C028ACEFB92 /* SwipeMenuViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwipeMenuViewController/SwipeMenuViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwipeMenuViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwipeMenuViewController/SwipeMenuViewController.modulemap";
-				PRODUCT_MODULE_NAME = SwipeMenuViewController;
-				PRODUCT_NAME = SwipeMenuViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D53ED74F1F11F343CB1AE0F101BC8C43 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C978A66415BCFFF7ECCA3A438758C1C2 /* BEMCheckBox.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BEMCheckBox/BEMCheckBox-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BEMCheckBox/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/BEMCheckBox/BEMCheckBox.modulemap";
-				PRODUCT_MODULE_NAME = BEMCheckBox;
-				PRODUCT_NAME = BEMCheckBox;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E0EE587026BAD4E60F7FEF3D0777488E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 166B49C290AB951362C9A2691E796369 /* Pods-easyBook.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-easyBook/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-easyBook/Pods-easyBook.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EADD8A78B58B3E96578E6089C0A8A323 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55D759589A4D3DB1671D7C028ACEFB92 /* SwipeMenuViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwipeMenuViewController/SwipeMenuViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwipeMenuViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwipeMenuViewController/SwipeMenuViewController.modulemap";
-				PRODUCT_MODULE_NAME = SwipeMenuViewController;
-				PRODUCT_NAME = SwipeMenuViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		F55093A1112ECDF7A3860C1CC14E3C27 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7198E126BBE173F6CA18B562FB2FA815 /* FTIndicator.xcconfig */;
+			baseConfigurationReference = D839DF73E2FE750C2B16BCB08C166C35 /* FTIndicator.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1570,6 +1908,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		053846C95042AFD0E9F125923ED8C0FB /* Build configuration list for PBXNativeTarget "Pods-easyBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51F0EF0422719B04588FA32704CA1A73 /* Debug */,
+				F173800CD5F2C8DA4E8AA9A50CBF6296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1597,24 +1944,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		600E687F66CE55A92DA386ECA33FBFEF /* Build configuration list for PBXNativeTarget "Pods-easyBook" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E0EE587026BAD4E60F7FEF3D0777488E /* Debug */,
-				9D6809396F8EF429306E7138F7419D81 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		876A0FD74412A3BDD24D17FAD34543C7 /* Build configuration list for PBXNativeTarget "SwipeMenuViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C143636D5F131DB681665B8F786ADD1B /* Debug */,
-				EADD8A78B58B3E96578E6089C0A8A323 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		DF8918F0B36B4A4E179CFA1899FAEA96 /* Build configuration list for PBXNativeTarget "FTIndicator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1629,6 +1958,24 @@
 			buildConfigurations = (
 				70B652DC8658E7DDFCEC8EB8967B593F /* Debug */,
 				A793C72F5A142B988E467623153554FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5347A655B294BA9CD97F8613F030F74 /* Build configuration list for PBXNativeTarget "SwipeMenuViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8234EF4E76869F4705F9A36641CB99D7 /* Debug */,
+				BEF84CCB996A268828D12D936174386A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6F83A3523D8341EDA917BED02337C9A /* Build configuration list for PBXNativeTarget "MJRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				027C6E284353542BE4D3451D1953434E /* Debug */,
+				0387DD7BAF1B97919C034EA3A7FFB12E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

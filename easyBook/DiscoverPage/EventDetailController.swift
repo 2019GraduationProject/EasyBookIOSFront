@@ -40,6 +40,15 @@ class EventDetailController: UITableViewController {
         self.tableView.register(UINib(nibName: "DetailClauseCell", bundle: nil), forCellReuseIdentifier: "DetailClauseCell")
     }
     
+    /// 去掉子页面返回按钮后的文字
+    ///
+    /// - Parameter animated:
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // 设置返回按钮后的文字
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
     /// 取消 section 的点击效果
     /// ⚠️注：若在viewDidLoad()中写，则还未加载到第一个section，会报空指针
     ///
@@ -53,6 +62,10 @@ class EventDetailController: UITableViewController {
         
         for x in 0...(tableView(self.tableView, numberOfRowsInSection: 2) - 1) {
             tableView.cellForRow(at: [2, x])?.selectionStyle = .none
+        }
+        
+        if eventInfo.group.count == 1 && eventInfo.group[0] == "全部用户" {
+            tableView.cellForRow(at: [1, 0])?.selectionStyle = .none
         }
     }
 
@@ -78,6 +91,9 @@ class EventDetailController: UITableViewController {
             let reuseIdentifier = String(describing: DetailGroupCell.self)
             let cell = self.tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! DetailGroupCell
 
+            if eventInfo.group[indexPath.row] == "全部用户" {
+                cell.detailBtn.isHidden = true
+            }
             cell.groupNameLabel.text = eventInfo.group[indexPath.row]
             return cell
         }
@@ -122,6 +138,19 @@ class EventDetailController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 取消点击行则选中的状态
         self.tableView.deselectRow(at: indexPath, animated: true)
+        
+        if indexPath.section == 1 {
+            let cell  = tableView.cellForRow(at: indexPath) as! DetailGroupCell
+            if cell.groupNameLabel.text == "全部用户" {
+                return
+            }
+            else {
+                if let groupInfoVC = self.storyboard?.instantiateViewController(withIdentifier: "GroupInfoController") as? GroupInfoController {
+                    groupInfoVC.groupName = eventInfo.group[indexPath.row]
+                    self.navigationController?.pushViewController(groupInfoVC, animated: true)
+                }
+            }
+        }
     }
     
     /// 修改每个section之间的间距：修改section的header的大小

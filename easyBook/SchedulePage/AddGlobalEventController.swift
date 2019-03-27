@@ -17,6 +17,10 @@ class AddGlobalEventController: UITableViewController {
     
     var clauseNum: Int! // 条目数量
     
+    var isEdit: Bool = false // 是否是编辑事件还是新建事件，默认是新建事件
+    var eventInfo: Event! // 如果是编辑事件，该变量存储待编辑事件的信息
+    var isInitialized: Bool = false
+    
     fileprivate lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
@@ -43,6 +47,16 @@ class AddGlobalEventController: UITableViewController {
         eventDate = Date()
         // 给 datePicker 加监听
         eventDatePicker.addTarget(self, action: #selector(chooseEventDate( _:)), for: UIControl.Event.valueChanged)
+        
+        if eventInfo != nil {
+            eventNameTextField.text = eventInfo.name
+            eventLocationTextField.text = eventInfo.location
+            let dateStr = eventInfo.date.year + "-" + eventInfo.date.monthAndDay
+            eventDateLabel.text = dateStr
+            eventDate = self.dateFormatter.date(from: dateStr)!
+            eventDatePicker.setDate(eventDate, animated: false)
+            clauseNum = eventInfo.clause.count
+        }
     }
 
     /// 取消 section 的点击效果
@@ -108,9 +122,29 @@ class AddGlobalEventController: UITableViewController {
         if indexPath.section == 1 && indexPath.row >= 1 {
             let reuseIdentifier = String(describing: ClauseCell.self)
             let cell = self.tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! ClauseCell
-            cell.timePeriodLabel.text = "时间段" + indexPath.row.description
+            
+//            cell.timePeriodLabel.text = "时间段" + indexPath.row.description
+            if eventInfo != nil && !isInitialized {
+                // 由于第一个 cell 是添加条目按钮转，所以要减1
+                let startTimeStr = eventInfo.clause[indexPath.row - 1].startTime
+                let endTimeStr = eventInfo.clause[indexPath.row - 1].endTime
+                
+                cell.startTimeLabel.text = startTimeStr
+                cell.endTimeLabel.text = endTimeStr
+                
+                let dateFormatter = DateFormatter.init()
+                dateFormatter.dateFormat = "HH:mm"
+                cell.startTimePicker.setDate(dateFormatter.date(from: startTimeStr)!, animated: false)
+                cell.endTimePicker.setDate(dateFormatter.date(from: endTimeStr)!, animated: false)
+                
+                // 点击添加条目按钮，不能用 eventInfo 的数据来初始化新增的 ClauseCell
+                if indexPath.row == eventInfo.clause.count {
+                    isInitialized = true
+                }
+            }
             return cell
-        } else {
+        }
+        else {
             return super.tableView(tableView, cellForRowAt: indexPath)
         }
     }
@@ -196,6 +230,11 @@ class AddGlobalEventController: UITableViewController {
     }
     
     @IBAction func tapDeliverButton(_ sender: UIBarButtonItem) {
+        if isEdit {
+            // TODO 编辑事件的逻辑写这里
+        } else {
+            // TODO 新建事件的逻辑写这里
+        }
         self.dismiss(animated: true, completion: nil)
     }
     

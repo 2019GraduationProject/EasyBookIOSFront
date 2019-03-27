@@ -11,5 +11,6 @@ target 'easyBook' do
   pod 'BEMCheckBox'
   pod 'SwipeMenuViewController'
   pod 'FTIndicator'
+  pod 'MJRefresh'
   
 end

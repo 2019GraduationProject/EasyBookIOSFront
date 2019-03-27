@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MJRefresh
 
 class LocalDiscoverController: UITableViewController, UISearchBarDelegate {
     
@@ -21,6 +22,12 @@ class LocalDiscoverController: UITableViewController, UISearchBarDelegate {
     // 保存搜索结果
     var eventSearchResult: [Event] = []
     
+    // 顶部刷新
+    let header = MJRefreshNormalHeader()
+    // 底部刷新
+    let footer = MJRefreshAutoNormalFooter()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +37,22 @@ class LocalDiscoverController: UITableViewController, UISearchBarDelegate {
         // 搜索内容为空时，显示全部内容
         self.eventSearchResult = self.localEventData
         searchBar.delegate = self
+        
+        // 下拉刷新
+        header.setRefreshingTarget(self, refreshingAction: #selector(headerRefresh))
+        header.setTitle("下拉刷新数据", for: .idle)
+        header.setTitle("松开立即刷新", for: .pulling)
+        header.setTitle("数据加载中...", for: .refreshing)
+        header.lastUpdatedTimeLabel.isHidden = true
+        self.tableView.mj_header = header
+        
+        // 上拉刷新
+        footer.setRefreshingTarget(self, refreshingAction: #selector(footerRefresh))
+        footer.setTitle("点击或上拉加载更多数据", for: .idle)
+        footer.setTitle("释放加载更多数据", for: .pulling)
+        footer.setTitle("数据加载中...", for: .refreshing)
+        footer.setTitle("已经到底啦TvT", for: .noMoreData)
+//        self.tableView.mj_footer = footer
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -89,19 +112,36 @@ class LocalDiscoverController: UITableViewController, UISearchBarDelegate {
         // 取消点击行则选中的状态
         self.tableView.deselectRow(at: indexPath, animated: true)
         
-//        if let eventDetailNaviController = self.storyboard?.instantiateViewController(withIdentifier: "EventDetailNaviController") as? UINavigationController {
-//            let eventDetailVC = eventDetailNaviController.topViewController as! EventDetailController
-//            let eventInfo = self.eventSearchResult[indexPath.row]
-//            eventDetailVC.eventInfo = eventInfo
-//
-//            eventDetailNaviController.modalTransitionStyle = .coverVertical
-//            present(eventDetailNaviController, animated: true, completion: nil)
-//        }
-        
         if let eventDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "EventDetailController") as? EventDetailController {
             let eventInfo = self.eventSearchResult[indexPath.row]
             eventDetailVC.eventInfo = eventInfo
             self.navigationController?.pushViewController(eventDetailVC, animated: true)
+        }
+    }
+    
+    
+    // MARK: - Event Listeners
+    
+    /// 顶部刷新
+    @objc func headerRefresh(){
+        // TODO
+        
+        // 结束刷新
+        self.tableView.mj_header.endRefreshing()
+    }
+    
+    /// 底部刷新
+    var index = 0
+    @objc func footerRefresh(){
+        // TODO
+        
+        // 结束刷新
+        self.tableView.mj_footer.endRefreshing()
+        
+        // 2次后模拟没有更多数据
+        index = index + 1
+        if index > 2 {
+            footer.endRefreshingWithNoMoreData()
         }
     }
 

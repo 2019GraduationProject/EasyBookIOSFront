@@ -105,8 +105,8 @@ class GroupInfoController: UITableViewController {
                 cell.identityLabel.isHidden = false
                 cell.identityLabel.text = "群主"
             }
-                // 若为本人且不是群主，显示“我”标签
-                // TODO
+            // 若为本人且不是群主，显示“我”标签
+            // TODO
             else if memberList[indexPath.row].name == "黄小白" {
                 cell.identityLabel.isHidden = false
                 cell.identityLabel.text = "我"

@@ -11,7 +11,8 @@ import UIKit
 class DetailGroupCell: UITableViewCell {
     
     @IBOutlet weak var groupNameLabel: UILabel!
-
+    @IBOutlet weak var detailBtn: UIButton!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
