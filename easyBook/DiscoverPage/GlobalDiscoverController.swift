@@ -14,8 +14,8 @@ class GlobalDiscoverController: UITableViewController, UISearchBarDelegate {
     @IBOutlet weak var searchBar: UISearchBar!
     
     let globalEventData: [Event] = [
-        Event(name: "机器学习讲座", date: EventDate(monthAndDay: "03-20"), location: "南京大学鼓楼校区教学楼201", group: ["全部用户"], clause: [Clause(startTime: "14:00", endTime: "16:00")]),
-        Event(name: "大数据时代讲座", date: EventDate(monthAndDay: "04-01"), location: "南京大学鼓楼校区教学楼220", group: ["全部用户"], clause: [Clause(startTime: "09:00", endTime: "11:00")])
+        Event(name: "机器学习讲座", date: EventDate(monthAndDay: "03-20"), location: "南京大学鼓楼校区教学楼201", group: ["全部用户"], clause: [Clause(startTime: "14:00", endTime: "16:00", maxAmount: 200, currentAmount: 200)]),
+        Event(name: "大数据时代讲座", date: EventDate(monthAndDay: "04-01"), location: "南京大学鼓楼校区教学楼220", group: ["全部用户"], clause: [Clause(startTime: "09:00", endTime: "11:00", maxAmount: 250, currentAmount: 120)])
     ]
     
     // 保存搜索结果

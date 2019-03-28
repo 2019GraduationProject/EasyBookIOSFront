@@ -39,10 +39,21 @@ struct Clause: Codable {
     
     var startTime = ""
     var endTime = ""
+    var maxAmount: Int!
+    var currentAmount: Int!
     
-    init(startTime: String, endTime: String) {
+    init(startTime: String, endTime: String, maxAmount: Int) {
         self.startTime = startTime
         self.endTime = endTime
+        self.maxAmount = maxAmount
+        self.currentAmount = 0
+    }
+    
+    init(startTime: String, endTime: String, maxAmount: Int, currentAmount: Int) {
+        self.startTime = startTime
+        self.endTime = endTime
+        self.maxAmount = maxAmount
+        self.currentAmount = currentAmount
     }
     
 }

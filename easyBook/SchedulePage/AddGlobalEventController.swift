@@ -136,6 +136,7 @@ class AddGlobalEventController: UITableViewController {
                 dateFormatter.dateFormat = "HH:mm"
                 cell.startTimePicker.setDate(dateFormatter.date(from: startTimeStr)!, animated: false)
                 cell.endTimePicker.setDate(dateFormatter.date(from: endTimeStr)!, animated: false)
+                cell.maxAmountTextField.text = eventInfo.clause[indexPath.row - 1].maxAmount.description
                 
                 // 点击添加条目按钮，不能用 eventInfo 的数据来初始化新增的 ClauseCell
                 if indexPath.row == eventInfo.clause.count {

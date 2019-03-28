@@ -191,12 +191,48 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Hjb-T5-fcK">
+                                        <rect key="frame" x="0.0" y="279.5" width="375" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hjb-T5-fcK" id="Nca-GV-IDe">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wxB-d3-jYG">
+                                                    <rect key="frame" x="20" y="17.5" width="335" height="20.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="人数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPD-4u-05f">
+                                                            <rect key="frame" x="0.0" y="0.0" width="281" height="20.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <color key="textColor" name="themeGray"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6/10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Re1-C5-A0v">
+                                                            <rect key="frame" x="301" y="0.0" width="34" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="Re1-C5-A0v" firstAttribute="leading" secondItem="gPD-4u-05f" secondAttribute="trailing" constant="20" id="c7S-Mt-ziY"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Re1-C5-A0v" secondAttribute="trailing" id="luu-rb-z5L"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wxB-d3-jYG" firstAttribute="centerY" secondItem="Nca-GV-IDe" secondAttribute="centerY" id="InD-yJ-YBx"/>
+                                                <constraint firstItem="wxB-d3-jYG" firstAttribute="leading" secondItem="Nca-GV-IDe" secondAttribute="leading" constant="20" id="lUO-5K-b8o"/>
+                                                <constraint firstAttribute="trailing" secondItem="wxB-d3-jYG" secondAttribute="trailing" constant="20" id="noi-Pv-Hsr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="群组" id="P4D-aN-c31">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="xne-tL-dBG">
-                                        <rect key="frame" x="0.0" y="335.5" width="375" height="56"/>
+                                        <rect key="frame" x="0.0" y="391.5" width="375" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xne-tL-dBG" id="RSp-YA-x3k">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
@@ -212,6 +248,7 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="amountLabel" destination="Re1-C5-A0v" id="IHI-I7-Od4"/>
                         <outlet property="dateLabel" destination="sDF-2a-5Vn" id="n0P-vO-YGn"/>
                         <outlet property="endTimeLabel" destination="xdd-od-UdQ" id="zfG-Qj-pI1"/>
                         <outlet property="eventNameLabel" destination="F8R-HC-D8x" id="TEi-19-gH8"/>
@@ -2529,6 +2566,9 @@
                                                 <constraint firstItem="hPP-gg-bun" firstAttribute="leading" secondItem="FfZ-YG-BZa" secondAttribute="leading" constant="20" id="pJn-at-tnR"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="SXd-u3-cbq" kind="show" id="cDB-n1-hyL"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -2696,6 +2736,15 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="themeColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
@@ -3049,7 +3098,7 @@
                                                                                     <real key="value" value="1"/>
                                                                                 </userDefinedRuntimeAttribute>
                                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                                    <real key="value" value="10"/>
+                                                                                    <real key="value" value="5"/>
                                                                                 </userDefinedRuntimeAttribute>
                                                                             </userDefinedRuntimeAttributes>
                                                                         </label>
@@ -3714,12 +3763,12 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wH-BN-7lx">
-                                <rect key="frame" x="160.5" y="620" width="54" height="45"/>
+                                <rect key="frame" x="157.5" y="620" width="60" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="xA0-lq-LYo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                <state key="normal" title="忘记密码">
+                                <state key="normal" title="忘记密码?">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -3773,7 +3822,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_bg_375x667_" translatesAutoresizingMaskIntoConstraints="NO" id="VfA-wg-MRO">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_bg_375x667_" translatesAutoresizingMaskIntoConstraints="NO" id="VfA-wg-MRO">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdf-ne-HI8">
@@ -3838,7 +3887,7 @@
                                                                 <real key="value" value="1"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="15"/>
+                                                                <real key="value" value="5"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
@@ -4446,10 +4495,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_bg_375x667_" translatesAutoresizingMaskIntoConstraints="NO" id="Z7d-Mj-YG9">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_bg_375x667_" translatesAutoresizingMaskIntoConstraints="NO" id="Z7d-Mj-YG9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重置密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hx0-wt-g0d">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="修改密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hx0-wt-g0d">
                                 <rect key="frame" x="127" y="117.5" width="121.5" height="36"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
@@ -4511,7 +4560,7 @@
                                                                 <real key="value" value="1"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="15"/>
+                                                                <real key="value" value="5"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
@@ -4649,7 +4698,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-743" y="2698"/>
+            <point key="canvasLocation" x="-743" y="2782"/>
         </scene>
         <!--Add Local Event Navigation Controller-->
         <scene sceneID="YAG-DC-t0p">
@@ -5449,7 +5498,7 @@
         <!--Event Detail Controller-->
         <scene sceneID="3Np-na-QuH">
             <objects>
-                <tableViewController storyboardIdentifier="EventDetailController" id="NgE-BT-oEp" customClass="EventDetailController" customModule="easyBook" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="EventDetailController" hidesBottomBarWhenPushed="YES" id="NgE-BT-oEp" customClass="EventDetailController" customModule="easyBook" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="56" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="uDj-21-uTK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5636,7 +5685,7 @@
         <image name="location_icon_14x13_" width="14" height="13"/>
         <image name="lock_icon_16x24_" width="32" height="47.342464447021484"/>
         <image name="login_bg_375x250_" width="375" height="250"/>
-        <image name="logo_about_64x64_" width="64" height="64"/>
+        <image name="logo_about_64x64_" width="341.5" height="341.5"/>
         <image name="message_25x25_" width="25" height="25"/>
         <image name="more_24x24_" width="24" height="24"/>
         <image name="new_invitation_40x40_" width="40" height="40"/>
@@ -5660,4 +5709,7 @@
             <color red="0.83921568627450982" green="0.84313725490196079" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="u9i-7R-TY4"/>
+    </inferredMetricsTieBreakers>
 </document>

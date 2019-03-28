@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FTIndicator
 
 class SettingsController: UITableViewController {
     
@@ -23,6 +24,8 @@ class SettingsController: UITableViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.darkText]
         // 修改每个 section 之间的间距：修改 section 的 footer 的大小
         tableView.sectionFooterHeight = 8
+        
+        FTIndicator.setIndicatorStyle(.dark)
     }
     
     /// 去掉子页面返回按钮后的文字
@@ -64,8 +67,12 @@ class SettingsController: UITableViewController {
         // 取消点击行则选中的状态
         self.tableView.deselectRow(at: indexPath, animated: true)
         
+        if indexPath == [0, 0] {
+            FTIndicator.showInfo(withMessage: "暂未开放修改手机号功能")
+        }
+        
         // 点击退出登录行
-        if indexPath.section == 2 {
+        else if indexPath.section == 2 {
             let actionSheet = UIAlertController(title: nil, message: "退出后不会删除任何历史数据，下次登录依然可以使用本账号。", preferredStyle: .actionSheet)
             
             let logoutAction = UIAlertAction(title: "退出登录", style: .destructive) { (_) in
@@ -84,11 +91,6 @@ class SettingsController: UITableViewController {
             present(actionSheet, animated: true, completion: nil)
         }
     }
-    
-    // MARK: - Event Listeners
-    
-    
-    
 
     /*
     // MARK: - Navigation

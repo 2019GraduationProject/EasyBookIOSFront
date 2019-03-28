@@ -119,6 +119,7 @@ class UpcomingEventDetailController: UITableViewController {
             }
             cell.startTimeLabel.text = eventInfo.clause[indexPath.row].startTime
             cell.endTimeLabel.text = eventInfo.clause[indexPath.row].endTime
+            cell.amountLabel.text = "(" + eventInfo.clause[indexPath.row].currentAmount.description + "/" + eventInfo.clause[indexPath.row].maxAmount.description + ")"
             return cell
         }
         else {

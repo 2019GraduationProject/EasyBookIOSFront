@@ -57,22 +57,36 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wa-7X-oOQ">
-                                <rect key="frame" x="283" y="0.0" width="52" height="28"/>
-                                <color key="backgroundColor" name="themeColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="PRx-oI-xro"/>
-                                    <constraint firstAttribute="width" constant="52" id="WFC-2J-Pzb"/>
-                                </constraints>
-                                <state key="normal" title="预约">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9zd-ts-dfK">
+                                <rect key="frame" x="234.5" y="0.0" width="100.5" height="28"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(4/6)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Db-gG-Fg8">
+                                        <rect key="frame" x="0.0" y="0.0" width="38.5" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wa-7X-oOQ">
+                                        <rect key="frame" x="48.5" y="0.0" width="52" height="28"/>
+                                        <color key="backgroundColor" name="themeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="PRx-oI-xro"/>
+                                            <constraint firstAttribute="width" constant="52" id="WFC-2J-Pzb"/>
+                                        </constraints>
+                                        <state key="normal" title="预约">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tapBookBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="e21-g0-3Ch"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                     </stackView>
                 </subviews>
@@ -84,6 +98,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="amountLabel" destination="3Db-gG-Fg8" id="ehD-Ka-u4F"/>
+                <outlet property="bookBtn" destination="8Wa-7X-oOQ" id="l0K-yy-aT4"/>
                 <outlet property="endTimeLabel" destination="vBq-ZW-LNK" id="h4p-Ix-mPb"/>
                 <outlet property="startTimeLabel" destination="d0c-91-TIG" id="6Sl-TO-CKs"/>
                 <outlet property="timePeriodLabel" destination="pYc-LB-qxr" id="KHG-ec-Qcl"/>

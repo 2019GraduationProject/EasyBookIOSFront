@@ -13,6 +13,7 @@ class EndedClauseCell: UITableViewCell {
     @IBOutlet weak var timePeriodLabel: UILabel!
     @IBOutlet weak var startTimeLabel: UILabel!
     @IBOutlet weak var endTimeLabel: UILabel!
+    @IBOutlet weak var amountLabel: UILabel!
     
 
     override func awakeFromNib() {

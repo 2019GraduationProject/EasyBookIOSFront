@@ -15,6 +15,7 @@ class ScheduleDetailController: UITableViewController {
     @IBOutlet weak var startTimeLabel: UILabel!
     @IBOutlet weak var endTimeLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var amountLabel: UILabel!
     
     var scheduleInfo: ScheduleEvent!
     
@@ -44,6 +45,7 @@ class ScheduleDetailController: UITableViewController {
         startTimeLabel.text = scheduleInfo.startTime
         endTimeLabel.text = scheduleInfo.endTime
         locationLabel.text = scheduleInfo.location
+        amountLabel.text = scheduleInfo.currentAmount.description + "/" + scheduleInfo.maxAmount.description
         
         // 设置多行文本在 label 中自动换行
         locationLabel.lineBreakMode = NSLineBreakMode.byWordWrapping

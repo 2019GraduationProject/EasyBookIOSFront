@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ClauseCell: UITableViewCell {
+class ClauseCell: UITableViewCell, UIScrollViewDelegate {
     
     @IBOutlet weak var timePeriodLabel: UILabel!
     @IBOutlet weak var startTimeLabel: UILabel!
     @IBOutlet weak var endTimeLabel: UILabel!
     @IBOutlet weak var startTimePicker: UIDatePicker!
     @IBOutlet weak var endTimePicker: UIDatePicker!
+    @IBOutlet weak var maxAmountTextField: UITextField!
     
     fileprivate lazy var timeFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -57,7 +58,15 @@ class ClauseCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    /// Event Listeners
+    
+    // MARK: - UIScrollViewDelegate
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        maxAmountTextField.resignFirstResponder()
+    }
+    
+    
+    // MARK: - Event Listeners
     
     @objc func chooseStartTime(_ datePicker: UIDatePicker) {
         self.clauseStartTime = startTimePicker.date
