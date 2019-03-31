@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FTIndicator
 
 class ScheduleDetailController: UITableViewController {
 
@@ -55,6 +56,8 @@ class ScheduleDetailController: UITableViewController {
         
         // 创建重用的单元格
         self.tableView.register(UINib(nibName: "DetailGroupCell", bundle: nil), forCellReuseIdentifier: "DetailGroupCell")
+        
+        FTIndicator.setIndicatorStyle(.dark)
     }
     
     /// 去掉子页面返回按钮后的文字
@@ -104,7 +107,7 @@ class ScheduleDetailController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -169,12 +172,31 @@ class ScheduleDetailController: UITableViewController {
                 }
             }
         }
+        else if indexPath.section == 2 {
+            let actionSheet = UIAlertController(title: nil, message: "是否确认取消预约该事件？", preferredStyle: .actionSheet)
+            
+            let confirmAction = UIAlertAction(title: "确认取消预约", style: .destructive) { (_) in
+                // TODO
+                FTIndicator.showSuccess(withMessage: "您已取消预约该事件")
+            }
+            
+            let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+            cancelAction.setValue(UIColor(named: "themeColor"), forKey: "titleTextColor")
+            
+            actionSheet.addAction(confirmAction)
+            actionSheet.addAction(cancelAction)
+            
+            present(actionSheet, animated: true, completion: nil)
+        }
     }
     
     /// 修改每个section之间的间距：修改section的header的大小
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 30
+        if section == 2 {
+            return 15
+        } else {
+            return 30
+        }
     }
-    
 
 }
