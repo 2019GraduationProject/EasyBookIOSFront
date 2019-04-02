@@ -2528,29 +2528,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6j4-tD-oeX">
-                                                    <rect key="frame" x="20" y="16" width="335" height="24"/>
+                                                    <rect key="frame" x="20" y="17.5" width="335" height="20.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vn-fe-y4v">
-                                                            <rect key="frame" x="0.0" y="1.5" width="52" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="52" height="20.5"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="pGu-bt-Pcy">
-                                                            <rect key="frame" x="201.5" y="0.0" width="133.5" height="24"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13712345678" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwj-CC-vhs">
-                                                                    <rect key="frame" x="0.0" y="1.5" width="105.5" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                                    <color key="textColor" name="themeGray"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtk-YX-w57">
-                                                                    <rect key="frame" x="121.5" y="0.0" width="12" height="24"/>
-                                                                    <state key="normal" image="rightArrow_12x24_"/>
-                                                                </button>
-                                                            </subviews>
-                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13712345678" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwj-CC-vhs">
+                                                            <rect key="frame" x="229.5" y="0.0" width="105.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <color key="textColor" name="themeGray"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
@@ -2738,7 +2729,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aAf-nK-06X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="598" y="3063"/>
+            <point key="canvasLocation" x="597.60000000000002" y="3062.5187406296855"/>
         </scene>
         <!--About Controller-->
         <scene sceneID="rPr-HS-Jn5">
@@ -4678,7 +4669,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="223" id="M58-wX-KQn"/>
                                     <constraint firstAttribute="height" constant="46" id="wdu-jF-VmD"/>
                                 </constraints>
-                                <state key="normal" title="确认重置">
+                                <state key="normal" title="确认修改">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -5734,6 +5725,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="u9i-7R-TY4"/>
+        <segue reference="cDB-n1-hyL"/>
     </inferredMetricsTieBreakers>
 </document>
