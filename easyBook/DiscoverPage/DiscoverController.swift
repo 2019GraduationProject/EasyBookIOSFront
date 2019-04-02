@@ -1,6 +1,6 @@
 //
 //  DiscoverController.swift
-//  easyBook
+//  easyBook 
 //
 //  Created by 黄小白 on 2019/3/9.
 //  Copyright © 2019 Sherley Huang's studio. All rights reserved.
