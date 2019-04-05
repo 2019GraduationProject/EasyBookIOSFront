@@ -87,18 +87,18 @@ class NewGroupController: UITableViewController, UITextFieldDelegate {
         return true
     }
     
-    /// 设置手动输入字数不超12位
+    /// 设置手动输入字数不超15位
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let text = groupNameTextField.text else {
             return true
         }
         
         let newLength = text.count + string.count - range.length
-        if newLength <= 12 {
+        if newLength <= 15 {
             count = newLength
         }
         
-        return newLength <= 12
+        return newLength <= 15
     }
     
     
