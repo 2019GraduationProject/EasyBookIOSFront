@@ -16,7 +16,7 @@ class NewGroupController: UITableViewController, UITextFieldDelegate {
     
     var count: Int! {
         didSet {
-            self.countLabel.text = (12 - count).description
+            self.countLabel.text = (15 - count).description
         }
     }
     

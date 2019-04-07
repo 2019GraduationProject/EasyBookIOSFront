@@ -5374,7 +5374,7 @@
         <!--New Group Controller-->
         <scene sceneID="SSh-2g-kn8">
             <objects>
-                <tableViewController storyboardIdentifier="NewGroupController" id="b3e-c2-N3d" customClass="NewGroupController" customModule="easyBook" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="NewGroupController" hidesBottomBarWhenPushed="YES" id="b3e-c2-N3d" customClass="NewGroupController" customModule="easyBook" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="56" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Lwp-WY-jeJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
