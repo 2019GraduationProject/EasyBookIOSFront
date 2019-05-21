@@ -74,11 +74,12 @@
 		4FEB7895222024CC00B24099 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB7894222024CC00B24099 /* LoginController.swift */; };
 		4FEB7897222111FE00B24099 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB7896222111FE00B24099 /* RegisterController.swift */; };
 		4FEB789922226E2100B24099 /* ResetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB789822226E2100B24099 /* ResetPasswordController.swift */; };
-		A9257638B1D701B4FAC4A79E /* Pods_easyBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61054DE0722DB96C06B55B5 /* Pods_easyBook.framework */; };
+		5905125C92A7898680C917CE /* Pods_easyBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56779024D8CA304B3A31CFB /* Pods_easyBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2AD79F6977566D102C2CC0DF /* Pods-easyBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easyBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-easyBook/Pods-easyBook.debug.xcconfig"; sourceTree = "<group>"; };
+		06F2508D59EC56B46F35BD1B /* Pods-easyBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easyBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-easyBook/Pods-easyBook.release.xcconfig"; sourceTree = "<group>"; };
+		22B21850BCD5D075AA18B33A /* Pods-easyBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easyBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-easyBook/Pods-easyBook.debug.xcconfig"; sourceTree = "<group>"; };
 		4F02564C223CB20800E0EF88 /* SetIntroducationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetIntroducationController.swift; sourceTree = "<group>"; };
 		4F02564E223D411800E0EF88 /* AvatarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarController.swift; sourceTree = "<group>"; };
 		4F05E6182236427300EC43D5 /* EventDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailController.swift; sourceTree = "<group>"; };
@@ -149,8 +150,7 @@
 		4FEB7894222024CC00B24099 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		4FEB7896222111FE00B24099 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		4FEB789822226E2100B24099 /* ResetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordController.swift; sourceTree = "<group>"; };
-		B61054DE0722DB96C06B55B5 /* Pods_easyBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_easyBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E932116BF92665CA761B5B29 /* Pods-easyBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easyBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-easyBook/Pods-easyBook.release.xcconfig"; sourceTree = "<group>"; };
+		E56779024D8CA304B3A31CFB /* Pods_easyBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_easyBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,28 +158,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9257638B1D701B4FAC4A79E /* Pods_easyBook.framework in Frameworks */,
+				5905125C92A7898680C917CE /* Pods_easyBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13F77FBF27E2E3C8A14F1F7A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B61054DE0722DB96C06B55B5 /* Pods_easyBook.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		4F25D18F21F4A36E004E7DB4 = {
 			isa = PBXGroup;
 			children = (
 				4F25D19A21F4A36E004E7DB4 /* easyBook */,
 				4F25D19921F4A36E004E7DB4 /* Products */,
-				EC5342F4DB2079FE703BA0A2 /* Pods */,
-				13F77FBF27E2E3C8A14F1F7A /* Frameworks */,
+				A695C382E7617ABBF17A075A /* Pods */,
+				A9DCE99E35F5614A2A860D43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -315,13 +307,21 @@
 			path = AccountPage;
 			sourceTree = "<group>";
 		};
-		EC5342F4DB2079FE703BA0A2 /* Pods */ = {
+		A695C382E7617ABBF17A075A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2AD79F6977566D102C2CC0DF /* Pods-easyBook.debug.xcconfig */,
-				E932116BF92665CA761B5B29 /* Pods-easyBook.release.xcconfig */,
+				22B21850BCD5D075AA18B33A /* Pods-easyBook.debug.xcconfig */,
+				06F2508D59EC56B46F35BD1B /* Pods-easyBook.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9DCE99E35F5614A2A860D43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E56779024D8CA304B3A31CFB /* Pods_easyBook.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,11 +331,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F25D1AA21F4A370004E7DB4 /* Build configuration list for PBXNativeTarget "easyBook" */;
 			buildPhases = (
-				0CA1E5F301488AE063BFCC4E /* [CP] Check Pods Manifest.lock */,
+				32911959ECA9BC6E890405FC /* [CP] Check Pods Manifest.lock */,
 				4F25D19421F4A36E004E7DB4 /* Sources */,
 				4F25D19521F4A36E004E7DB4 /* Frameworks */,
 				4F25D19621F4A36E004E7DB4 /* Resources */,
-				0A6DAFCF593EEFC25641BBB2 /* [CP] Embed Pods Frameworks */,
+				65CC78142EA7540A1E6C0E70 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -399,9 +399,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A6DAFCF593EEFC25641BBB2 /* [CP] Embed Pods Frameworks */ = {
+		32911959ECA9BC6E890405FC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-easyBook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65CC78142EA7540A1E6C0E70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -429,28 +451,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-easyBook/Pods-easyBook-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0CA1E5F301488AE063BFCC4E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-easyBook-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -662,7 +662,7 @@
 		};
 		4F25D1AB21F4A370004E7DB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AD79F6977566D102C2CC0DF /* Pods-easyBook.debug.xcconfig */;
+			baseConfigurationReference = 22B21850BCD5D075AA18B33A /* Pods-easyBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -685,7 +685,7 @@
 		};
 		4F25D1AC21F4A370004E7DB4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E932116BF92665CA761B5B29 /* Pods-easyBook.release.xcconfig */;
+			baseConfigurationReference = 06F2508D59EC56B46F35BD1B /* Pods-easyBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

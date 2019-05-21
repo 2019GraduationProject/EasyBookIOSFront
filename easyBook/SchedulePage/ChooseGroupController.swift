@@ -11,7 +11,7 @@ import UIKit
 class ChooseGroupController: UITableViewController {
     
     let createdGroupNameList = ["机器学习", "软工大作业"]
-    let attendedGroupNameList = ["出国留学申请", "movies", "本科毕设", "设计design"]
+    let attendedGroupNameList = ["出国留学申请", "movies", "预约访谈app组", "设计design"]
     var chosenGroupDic = Dictionary<String, Bool>()
     
 

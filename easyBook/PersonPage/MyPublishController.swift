@@ -16,9 +16,8 @@ class MyPublishController: UITableViewController {
     var isInitialCompute = true // 是否是第一次计算初始位移的标志
     
     var myEventData: [Event] = [
-        Event(name: "软件工程与计算II小组会", date: EventDate(monthAndDay: "03-01"), location: "南大仙林图书馆220", group: ["软工大作业"], clause: [Clause(startTime: "13:30", endTime: "17:00", maxAmount: 4, currentAmount: 2)]),
-        Event(name: "美研留学规划", date: EventDate(monthAndDay: "03-18"), location: "南大仙林校区仙1教学楼201", group: ["出国留学申请"], clause: [Clause(startTime: "13:00", endTime: "17:30", maxAmount: 25, currentAmount: 18)]),
-        Event(name: "大数据时代讲座", date: EventDate(monthAndDay: "04-01"), location: "南京大学鼓楼校区教学楼220", group: ["全部用户"], clause: [Clause(startTime: "09:00", endTime: "11:00", maxAmount: 250, currentAmount: 120), Clause(startTime: "13:30", endTime: "15:00", maxAmount: 3, currentAmount: 0)]),
+        Event(name: "预答辩交流会", date: EventDate(monthAndDay: "05-21"), location: "南京大学软件学院院楼603", group: ["软工大作业"], clause: [Clause(startTime: "13:00", endTime: "14:00", maxAmount: 3, currentAmount: 1), Clause(startTime: "15:00", endTime: "16:00", maxAmount: 3, currentAmount: 0)]),
+        Event(name: "大数据时代讲座", date: EventDate(monthAndDay: "04-01"), location: "南京大学鼓楼校区教学楼220", group: ["全部用户"], clause: [Clause(startTime: "09:00", endTime: "11:00", maxAmount: 250, currentAmount: 120), Clause(startTime: "13:30", endTime: "15:00", maxAmount: 3, currentAmount: 0)], isOver: true),
         Event(name: "机器学习讲座", date: EventDate(monthAndDay: "03-20"), location: "南京大学鼓楼校区教学楼201", group: ["全部用户"], clause: [Clause(startTime: "14:00", endTime: "16:00", maxAmount: 200, currentAmount: 200)], isOver: true),
         Event(name: "本科毕业设计", date: EventDate(monthAndDay: "02-28"), location: "南京大学软件学院院楼710", group: ["预约访谈app组", "微信小程序组"], clause: [Clause(startTime: "14:00", endTime: "15:00", maxAmount: 3, currentAmount: 0), Clause(startTime: "15:00", endTime: "16:00", maxAmount: 3, currentAmount: 1)], isOver: true)
     ]

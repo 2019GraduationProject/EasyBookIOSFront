@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FTIndicator
 
 class AddLocalEventController: UITableViewController {
     
@@ -17,7 +18,7 @@ class AddLocalEventController: UITableViewController {
     @IBOutlet weak var chosenGroupLabel: UILabel!
     
     let createdGroupNameList = ["机器学习", "软工大作业"]
-    let attendedGroupNameList = ["出国留学申请", "movies", "本科毕设", "设计design"]
+    let attendedGroupNameList = ["出国留学申请", "movies", "预约访谈app组", "设计design"]
     
     var clauseNum: Int! // 条目数量
     var chosenGroupDic = Dictionary<String, Bool>()
@@ -42,6 +43,7 @@ class AddLocalEventController: UITableViewController {
         super.viewDidLoad()
         
         clauseNum = 1 // 默认新建一个条目
+        FTIndicator.setIndicatorStyle(.dark)
         
         // 初始化字典
         for group in createdGroupNameList {
@@ -271,8 +273,10 @@ class AddLocalEventController: UITableViewController {
     @IBAction func tapDeliverButton(_ sender: UIBarButtonItem) {
         if isEdit {
             // TODO 编辑事件的逻辑写这里
+            FTIndicator.showSuccess(withMessage: "事件信息已修改！")
         } else {
             // TODO 新建事件的逻辑写这里
+            FTIndicator.showSuccess(withMessage: "发布事件成功！")
         }
         self.dismiss(animated: true, completion: nil)
     }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ClauseCell: UITableViewCell, UIScrollViewDelegate {
+class ClauseCell: UITableViewCell {
     
     @IBOutlet weak var timePeriodLabel: UILabel!
     @IBOutlet weak var startTimeLabel: UILabel!
@@ -26,12 +26,14 @@ class ClauseCell: UITableViewCell, UIScrollViewDelegate {
     var clauseStartTime: Date = Date() {
         didSet {
             self.startTimeLabel.text = self.timeFormatter.string(from: clauseStartTime)
+            self.maxAmountTextField.resignFirstResponder()
         }
     }
     
     var clauseEndTime: Date = Date() {
         didSet {
             self.endTimeLabel.text = self.timeFormatter.string(from: clauseEndTime)
+            self.maxAmountTextField.resignFirstResponder()
         }
     }
     
@@ -56,13 +58,6 @@ class ClauseCell: UITableViewCell, UIScrollViewDelegate {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
-    
-    
-    // MARK: - UIScrollViewDelegate
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        maxAmountTextField.resignFirstResponder()
     }
     
     

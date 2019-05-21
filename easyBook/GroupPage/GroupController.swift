@@ -21,7 +21,7 @@ class GroupController: UITableViewController, UISearchResultsUpdating {
     let actionImgList = ["new_invitation_40x40_","new_group_40x40_"]
     let actionTitleList = ["新的邀请", "新建群组"]
     let createdGroupNameList = ["机器学习", "软工大作业"]
-    let attendedGroupNameList = ["出国留学申请", "movies", "本科毕设", "设计design"]
+    let attendedGroupNameList = ["出国留学申请", "movies", "预约访谈app组", "设计design"]
     
     // 保存搜索结果
     var createdSearchResult: [String] = []

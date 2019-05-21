@@ -20,9 +20,10 @@ class ScheduleController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var datesWithEvent = ["2019-02-28", "2019-03-01", "2019-03-18", "2019-04-15"]
     var scheduleData = [
-        ScheduleEvent(name: "本科毕业设计", date: "2019-02-28", startTime: "14:00", endTime: "15:00", location: "南京大学软件学院院楼710", maxAmount: 3, currentAmount: 1, group: ["预约访谈app组", "微信小程序组"]),
-        ScheduleEvent(name: "软件工程与计算II小组会", date: "2019-03-01", startTime: "13:30", endTime: "17:00", location: "南大仙林图书馆220", maxAmount: 4, currentAmount: 2, group: ["电影网站组"]),
-        ScheduleEvent(name: "EL游戏设计比赛小组会", date: "2019-03-18", startTime: "13:00", endTime: "17:30", location: "南大仙林图书馆202", maxAmount: 4, currentAmount: 1, group: ["EL游戏设计组"])
+        ScheduleEvent(name: "预答辩交流会", date: "2019-05-21", startTime: "13:00", endTime: "14:00", location: "南京大学软件学院院楼603", maxAmount: 3, currentAmount: 1, group: ["预约访谈app组"]),
+        ScheduleEvent(name: "本科毕业设计", date: "2019-05-21", startTime: "14:30", endTime: "15:00", location: "南京大学软件学院院楼710", maxAmount: 3, currentAmount: 2, group: ["预约访谈app组", "微信小程序组"]),
+//        ScheduleEvent(name: "软件工程与计算II小组会", date: "2019-03-01", startTime: "13:30", endTime: "17:00", location: "南大仙林图书馆220", maxAmount: 4, currentAmount: 2, group: ["电影网站组"]),
+//        ScheduleEvent(name: "EL游戏设计比赛小组会", date: "2019-03-18", startTime: "13:00", endTime: "17:30", location: "南大仙林图书馆202", maxAmount: 4, currentAmount: 1, group: ["EL游戏设计组"])
     ]
     
     fileprivate lazy var dateFormatter: DateFormatter = {
